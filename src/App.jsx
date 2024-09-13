@@ -9,9 +9,7 @@ function App() {
  return(
     <Suspense fallback='loading'>
     <Navbar></Navbar>
-    <NavbarExt></NavbarExt>
-   <HomePage></HomePage>
-   <Footer></Footer>
+    <HomePage></HomePage>
     </Suspense>
  );
 }

@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 
 
 
@@ -11,11 +11,30 @@ function classNames(...classes) {
 export default function Navbar() {
 
   const [navigation, setNavigation] = useState([
-    { name: 'Hakkimizda', href: '#', current: true },
+    { name: 'Hakkımızda', href: '#', current: true },
     { name: 'Organizasyonlar', href: '#', current: false },
     { name: 'Galeri', href: '#', current: false },
-    { name: 'Iletisim', href: '#', current: false },
+    { name: 'İletişim', href: '#', current: false },
   ]);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Listen to scroll event and update the navbar style based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const updateNavigation = (index) => {
     setNavigation(prevNavigation => 
@@ -27,8 +46,8 @@ export default function Navbar() {
   };
 
   return (
-    <Disclosure as="nav" className="bg-white">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <Disclosure as="nav" className="bg-white sticky top-0">
+      <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
