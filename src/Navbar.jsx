@@ -23,7 +23,7 @@ export default function Navbar() {
   // Listen to scroll event and update the navbar style based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -49,7 +49,7 @@ export default function Navbar() {
   
 
   return (
-    <Disclosure as="nav" className="bg-white sticky top-0">
+    <Navbar as="nav" className="sticky top-0 w-full transition-all duration-300">
       <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -110,6 +110,6 @@ export default function Navbar() {
           ))}
         </div>
       </DisclosurePanel>
-    </Disclosure>
+    </Navbar>
   )
 }
