@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Hero() {
     return (
       <div className="hero bg-base-200 min-h-screen">
@@ -18,26 +20,26 @@ function Hero() {
               <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
                 <h2 className="text-2xl font-semibold mb-4">BBQ</h2>
                 <p className="text-gray-600">
-                  Enjoy an outdoor BBQ with exquisite culinary delights.
+                  Açık havada Barbekü ve Mangal yapmanın keyfine varın
                 </p>
               </li>
   
               <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Kır Düğünü</h2>
                 <p className="text-gray-600">
-                  Celebrate your special day with a charming countryside wedding.
+                  Özel gününüzü özel bir yerde yapın
                 </p>
               </li>
   
               <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Hotel</h2>
                 <p className="text-gray-600">
-                  Experience luxury and comfort in our elegant hotel rooms.
+                  Lüks odalarımızda konaklayın
                 </p>
               </li>
             </ul>
   
-            <button className="btn btn-primary mt-8">Reservasyon</button>
+            <Link to={"/reservasyon"}><button className="btn btn-primary mt-8">Reservasyon</button></Link>
           </div>
         </div>
       </div>
