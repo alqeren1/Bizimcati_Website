@@ -7,16 +7,25 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Navbar() {
   const navigate = useNavigate();
 
+  const goToHomePage = () => {
+    // Perform your logic
+    navigate('/'); // Navigate to the About page
+  };
+
   const goToAboutPage = () => {
     // Perform your logic
     navigate('/hakkimizda'); // Navigate to the About page
   };
 
+  const goToContactPage = () => {
+    // Perform your logic
+    navigate('/iletisim'); // Navigate to the About page
+  };
   
   return (
     <div className="navbar bg-white sticky top-0 z-50">
     <div className="flex-1">
-      <a className="btn btn-ghost text-xl">Bizim Çatı</a>
+      <a className="btn btn-ghost text-xl" onClick={goToHomePage}>Bizim Çatı</a>
     </div>
     <div className="flex-none">
       <ul className="menu menu-horizontal px-1">
@@ -31,6 +40,7 @@ export default function Navbar() {
             </ul>
           </details>
         </li>
+        <li onClick={goToContactPage}><a>İletişim</a></li>
       </ul>
     </div>
   </div>
