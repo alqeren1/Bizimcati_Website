@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Footer from './Footer';
+import LocationContactSection from './Location';
 
 
 function HomePage(){
@@ -17,6 +18,7 @@ function HomePage(){
     <div className="min-h-screen container mx-auto">
        <Hero></Hero>
     </div>
+      
       <Footer/>
     </div>);
 }
