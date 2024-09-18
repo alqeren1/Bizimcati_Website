@@ -1,11 +1,19 @@
 import React,{useState, useEffect, useRef} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaXmark, FaBars } from "react-icons/fa6";
+
 
 
 
 
 export default function Navbar() {
   const navigate = useNavigate();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = (event) => {
+    setIsOpen(event.target.open);
+  };
 
   const goToHomePage = () => {
     // Perform your logic
@@ -29,10 +37,10 @@ export default function Navbar() {
   
   return (
     <div className="navbar bg-white sticky top-0 z-50">
-    <div className="flex-1">
+    <div className="hidden lg:flex">
       <a className="btn btn-ghost text-xl" onClick={goToHomePage}>Bizim Çatı</a>
     </div>
-    <div className="flex-none">
+    <div className="hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
         <li onClick={goToAboutPage}><a>Hakkımızda</a></li>
         <li onClick={goToGalleryPage}><a>Galeri</a></li>
@@ -48,6 +56,15 @@ export default function Navbar() {
         <li onClick={goToContactPage}><a>İletişim</a></li>
       </ul>
     </div>
+    
+    <details className=" navbar-start dropdown lg:hidden" onToggle={handleToggle}>
+  <summary className="btn m-1">{isOpen ? <FaXmark /> : <FaBars />}</summary>
+  <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+    <li><a>Item 1</a></li>
+    <li><a>Item 2</a></li>
+  </ul>
+</details>
+
   </div>
   )
 }
