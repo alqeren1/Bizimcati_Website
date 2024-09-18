@@ -13,7 +13,7 @@ function HomePage(){
         i18n.changeLanguage(lng);
       };
 
-    return(<div>
+    return(<div className='bg-white'>
       <Navbar/>
     <div className="min-h-screen container mx-auto">
        <Hero></Hero>

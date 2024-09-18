@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-white min-h-screen">
         <div className="hero-content flex-col lg:flex-row gap-8">
           <img
             src="https://www.bizimcati.com.tr/wp-content/uploads/2021/07/bizimcatislider2.png"

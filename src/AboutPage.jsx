@@ -28,7 +28,7 @@ const AboutPage = () => {
           With years of experience, we pride ourselves on our commitment to excellence and our ability to deliver outstanding results. Join us on this journey, and let's achieve great things together.
         </p>
         <a
-          href="/contact"
+          href="/iletisim"
           className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
         >
           Contact Us

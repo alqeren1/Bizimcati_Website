@@ -21,6 +21,11 @@ export default function Navbar() {
     // Perform your logic
     navigate('/iletisim'); // Navigate to the About page
   };
+
+  const goToGalleryPage = () => {
+    // Perform your logic
+    navigate('/galeri'); // Navigate to the About page
+  };
   
   return (
     <div className="navbar bg-white sticky top-0 z-50">
@@ -30,7 +35,7 @@ export default function Navbar() {
     <div className="flex-none">
       <ul className="menu menu-horizontal px-1">
         <li onClick={goToAboutPage}><a>Hakkımızda</a></li>
-        <li><a>Galeri</a></li>
+        <li onClick={goToGalleryPage}><a>Galeri</a></li>
         <li>
           <details>
             <summary>Organizasyonlarımız</summary>
