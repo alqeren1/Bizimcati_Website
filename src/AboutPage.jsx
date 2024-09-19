@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import aboutImage from './assets/images/img2.jpg'
+
 
 
 const AboutPage = () => {
@@ -13,7 +13,7 @@ const AboutPage = () => {
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
-          src={aboutImage}
+          src='/images/img2.jpg'
           alt="About Us"
           className="w-full h-auto rounded-lg shadow-lg"
         />

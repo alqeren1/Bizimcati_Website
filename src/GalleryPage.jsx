@@ -3,15 +3,17 @@ import React, { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-const images = [
-  { src: './assets/images/1.jpg', alt: 'Description 1' },
-  { src: './assets/images/2.jpg', alt: 'Description 1' },
-  // Add more images
-];
+
+const images = [];
+
+for (let i = 1; i <= 49; i++) {
+  images.push({ src: `/images/${i}.jpg`, alt: `Description ${i}` });
+}
 
 const GalleryPage = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+
 
   return (
     <section className="bg-white py-16">
@@ -25,11 +27,12 @@ const GalleryPage = () => {
         </div>
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((image, idx) => (
-            <div key={idx} className="overflow-hidden rounded-lg shadow-lg">
+          {images.map((image) => (
+            <div key={image.src} className="overflow-hidden rounded-lg shadow-lg">
               <img
                 src={image.src}
                 alt={image.alt}
+                loading='lazy'
                 className="w-full h-64 object-cover cursor-pointer"
                 onClick={() => {
                   setIndex(idx);

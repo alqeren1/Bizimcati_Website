@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import contactImage from './assets/images/1.jpg';
+
 
 const ContactPage = () => {
   return (
@@ -63,7 +63,7 @@ const ContactPage = () => {
           {/* Image */}
           <div className="md:w-1/2">
             <img
-              src={contactImage}
+              src= '/images/1.jpg'
               alt="Contact Us"
               className="w-full h-auto rounded-lg shadow-lg"
             />
