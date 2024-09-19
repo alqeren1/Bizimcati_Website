@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import HomeCarousel from './HomeCarousel';
+import EventTypesSection from './Events';
 import Footer from './Footer';
 import LocationContactSection from './Location';
 
@@ -20,6 +21,7 @@ function HomePage(){
        <Hero></Hero>
     </div>
     <HomeCarousel/>
+    <EventTypesSection/>
       <Footer/>
     </div>);
 }

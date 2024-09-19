@@ -1,5 +1,6 @@
 // ReservationPage.jsx
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const ReservationPage = () => {
   const [formData, setFormData] = useState({
@@ -20,12 +21,23 @@ const ReservationPage = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to a server)
+    
+    try {
+      const response = await axios.post('http://localhost:5000/send-email', {
+        toEmail: 'enver.enes98@gmail.com',
+        subject: 'Hello',
+        text: 'This is a test email.',
+      });
+      alert(response.data.message);
+    } catch (error) {
+      alert('Error sending email');
+      console.error(error);
+    }
     console.log(formData);
   };
 
