@@ -32,6 +32,7 @@ const ReservationPage = () => {
         toEmail: 'enver.enes98@gmail.com',
         subject: 'Hello',
         text: 'This is a test email.',
+        data: formData,
       });
       alert(response.data.message);
     } catch (error) {
