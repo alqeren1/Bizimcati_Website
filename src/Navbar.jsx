@@ -36,35 +36,90 @@ export default function Navbar() {
   };
   
   return (
-    <div className="navbar bg-white sticky top-0 z-50">
+    <div className="navbar bg-navbar-background sticky top-0 z-50">
+    {/* Logo/Home Link */}
     <div className="hidden lg:flex">
-      <a className="btn btn-ghost text-xl" onClick={goToHomePage}>Bizim Çatı</a>
+      <a
+        className="btn btn-ghost text-xl text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+        onClick={goToHomePage}
+      >
+        Bizim Çatı
+      </a>
     </div>
+
+    {/* Menu Items */}
     <div className="hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
-        <li onClick={goToAboutPage}><a>Hakkımızda</a></li>
-        <li onClick={goToGalleryPage}><a>Galeri</a></li>
+        <li>
+          <a
+            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            onClick={goToAboutPage}
+          >
+            Hakkımızda
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            onClick={goToGalleryPage}
+          >
+            Galeri
+          </a>
+        </li>
+      
+        <li>
+          <a
+            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            onClick={goToContactPage}
+          >
+            İletişim
+          </a>
+        </li>
         <li>
           <details>
-            <summary>Organizasyonlarımız</summary>
-            <ul className="bg-base-100 rounded-t-none p-2">
-              <li><a>BBQ</a></li>
-              <li><a>Kır düğünü</a></li>
+            <summary className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red cursor-pointer">
+              Organizasyonlarımız
+            </summary>
+            <ul className="bg-navbar-background rounded-t-none p-2">
+              <li>
+                <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">
+                  BBQ
+                </a>
+              </li>
+              <li>
+                <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">
+                  Kır düğünü
+                </a>
+              </li>
             </ul>
           </details>
         </li>
-        <li onClick={goToContactPage}><a>İletişim</a></li>
       </ul>
     </div>
-    
-    <details className=" navbar-start dropdown lg:hidden" onToggle={handleToggle}>
-  <summary className="btn m-1">{isOpen ? <FaXmark /> : <FaBars />}</summary>
-  <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
-  </ul>
-</details>
 
+    {/* Mobile Menu */}
+    <details className="navbar-start dropdown lg:hidden" onToggle={handleToggle}>
+      <summary className="btn m-1 bg-navbar-background">
+        {isOpen ? <FaXmark className="text-navbar-dark-blue" /> : <FaBars className="text-navbar-dark-blue" />}
+      </summary>
+      <ul className="menu dropdown-content bg-navbar-background rounded-box z-[1] w-52 p-2 shadow">
+        <li>
+          <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">Hakkımızda</a>
+        </li>
+        <li>
+          <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">Galeri</a>
+        </li>
+        <li>
+          <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">BBQ</a>
+        </li>
+        <li>
+          <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">Kır düğünü</a>
+        </li>
+        <li>
+          <a className="text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red">İletişim</a>
+        </li>
+      </ul>
+    </details>
   </div>
   )
 }
