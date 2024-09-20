@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   const scrollToTop = () => {
@@ -33,12 +34,22 @@ function Footer() {
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
         </nav>
+        
         <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
+        <h6 className="footer-title">Social Media</h6>
+              <div className="flex space-x-2">
+                <a href="https://www.facebook.com/yourpage" className="text-gray-700 hover:text-blue-600 transition duration-300">
+                  <FaFacebookF size={24} />
+                </a>
+                <a href="https://twitter.com/yourprofile" className="text-gray-700 hover:text-blue-400 transition duration-300">
+                  <FaTwitter size={24} />
+                </a>
+                <a href="https://www.instagram.com/yourprofile" className="text-gray-700 hover:text-pink-600 transition duration-300">
+                  <FaInstagram size={24} />
+                </a>
+                {/* Add more social media icons as needed */}
+              </div>
+            </nav>
         <form>
           <h6 className="footer-title">Newsletter</h6>
           <fieldset className="form-control w-80">
