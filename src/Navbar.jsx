@@ -36,7 +36,7 @@ export default function Navbar() {
   };
   
   return (
-    <div className="navbar bg-navbar-background sticky top-0 z-50">
+    <div className="navbar bg-white text-gray-800 sticky top-0 z-50">
     {/* Logo/Home Link */}
     <div className="hidden lg:flex">
       <a
@@ -52,7 +52,7 @@ export default function Navbar() {
       <ul className="menu menu-horizontal px-1">
         <li>
           <a
-            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            className=" text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
             onClick={goToAboutPage}
           >
             Hakkımızda
@@ -60,7 +60,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            className=" text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
             onClick={goToGalleryPage}
           >
             Galeri
@@ -69,7 +69,7 @@ export default function Navbar() {
       
         <li>
           <a
-            className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
+            className=" text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red"
             onClick={goToContactPage}
           >
             İletişim
@@ -77,7 +77,7 @@ export default function Navbar() {
         </li>
         <li>
           <details>
-            <summary className="btn btn-ghost text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red cursor-pointer">
+            <summary className=" text-navbar-dark-blue hover:text-navbar-teal-blue active:text-navbar-red cursor-pointer">
               Organizasyonlarımız
             </summary>
             <ul className="bg-navbar-background rounded-t-none p-2">
