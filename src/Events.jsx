@@ -4,18 +4,13 @@ import React from 'react';
 const EventTypesSection = () => {
   // Array of event types with images and names
   const eventTypes = [
-    { name: 'Wedding Reception', image: '/events/wedding.jpg' },
-    { name: 'Corporate Meeting', image: '/events/corporate.jpg' },
-    { name: 'Birthday Party', image: '/events/birthday.jpg' },
-    { name: 'Graduation Party', image: '/events/graduation.jpg' },
-    { name: 'Anniversary Celebration', image: '/events/anniversary.jpg' },
-    { name: 'Family Reunion', image: '/events/family_reunion.jpg' },
-    { name: 'Holiday Party', image: '/events/holiday.jpg' },
-    { name: 'Baby Shower', image: '/events/baby_shower.jpg' },
-    { name: 'Engagement Party', image: '/events/engagement.jpg' },
-    { name: 'Cocktail Reception', image: '/events/cocktail.jpg' },
-    { name: 'Fundraising Event', image: '/events/fundraising.jpg' },
-    { name: 'Workshop or Seminar', image: '/events/workshop.jpg' },
+    { name: 'Wedding Reception', image: 'images/wedding.jpg' },
+    { name: 'Corporate Meeting', image: 'images/corporatemeeting.jpg' },
+    { name: 'Birthday Party', image: 'images/birthday.jpg' },
+    { name: 'Graduation Party', image: 'images/graduation_party.jpg' },
+    { name: 'Anniversary Celebration', image: 'images/anniversary.jpg' },
+    { name: 'BBQ', image: 'images/bbq.jpg' },
+    { name: 'Workshop or Seminar', image: 'images/seminar.jpg' },
   ];
 
   return (
