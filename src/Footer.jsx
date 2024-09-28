@@ -38,25 +38,13 @@ function Footer() {
         </button>
       )}
 
-      <footer className="footer bg-white text-base-200 p-10">
+      <footer className="footer bg-white text-base-200 p-14 justify-items-center">
         {/* Existing content */}
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
+       
+      
         
-        <nav>
-          <h6 className="footer-title">Social Media</h6>
+        <nav className='justify-items-center'>
+          
           <div className="flex space-x-2">
             <a href="https://www.facebook.com/yourpage" className="text-gray-700 hover:text-blue-600 transition duration-300">
               <FaFacebookF size={24} />
@@ -69,23 +57,11 @@ function Footer() {
             </a>
             {/* Add more social media icons as needed */}
           </div>
+          <div className="flex space-y-2">
+          Copyright © 2024 
+          </div>
         </nav>
-        <form>
-          <h6 className="footer-title">Newsletter</h6>
-          <fieldset className="form-control w-80">
-            <label className="label">
-              <span className="label-text">Enter your email address</span>
-            </label>
-            <div className="join">
-              <input
-                type="text"
-                placeholder=".."
-                className="input input-bordered join-item bg-gray-200"
-              />
-              <button className="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
+        
       </footer>
     </>
   );
