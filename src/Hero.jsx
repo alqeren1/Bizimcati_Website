@@ -1,56 +1,32 @@
 import { Link } from 'react-router-dom';
 
-
 function Hero() {
   return (
-    <div className="hero bg-white text-gray-800 min-h-screen">
-      <div className="container mx-auto px-4">
-        <div className="hero-content flex-col lg:flex-row gap-8">
-          <img
-            src= '/images/36.jpg'
-            className="w-full max-w-lg rounded-lg shadow-2xl"
-          />
-          <div className="flex flex-col space-y-6">
-            <h1 className="text-5xl font-bold">
-              Bizim Çatı Restorant & Hotel
-            </h1>
-            <p className="py-6">
-              Bizim Çatı Hotel Restorant, Ankara’nın en güzel yerlerinden biri
-              olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı
-              güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli
-              yemekleri ve makul fiyatlarıyla, güler yüzlü personeli ve
-              kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.
-            </p>
-            
-            <ul className="flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-8 md:space-y-0">
-              <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
-                <h2 className="text-2xl font-semibold mb-4">BBQ</h2>
-                <p className="text-gray-600">
-                  Açık havada Barbekü ve Mangal
-                </p>
-              </li>
+    <div
+      className="hero min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url('/images/lake-bg.jpg')` }}
+    >
+      {/* Overlay to make text readable over the background image */}
+      <div className="hero-overlay bg-black bg-opacity-50"></div>
 
-              <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
-                <h2 className="text-2xl font-semibold mb-4">Kır Düğünü</h2>
-                <p className="text-gray-600">
-                  Özel gününüzü özel bir yerde yapın
-                </p>
-              </li>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col items-center justify-center min-h-screen text-white">
+          <h1 className="text-5xl font-bold mb-6 text-center">
+            Bizim Çatı Restorant & Hotel
+          </h1>
+          <p className="text-xl mb-8 text-center max-w-2xl">
+            Bizim Çatı Hotel Restorant, Ankara’nın en güzel yerlerinden biri
+            olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı
+            güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli
+            yemekleri ve makul fiyatlarıyla, güler yüzlü personeli ve
+            kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.
+          </p>
 
-              <li className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 text-center">
-                <h2 className="text-2xl font-semibold mb-4">Hotel</h2>
-                <p className="text-gray-600">
-                  Lüks odalarımızda konaklayın
-                </p>
-              </li>
+        
 
-              
-            </ul>
-
-            <Link to="/reservasyon"className="btn btn-primary mt-8">
-              Reservasyon
-            </Link>
-          </div>
+          <Link to="/reservasyon" className="btn btn-primary">
+            Reservasyon
+          </Link>
         </div>
       </div>
     </div>

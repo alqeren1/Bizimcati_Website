@@ -38,7 +38,7 @@ function Footer() {
         </button>
       )}
 
-      <footer className="footer bg-gray-800 text-base-content p-10">
+      <footer className="footer bg-white text-base-200 p-10">
         {/* Existing content */}
         <nav>
           <h6 className="footer-title">Services</h6>
@@ -79,8 +79,8 @@ function Footer() {
             <div className="join">
               <input
                 type="text"
-                placeholder="username@site.com"
-                className="input input-bordered join-item"
+                placeholder=".."
+                className="input input-bordered join-item bg-gray-200"
               />
               <button className="btn btn-primary join-item">Subscribe</button>
             </div>

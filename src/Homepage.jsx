@@ -17,11 +17,12 @@ function HomePage(){
 
     return(<div className='bg-white'>
       <Navbar/>
-    <div className="min-h-screen container mx-auto">
+    <div className="min-h-screen">
        <Hero></Hero>
     </div>
-    <HomeCarousel/>
     <EventTypesSection/>
+    <HomeCarousel/>
+    
       <Footer/>
     </div>);
 }
