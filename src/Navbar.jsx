@@ -39,7 +39,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   // Conditional classes
-  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-16${
+  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-16 ${
     isOnHomePage
       ? scrolled
         ? 'bg-white shadow-md'
