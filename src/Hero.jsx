@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <div
-      className="hero min-h-screen bg-cover bg-center"
+      className="relative top-0 hero min-h-screen bg-cover bg-center "
       style={{ backgroundImage: `url('/images/lake-bg.jpg')` }}
     >
       {/* Overlay to make text readable over the background image */}
