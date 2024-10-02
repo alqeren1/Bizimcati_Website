@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { FaXmark } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -81,32 +83,19 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="lg:hidden">
+        <div className="lg:hidden z-50">
           <button
             className="relative w-8 h-8 focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
-            <span
-              className={`block absolute h-0.5 w-full bg-current transform transition duration-500 ease-in-out ${
-                isMenuOpen
-                  ? 'rotate-45 translate-y-[0.4375rem]'
-                  : '-translate-y-2'
-              } ${linkClasses}`}
-            ></span>
-            <span
-              className={`block absolute h-0.5 w-full bg-current transform transition duration-500 ease-in-out ${
-                isMenuOpen ? 'opacity-0' : 'translate-y-0'
-              } ${linkClasses}`}
-            ></span>
-            <span
-              className={`block absolute h-0.5 w-full bg-current transform transition duration-500 ease-in-out ${
-                isMenuOpen
-                  ? '-rotate-45 translate-y-[-0.4375rem]'
-                  : 'translate-y-2'
-              } ${linkClasses}`}
-            ></span>
+            
+            {isMenuOpen ? (
+        <FaXmark className='text-black' />
+      ) : (
+        <RxHamburgerMenu/>
+      )}
           </button>
         </div>
       </div>
@@ -117,18 +106,21 @@ export default function Navbar() {
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out z-40`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
-          <a
-            className="text-xl text-gray-800"
+        <div className="flex flex-col items-center justify-center h-full space-y-8 w-full">
+          
+        <button className="btn btn-wide btn-info text-white"><a
+            className="text-3xl"
             onClick={() => {
               navigate('/');
               toggleMenu();
             }}
           >
             Anasayfa
-          </a>
+          </a></button>
+          
+          <button className="btn btn-wide  btn-info text-white">
           <a
-            className="text-xl text-gray-800"
+            className="text-3xl"
             onClick={() => {
               navigate('/hakkimizda');
               toggleMenu();
@@ -136,17 +128,22 @@ export default function Navbar() {
           >
             Hakkımızda
           </a>
-          <a
-            className="text-xl text-gray-800"
+          </button>
+          
+          <button className="btn btn-wide  btn-info text-white"><a
+            className="text-3xl"
             onClick={() => {
               navigate('/galeri');
               toggleMenu();
             }}
           >
             Galeri
-          </a>
+          </a></button>
+          
+
+          <button className="btn btn-wide  btn-info text-white">
           <a
-            className="text-xl text-gray-800"
+            className="text-3xl"
             onClick={() => {
               navigate('/iletisim');
               toggleMenu();
@@ -154,6 +151,8 @@ export default function Navbar() {
           >
             İletişim
           </a>
+          </button>
+         
           {/* Add other links as needed */}
         </div>
       </div>
