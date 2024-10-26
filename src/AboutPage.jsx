@@ -13,7 +13,7 @@ const AboutPage = () => {
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
-          src='/images/img2.jpg'
+          src='/images/10.jpg'
           alt="About Us"
           className="w-full h-auto rounded-lg shadow-lg"
         />

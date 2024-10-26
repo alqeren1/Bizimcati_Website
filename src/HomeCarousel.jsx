@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const HomeCarousel = () => {
   // Define the images for the carousel
   const images = [];
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 5; i <= 10; i++) {
     images.push({ src: `/images/${i}.jpg`, alt: `Slide ${i}` });
   }
 
@@ -19,7 +19,7 @@ const HomeCarousel = () => {
       );
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   // Functions to handle navigation
   const goToPreviousSlide = () => {
@@ -45,12 +45,14 @@ const HomeCarousel = () => {
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {images.map((image) => (
+        {images.map((image, index) => (
           <div key={image.src} className="w-full flex-shrink-0">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-96 object-cover"
+              className={`h-96 mx-auto transition-transform duration-500 ease-in-out ${
+                index === currentIndex ? 'scale-100' : 'scale-50'
+              }`}
             />
           </div>
         ))}
