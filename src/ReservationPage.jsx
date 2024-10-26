@@ -1,6 +1,7 @@
 // ReservationPage.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
+import Footer from './Footer'
 
 const ReservationPage = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const ReservationPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await axios.post('http://localhost:5000/send-email', {
         toEmail: 'enver.enes98@gmail.com',
@@ -53,7 +54,10 @@ const ReservationPage = () => {
           </p>
         </div>
         {/* Reservation Form */}
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg"
+        >
           {/* Name */}
           <div className="mb-6">
             <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
@@ -63,7 +67,7 @@ const ReservationPage = () => {
               type="text"
               id="name"
               name="name"
-              className="w-full border border-gray-300 rounded-md p-3"
+              className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
@@ -79,7 +83,7 @@ const ReservationPage = () => {
               type="email"
               id="email"
               name="email"
-              className="w-full border border-gray-300 rounded-md p-3"
+              className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
@@ -97,7 +101,7 @@ const ReservationPage = () => {
                 type="date"
                 id="date"
                 name="date"
-                className="w-full border border-gray-300 rounded-md p-3"
+                className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
                 value={formData.date}
                 onChange={handleChange}
                 required
@@ -112,7 +116,7 @@ const ReservationPage = () => {
                 type="time"
                 id="time"
                 name="time"
-                className="w-full border border-gray-300 rounded-md p-3"
+                className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
                 value={formData.time}
                 onChange={handleChange}
                 required
@@ -128,7 +132,7 @@ const ReservationPage = () => {
               type="number"
               id="guests"
               name="guests"
-              className="w-full border border-gray-300 rounded-md p-3"
+              className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
               placeholder="Number of Guests"
               value={formData.guests}
               onChange={handleChange}
@@ -144,7 +148,7 @@ const ReservationPage = () => {
             <select
               id="eventType"
               name="eventType"
-              className="w-full border border-gray-300 rounded-md p-3"
+              className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
               value={formData.eventType}
               onChange={handleChange}
               required
@@ -161,13 +165,16 @@ const ReservationPage = () => {
           </div>
           {/* Additional Requests */}
           <div className="mb-6">
-            <label htmlFor="additionalRequests" className="block text-gray-700 font-semibold mb-2">
+            <label
+              htmlFor="additionalRequests"
+              className="block text-gray-700 font-semibold mb-2"
+            >
               Additional Requests
             </label>
             <textarea
               id="additionalRequests"
               name="additionalRequests"
-              className="w-full border border-gray-300 rounded-md p-3"
+              className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
               placeholder="Any special requests or notes"
               value={formData.additionalRequests}
               onChange={handleChange}
@@ -184,7 +191,30 @@ const ReservationPage = () => {
             </button>
           </div>
         </form>
+        {/* Contact Information */}
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <p className="text-lg text-gray-600 mb-2">
+            Phone 1:{' '}
+            <a href="tel:+903124982121" className="text-blue-600">
+              +90 312 498 21 21
+            </a>
+          </p>
+          <p className="text-lg text-gray-600 mb-2">
+            Phone 2:{' '}
+            <a href="tel:+905558009261" className="text-blue-600">
+              +90 555 800 92 61
+            </a>
+          </p>
+          <p className="text-lg text-gray-600">
+            Our Email Address:{' '}
+            <a href="mailto:info@bizimcati.com.tr" className="text-blue-600">
+              info@bizimcati.com.tr
+            </a>
+          </p>
+        </div>
       </div>
+      <Footer/>
     </section>
   );
 };
