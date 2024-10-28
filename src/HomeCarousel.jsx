@@ -42,7 +42,7 @@ const HomeCarousel = () => {
     <div className="relative w-full overflow-hidden bg-gray-100">
       {/* Slides */}
       <div
-        className="flex transition-transform duration-500"
+        className="flex m-4 sm:m-0 transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
@@ -50,7 +50,7 @@ const HomeCarousel = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className={`h-96 mx-auto transition-transform duration-500 ease-in-out ${
+              className={`h-96 w-full object-cover transition-transform duration-500 ease-in-out ${
                 index === currentIndex ? 'scale-100' : 'scale-50'
               }`}
             />
