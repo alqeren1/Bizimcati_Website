@@ -44,7 +44,7 @@ const ReservationPage = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 pt-16">
       <div className="container mx-auto px-4">
         {/* Page Header */}
         <div className="text-center mb-12">
@@ -192,7 +192,7 @@ const ReservationPage = () => {
           </div>
         </form>
         {/* Contact Information */}
-        <div className="mt-12 text-center">
+        <div className="my-12 text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
           <p className="text-lg text-gray-600 mb-2">
             Phone 1:{' '}

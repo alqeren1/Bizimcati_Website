@@ -1,16 +1,19 @@
 // EventTypesSection.jsx
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const EventTypesSection = () => {
   // Array of event types with images and names
+
+  const navigate = useNavigate();
+
   const eventTypes = [
-    { name: 'Wedding Reception', image: 'images/wedding.jpg' },
-    { name: 'Corporate Meeting', image: 'images/corporatemeeting.jpg' },
-    { name: 'Birthday Party', image: 'images/birthday.jpg' },
-    { name: 'Graduation Party', image: 'images/graduation_party.jpg' },
-    { name: 'Anniversary Celebration', image: 'images/anniversary.jpg' },
-    { name: 'BBQ', image: 'images/bbq.jpg' },
-    { name: 'Workshop or Seminar', image: 'images/seminar.jpg' },
+    { name: 'Wedding Reception', image: 'images/wedding.jpg', navKey: 'kirdugunu' },
+    { name: 'BBQ', image: 'images/bbq.jpg', navKey: 'bbq' },
+    { name: 'Corporate Meeting', image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
+    { name: 'Birthday Party', image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
+    { name: 'Graduation Party', image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
+    { name: 'Workshop or Seminar', image: 'images/seminar.jpg', navKey: 'seminer' },
   ];
 
   return (
@@ -29,6 +32,7 @@ const EventTypesSection = () => {
             <div
               key={event.name}
               className="overflow-hidden rounded-lg shadow-lg bg-white"
+              onClick={() => navigate("/" +event.navKey)}
             >
               <img
                 src={event.image}
