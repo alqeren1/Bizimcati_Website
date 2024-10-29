@@ -53,7 +53,7 @@ export default function Navbar() {
     isOnHomePage
       ? scrolled
         ? 'text-gray-800'
-        : 'text-white'
+        : 'text-black'
       : 'text-gray-800'
   }`;
 
@@ -103,13 +103,14 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed top-0 left-0 w-full h-full bg-white transform ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          isMenuOpen ? 'translate-x-20' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out z-40`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8 w-full">
+        <div className="flex flex-col p-28 items-end justify-start h-full space-y-8 w-full bg-slate-200">
           
-        <button className="btn btn-wide btn-info text-white"><a
-            className="text-3xl"
+      
+        <button className="border-b border-gray-500 text-black"><a
+            className="text-xl"
             onClick={() => {
               navigate('/');
               toggleMenu();
@@ -118,9 +119,9 @@ export default function Navbar() {
             Anasayfa
           </a></button>
           
-          <button className="btn btn-wide  btn-info text-white">
+          <button className="border-b border-gray-500  text-black">
           <a
-            className="text-3xl"
+            className="text-xl"
             onClick={() => {
               navigate('/hakkimizda');
               toggleMenu();
@@ -130,8 +131,8 @@ export default function Navbar() {
           </a>
           </button>
           
-          <button className="btn btn-wide  btn-info text-white"><a
-            className="text-3xl"
+          <button className="border-b border-gray-500   text-black"><a
+            className="text-xl"
             onClick={() => {
               navigate('/galeri');
               toggleMenu();
@@ -141,9 +142,9 @@ export default function Navbar() {
           </a></button>
           
 
-          <button className="btn btn-wide  btn-info text-white">
+          <button className="border-b border-gray-500  text-black">
           <a
-            className="text-3xl"
+            className="text-xl"
             onClick={() => {
               navigate('/iletisim');
               toggleMenu();
