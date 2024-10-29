@@ -31,7 +31,7 @@ Tüm ekipmanlarının yanı sıra sinema düzeninde 85 kişi kapasitesiyle topla
           href="/iletisim"
           className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
         >
-          Contact Us
+          İletişim
         </a>
       </div>
     </div>

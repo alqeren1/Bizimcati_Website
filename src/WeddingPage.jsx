@@ -8,7 +8,7 @@ const WeddingPage = () =>{
         <>
         <Navbar/>
         <section className="bg-white py-16">
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div className="container mx-auto px-4 flex flex-col md:flex-row items-start">
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
@@ -21,16 +21,47 @@ const WeddingPage = () =>{
       <div className="md:w-1/2 md:pl-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">Kır Düğünü</h2>
         <p className="text-lg text-gray-700 mb-6">
-          Welcome to <strong>Bizim Çatı Restorant</strong>, where we specialize in providing top-notch services to meet your needs. Our dedicated team ensures customer satisfaction through exceptional service and attention to detail.
+        Bizim Çatı'da Hayallerinizi Süsleyen Kır Düğünleri
+<br/><br/>
+Ankara'nın incisi Gölbaşı'nda yer alan Bizim Çatı Restoran & Otel, doğanın eşsiz güzellikleriyle çevrili mekânında, hayatınızın en özel gününü unutulmaz kılmak için sizleri bekliyor. Kır düğünü konseptimizin sunduğu romantik ve doğal atmosferde, sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.
+<br/><br/>
+<h4 className="text-xl font-semibold">Neden Bizim Çatı Kır Düğünü?
+</h4>
+<br/>
+<ul className="list-none">
+  <li>Muhteşem Doğa Manzarası: Gölbaşı'nın eşsiz göl ve doğa manzarası eşliğinde, açık havada ferah bir düğün ortamı sunuyoruz.
+  </li>
+  <br/>
+  <li>Özel Dekorasyon Seçenekleri: Kişisel zevklerinize uygun dekorasyon alternatifleriyle düğününüzü tamamen size özel hale getiriyoruz.
+  </li>
+  <br/>
+  <li>
+  Lezzetli Menü Seçenekleri: Usta şeflerimizin hazırladığı zengin menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz.
+  </li>
+  <br/>
+  <li>Profesyonel Hizmet Anlayışı: Deneyimli ekibimiz, organizasyonun tüm aşamalarında yanınızda olarak her detayın kusursuz olmasını sağlıyor.
+  </li>
+  <br/>
+  <li>Konaklama İmkanı: Otelimizde sunduğumuz konaklama seçenekleriyle şehir dışından gelen misafirlerinizi rahat ettirebilirsiniz.
+  </li>
+  <br/>
+</ul>
+
+Bizim Çatı olarak, her çiftin hayalini kurduğu düğünü gerçekleştirmek için çalışıyoruz. İster samimi bir tören, ister görkemli bir kutlama planlayın; esnek paket seçeneklerimiz ve kişiselleştirilmiş hizmetlerimizle beklentilerinizi karşılıyoruz.
+<br/><br/>
+Doğayla İç İçe Bir Kutlama
+Kuş cıvıltıları, hafif esen bir rüzgâr ve doğanın tüm renkleriyle bezenmiş bir ortamda "Evet" demeye hazır mısınız? Kır bahçemiz, geniş alanı ve doğal güzelliğiyle fotoğraflarınıza da eşsiz bir fon oluşturacak.
+<br/><br/>
+Rezervasyon ve Detaylı Bilgi İçin
+
+
         </p>
-        <p className="text-lg text-gray-700">
-          With years of experience, we pride ourselves on our commitment to excellence and our ability to deliver outstanding results. Join us on this journey, and let's achieve great things together.
-        </p>
+       
         <a
           href="/iletisim"
           className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
         >
-          Contact Us
+          İletişim
         </a>
       </div>
     </div>

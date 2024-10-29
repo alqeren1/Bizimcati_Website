@@ -53,7 +53,7 @@ export default function Navbar() {
     isOnHomePage
       ? scrolled
         ? 'text-gray-800'
-        : 'text-black'
+        : 'text-white'
       : 'text-gray-800'
   }`;
 
@@ -103,14 +103,14 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed top-0 left-0 w-full h-full bg-white transform ${
-          isMenuOpen ? 'translate-x-20' : 'translate-x-full'
+          isMenuOpen ? 'translate-x-40' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out z-40`}
       >
-        <div className="flex flex-col p-28 items-end justify-start h-full space-y-8 w-full bg-slate-200">
+        <div className="flex flex-col p-48 items-end justify-start h-full space-y-8 w-full bg-slate-200">
           
       
         <button className="border-b border-gray-500 text-black"><a
-            className="text-xl"
+            className="text-2xl font-bold"
             onClick={() => {
               navigate('/');
               toggleMenu();
@@ -121,7 +121,7 @@ export default function Navbar() {
           
           <button className="border-b border-gray-500  text-black">
           <a
-            className="text-xl"
+            className="text-2xl font-bold"
             onClick={() => {
               navigate('/hakkimizda');
               toggleMenu();
@@ -132,7 +132,7 @@ export default function Navbar() {
           </button>
           
           <button className="border-b border-gray-500   text-black"><a
-            className="text-xl"
+            className="text-2xl font-bold"
             onClick={() => {
               navigate('/galeri');
               toggleMenu();
@@ -144,7 +144,7 @@ export default function Navbar() {
 
           <button className="border-b border-gray-500  text-black">
           <a
-            className="text-xl"
+            className="text-2xl font-bold"
             onClick={() => {
               navigate('/iletisim');
               toggleMenu();

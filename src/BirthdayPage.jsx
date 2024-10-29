@@ -19,18 +19,32 @@ const BirthdayPage = () =>{
       </div>
       {/* Content Section */}
       <div className="md:w-1/2 md:pl-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">Kır Düğünü</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">Doğum Günü Partisi</h2>
         <p className="text-lg text-gray-700 mb-6">
-          Welcome to <strong>Bizim Çatı Restorant</strong>, where we specialize in providing top-notch services to meet your needs. Our dedicated team ensures customer satisfaction through exceptional service and attention to detail.
+        Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın
+<br/>
+Ankara Gölbaşı'nın huzur dolu doğasında yer alan Bizim Çatı Restoran & Otel, sevdiklerinizle birlikte unutulmaz doğum günü partilerine ev sahipliği yapıyor. Doğanın içinde, sıcak ve samimi bir ortamda özel günlerinizi taçlandırmak için mükemmel bir mekân arıyorsanız doğru yerdesiniz.
+<br/>
+
+<h4 className="text-xl font-semibold">Neden Doğum Günü Partiniz İçin Bizim Çatı'yı Seçmelisiniz?
+</h4>
+<br/>
+Doğayla İç İçe Mekân: Yeşillikler arasında, ferah ve şık bir ortamda hem çocuklar hem de yetişkinler için ideal bir kutlama alanı sunuyoruz.
+<br/>
+Özel Menü Alternatifleri: Usta şeflerimizin hazırladığı lezzetli ve çeşitli menülerle misafirlerinize gastronomik bir şölen yaşatıyoruz.
+<br/>
+Kişiye Özel Organizasyon: İsteklerinize göre şekillenen dekorasyon ve etkinliklerle doğum günü partinizi benzersiz hale getiriyoruz.
+<br/>
+Eğlence Seçenekleri: Canlı müzik, DJ performansı ve çocuklar için oyun alanları gibi farklı eğlence alternatifleriyle partinizi renklendiriyoruz.
+
+Kon<br/>forlu Konaklama: Otelimizde sunulan konaklama imkânlarıyla şehir dışından gelen misafirlerinizi rahat ettiriyoruz.
         </p>
-        <p className="text-lg text-gray-700">
-          With years of experience, we pride ourselves on our commitment to excellence and our ability to deliver outstanding results. Join us on this journey, and let's achieve great things together.
-        </p>
+        
         <a
           href="/iletisim"
           className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
         >
-          Contact Us
+          İletişim
         </a>
       </div>
     </div>

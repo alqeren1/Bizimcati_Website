@@ -8,12 +8,12 @@ const EventTypesSection = () => {
   const navigate = useNavigate();
 
   const eventTypes = [
-    { name: 'Wedding Reception', image: 'images/wedding.jpg', navKey: 'kirdugunu' },
+    { name: 'Kır Düğünü', image: 'images/wedding.jpg', navKey: 'kirdugunu' },
     { name: 'BBQ', image: 'images/bbq.jpg', navKey: 'bbq' },
-    { name: 'Corporate Meeting', image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
-    { name: 'Birthday Party', image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
-    { name: 'Graduation Party', image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
-    { name: 'Workshop or Seminar', image: 'images/seminar.jpg', navKey: 'seminer' },
+    { name: 'Şirket Organizasyonu', image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
+    { name: 'Doğum Günü Partisi', image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
+    { name: 'Mezuniyet Partisi', image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
+    { name: 'Seminer & Workshop', image: 'images/seminar.jpg', navKey: 'seminer' },
   ];
 
   return (

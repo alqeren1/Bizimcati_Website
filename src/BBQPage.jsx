@@ -21,11 +21,11 @@ const BBQPage = () =>{
       <div className="md:w-1/2 md:pl-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">BBQ</h2>
         <p className="text-lg text-gray-700 mb-6">
-          Welcome to <strong>Bizim Çatı Restorant</strong>, where we specialize in providing top-notch services to meet your needs. Our dedicated team ensures customer satisfaction through exceptional service and attention to detail.
+        Barbekü veya barbekü (İngiltere ve ABD’de gayri resmi olarak BBQ, Avustralya’da barbie ve Güney Afrika’da braai), yiyecekleri pişirmek için canlı ateş ve duman kullanan çeşitli pişirme yöntemlerini tanımlamak için önemli bölgesel ve ulusal varyasyonlarla kullanılan bir terimdir. Terim genellikle bu yöntemlerle ilişkili cihazlara, bu yöntemlerin ürettiği daha geniş mutfaklara ve bu tarz yemeklerin pişirildiği ve servis edildiği yemekler veya toplantılara da uygulanır. Barbekü ile ilgili pişirme yöntemleri önemli ölçüde farklılık gösterir, ancak çoğu açık havada pişirmeyi içerir.
+<br/><br/>
+Barbekünün çeşitli bölgesel varyasyonları, genel olarak doğrudan veya dolaylı ısıtma kullanan yöntemler olarak kategorize edilebilir. Dolaylı barbeküler, etin odun veya odun kömürü üzerinde kavrularak veya tütsülenerek ısıtıldığı Kuzey Amerika mutfağı ile ilişkilidir. Bu barbekü yöntemleri, düşük sıcaklıklarda ve uzun pişirme sürelerinde (birkaç saat) duman kullanarak pişirmeyi içerir. Başka yerlerde, barbekü daha yaygın olarak ısının daha doğrudan uygulanması, sıcak kömürler veya gaz üzerinde yiyeceklerin ızgara edilmesi anlamına gelir. Bu teknik genellikle birkaç dakika boyunca doğrudan, kuru ısı veya sıcak ateşte yapılır. Bu daha geniş kategoriler içinde başka ulusal ve bölgesel farklılıklar da vardır.
         </p>
-        <p className="text-lg text-gray-700">
-          With years of experience, we pride ourselves on our commitment to excellence and our ability to deliver outstanding results. Join us on this journey, and let's achieve great things together.
-        </p>
+        
         <a
           href="/iletisim"
           className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
