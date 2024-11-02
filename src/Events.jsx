@@ -9,7 +9,7 @@ const EventTypesSection = () => {
 
   const eventTypes = [
     { name: 'Kır Düğünü', image: 'images/wedding.jpg', navKey: 'kirdugunu' },
-    { name: 'BBQ', image: 'images/bbq.jpg', navKey: 'bbq' },
+    { name: 'BBQ ve Mangal', image: 'images/bbq.jpg', navKey: 'bbq' },
     { name: 'Şirket Organizasyonu', image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
     { name: 'Doğum Günü Partisi', image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
     { name: 'Mezuniyet Partisi', image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
@@ -21,9 +21,9 @@ const EventTypesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Event Types We Host</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Organizasyonlarımız</h2>
           <p className="text-lg text-gray-600">
-            Our restaurant is the perfect venue for any occasion. Explore the event types we can host for you.
+          Restoranımız her türlü etkinlik için mükemmel bir mekandır. Sizin için düzenleyebileceğimiz etkinlik türlerini keşfedin.
           </p>
         </div>
         {/* Event Types Grid */}
@@ -31,7 +31,7 @@ const EventTypesSection = () => {
           {eventTypes.map((event, idx) => (
             <div
               key={event.name}
-              className="overflow-hidden rounded-lg shadow-lg bg-white"
+              className="overflow-hidden rounded-lg shadow-lg bg-white hover:bg-blue-300"
               onClick={() => navigate("/" +event.navKey)}
             >
               <img

@@ -50,7 +50,7 @@ const HomeCarousel = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className={`h-96 w-full object-cover transition-transform duration-500 ease-in-out ${
+              className={`h-96 w-full object-cover sm:rounded-none rounded-lg transition-transform duration-500 ease-in-out ${
                 index === currentIndex ? 'scale-100' : 'scale-50'
               }`}
             />

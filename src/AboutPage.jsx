@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <> 
     <Navbar></Navbar>
-    <section className="bg-white py-28 h-full">
+    <section className="bg-white py-28 h-screen">
     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">

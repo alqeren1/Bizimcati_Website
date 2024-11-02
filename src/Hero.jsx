@@ -14,7 +14,7 @@ function Hero() {
           <h1 className="text-5xl font-bold mb-6 text-center">
             Bizim Çatı Restorant & Hotel
           </h1>
-          <p className="text-xl mb-8 text-center max-w-2xl">
+          <p className="text-xl mb-8 text-start max-w-2xl leading-8">
             Bizim Çatı Hotel Restorant, Ankara’nın en güzel yerlerinden biri
             olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı
             güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli
