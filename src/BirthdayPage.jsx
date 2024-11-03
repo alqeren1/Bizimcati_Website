@@ -17,7 +17,7 @@ const BirthdayPage = () => {
             />
           </div>
           {/* Content Section */}
-          <div className="md:col-span-7">
+          <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Doğum Günü Partisi</h2>
             <div className="text-lg text-gray-700 mb-6">
               <p className="mb-4">

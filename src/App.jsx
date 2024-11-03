@@ -22,7 +22,7 @@ function App() {
     <Suspense fallback='loading'>
     <Router>
       <ScrollTop/>
-      <Routes>
+      <Routes > 
         <Route path="/" element={<HomePage />} />
         <Route path="/hakkimizda" element={<AboutPage />} />
         <Route path="/reservasyon" element={<ReservationPage/>} />

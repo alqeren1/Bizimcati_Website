@@ -10,19 +10,19 @@ const WeddingPage = () => {
         <div
           className="
             container mx-auto px-4
-            grid grid-cols-1 md:grid-cols-12 gap-8
+            grid grid-cols-1 md:grid-cols-2 gap-8
           "
         >
           {/* Image Section */}
-          <div className="md:col-span-5">
+          <div className="md:h-auto">
             <img
               src="/images/10.jpg"
               alt="About Us"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
             />
           </div>
           {/* Content Section */}
-          <div className="md:col-span-7">
+          <div >
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Kır Düğünü</h2>
             <p className="text-lg text-gray-700 mb-6">
               Bizim Çatı'da Hayallerinizi Süsleyen Kır Düğünleri
@@ -33,9 +33,7 @@ const WeddingPage = () => {
               sizleri bekliyor. Kır düğünü konseptimizin sunduğu romantik ve doğal atmosferde,
               sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.
             </p>
-          </div>
-          {/* Exceeding Content */}
-          <div className="md:col-span-12">
+          
             <strong className="text-2xl text-black">Neden Bizim Çatı Kır Düğünü?</strong>
             <br />
             <br />
@@ -89,6 +87,8 @@ const WeddingPage = () => {
       </section>
       <Footer />
     </>
+
+    
   );
 };
 

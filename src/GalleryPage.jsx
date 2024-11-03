@@ -8,7 +8,7 @@ import 'yet-another-react-lightbox/styles.css';
 
 const images = [];
 
-for (let i = 1; i <= 49; i++) {
+for (let i = 1; i <= 48; i++) {
   images.push({ src: `/images/${i}.jpg`, alt: `Description ${i}` });
 }
 
