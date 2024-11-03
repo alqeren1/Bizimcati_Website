@@ -1,7 +1,7 @@
 // ReservationPage.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
-import Footer from './Footer'
+import Footer from './Footer';
 
 const ReservationPage = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +15,9 @@ const ReservationPage = () => {
   });
 
   const eventTypes = [
-    { value: 'bbq', label: 'BBQ' },
+    { value: 'bbq', label: 'Barbekü' },
     { value: 'wedding', label: 'Kır Düğünü' },
-    { value: 'hotel', label: 'Hotel' },
+    { value: 'hotel', label: 'Otel' },
   ];
 
   const handleChange = (e) => {
@@ -31,13 +31,13 @@ const ReservationPage = () => {
     try {
       const response = await axios.post('http://localhost:5000/send-email', {
         toEmail: 'enver.enes98@gmail.com',
-        subject: 'Hello',
-        text: 'This is a test email.',
+        subject: 'Merhaba',
+        text: 'Bu bir test e-postasıdır.',
         data: formData,
       });
       alert(response.data.message);
     } catch (error) {
-      alert('Error sending email');
+      alert('E-posta gönderilirken hata oluştu');
       console.error(error);
     }
     console.log(formData);
@@ -46,56 +46,56 @@ const ReservationPage = () => {
   return (
     <section className="bg-gray-100 pt-16">
       <div className="container mx-auto px-4">
-        {/* Page Header */}
+        {/* Sayfa Başlığı */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Make a Reservation</h1>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Rezervasyon Yapın</h1>
           <p className="text-lg text-gray-600">
-            Please fill out the form below to reserve your spot.
+            Lütfen yerinizi ayırtmak için aşağıdaki formu doldurun.
           </p>
         </div>
-        {/* Reservation Form */}
+        {/* Rezervasyon Formu */}
         <form
           onSubmit={handleSubmit}
           className="max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg"
         >
-          {/* Name */}
+          {/* İsim */}
           <div className="mb-6">
             <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
-              Name
+              İsim
             </label>
             <input
               type="text"
               id="name"
               name="name"
               className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
-              placeholder="Your Name"
+              placeholder="İsminiz"
               value={formData.name}
               onChange={handleChange}
               required
             />
           </div>
-          {/* Email */}
+          {/* E-posta */}
           <div className="mb-6">
             <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
-              Email
+              E-posta
             </label>
             <input
               type="email"
               id="email"
               name="email"
               className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
-              placeholder="Your Email"
+              placeholder="E-postanız"
               value={formData.email}
               onChange={handleChange}
               required
             />
           </div>
-          {/* Date and Time */}
+          {/* Tarih ve Saat */}
           <div className="mb-6 flex space-x-4">
-            {/* Date */}
+            {/* Tarih */}
             <div className="w-1/2">
               <label htmlFor="date" className="block text-gray-700 font-semibold mb-2">
-                Date
+                Tarih
               </label>
               <input
                 type="date"
@@ -107,10 +107,10 @@ const ReservationPage = () => {
                 required
               />
             </div>
-            {/* Time */}
+            {/* Saat */}
             <div className="w-1/2">
               <label htmlFor="time" className="block text-gray-700 font-semibold mb-2">
-                Time
+                Saat
               </label>
               <input
                 type="time"
@@ -123,27 +123,27 @@ const ReservationPage = () => {
               />
             </div>
           </div>
-          {/* Number of Guests */}
+          {/* Misafir Sayısı */}
           <div className="mb-6">
             <label htmlFor="guests" className="block text-gray-700 font-semibold mb-2">
-              Number of Guests
+              Misafir Sayısı
             </label>
             <input
               type="number"
               id="guests"
               name="guests"
               className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
-              placeholder="Number of Guests"
+              placeholder="Misafir Sayısı"
               value={formData.guests}
               onChange={handleChange}
               required
               min="1"
             />
           </div>
-          {/* Event Type */}
+          {/* Etkinlik Türü */}
           <div className="mb-6">
             <label htmlFor="eventType" className="block text-gray-700 font-semibold mb-2">
-              Event Type
+              Etkinlik Türü
             </label>
             <select
               id="eventType"
@@ -154,7 +154,7 @@ const ReservationPage = () => {
               required
             >
               <option value="" disabled>
-                Select an Event Type
+                Bir Etkinlik Türü Seçin
               </option>
               {eventTypes.map((event) => (
                 <option key={event.value} value={event.value}>
@@ -163,58 +163,64 @@ const ReservationPage = () => {
               ))}
             </select>
           </div>
-          {/* Additional Requests */}
+          {/* Ek Talepler */}
           <div className="mb-6">
             <label
               htmlFor="additionalRequests"
               className="block text-gray-700 font-semibold mb-2"
             >
-              Additional Requests
+              Ek Talepler
             </label>
             <textarea
               id="additionalRequests"
               name="additionalRequests"
               className="w-full border border-gray-300 rounded-md p-3 bg-slate-50"
-              placeholder="Any special requests or notes"
+              placeholder="Özel istekler veya notlar"
               value={formData.additionalRequests}
               onChange={handleChange}
               rows="4"
             ></textarea>
           </div>
-          {/* Submit Button */}
+          {/* Gönder Butonu */}
           <div className="text-center">
             <button
               type="submit"
               className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
             >
-              Submit Reservation
+              Rezervasyonu Gönder
             </button>
           </div>
+
+          <div className="text-center mt-5">
+            <p>
+              Rezervasyon onayı için aranabilirsiniz.
+            </p>
+          </div>
         </form>
-        {/* Contact Information */}
+        {/* İletişim Bilgileri */}
         <div className="my-12 text-center">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Bize Ulaşın</h2>
           <p className="text-lg text-gray-600 mb-2">
-            Phone 1:{' '}
+            Telefon 1:{' '}
             <a href="tel:+903124982121" className="text-blue-600">
               +90 312 498 21 21
             </a>
           </p>
           <p className="text-lg text-gray-600 mb-2">
-            Phone 2:{' '}
+            Telefon 2:{' '}
             <a href="tel:+905558009261" className="text-blue-600">
               +90 555 800 92 61
             </a>
           </p>
           <p className="text-lg text-gray-600">
-            Our Email Address:{' '}
+            E-posta Adresimiz:{' '}
             <a href="mailto:info@bizimcati.com.tr" className="text-blue-600">
               info@bizimcati.com.tr
             </a>
           </p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 };

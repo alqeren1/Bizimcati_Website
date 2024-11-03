@@ -5,6 +5,7 @@ import Hero from './Hero';
 import HomeCarousel from './HomeCarousel';
 import EventTypesSection from './Events';
 import Footer from './Footer';
+import Intro from './Maps';
 import LocationContactSection from './Location';
 
 
@@ -15,14 +16,17 @@ function HomePage(){
         i18n.changeLanguage(lng);
       };
 
-    return(<div className='bg-white'>
+    return(<div className='bg-gray-100'>
       <Navbar/>
     <div className="min-h-screen">
        <Hero></Hero>
     </div>
     <EventTypesSection/>
-    <HomeCarousel/>
     
+    <div  className="my-20">
+    <Intro/>
+    </div>
+    <HomeCarousel/>
       <Footer/>
     </div>);
 }
