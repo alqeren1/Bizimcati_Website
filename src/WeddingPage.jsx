@@ -16,7 +16,7 @@ const WeddingPage = () => {
           {/* Image Section */}
           <div className="md:h-auto">
             <img
-              src="/images/10.jpg"
+              src="/images/36.jpg"
               alt="About Us"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
@@ -34,9 +34,19 @@ const WeddingPage = () => {
               sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.
             </p>
           
-            <strong className="text-2xl text-black">Neden Bizim Çatı Kır Düğünü?</strong>
+            
+          </div>
+
+          
+        </div>
+        <div className="
+            container mx-auto px-4
+            grid grid-cols-1  gap-2
+          ">
             <br />
+          <strong className="text-2xl text-black">Neden Bizim Çatı Kır Düğünü?</strong>
             <br />
+            
             <ul className="list-none text-lg text-gray-700 mb-6">
               <li className="mb-2">
                 <strong>Muhteşem Doğa Manzarası:</strong> Gölbaşı'nın eşsiz göl ve doğa manzarası
@@ -76,14 +86,18 @@ const WeddingPage = () => {
               <br />
               <strong>Rezervasyon ve Detaylı Bilgi İçin</strong>
             </p>
-            <a
-              href="/iletisim"
-              className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
-            >
-              İletişim
-            </a>
+            <div className="container mx-auto text-left">
+  <a
+    href="/iletisim"
+    className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+  >
+    İletişim
+  </a>
+</div>
+
+
           </div>
-        </div>
+        
       </section>
       <Footer />
     </>

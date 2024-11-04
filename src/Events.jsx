@@ -27,11 +27,11 @@ const EventTypesSection = () => {
           </p>
         </div>
         {/* Event Types Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
           {eventTypes.map((event, idx) => (
             <div
               key={event.name}
-              className="overflow-hidden rounded-lg shadow-lg bg-white hover:bg-blue-300"
+              className="overflow-hidden rounded-lg shadow-lg bg-white hover:bg-blue-300 hover:cursor-pointer"
               onClick={() => navigate("/" +event.navKey)}
             >
               <img

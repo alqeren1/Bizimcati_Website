@@ -11,7 +11,7 @@ const BBQPage = () => {
           {/* Image Section */}
           <div className="md:h-auto">
             <img
-              src="/images/10.jpg"
+              src="/images/bbq.jpg"
               alt="BBQ ve Mangal"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

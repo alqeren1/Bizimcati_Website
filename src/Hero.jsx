@@ -24,7 +24,7 @@ function Hero() {
 
         
 
-          <Link to="/reservasyon" className="btn btn-primary">
+          <Link to="/iletisim" className="btn btn-primary">
             Reservasyon
           </Link>
         </div>

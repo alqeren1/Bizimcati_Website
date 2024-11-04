@@ -12,7 +12,7 @@ const SeminarPage = () =>{
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
-          src='/images/10.jpg'
+          src='/images/seminar.jpg'
           alt="About Us"
           className="w-full h-auto rounded-lg shadow-lg"
         />

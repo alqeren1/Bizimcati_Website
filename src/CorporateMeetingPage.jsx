@@ -12,7 +12,7 @@ const CorporateMeetingPage = () => {
           {/* Image Section */}
           <div className="md:h-auto">
             <img
-              src="/images/10.jpg"
+              src="/images/corporatemeeting.jpg"
               alt="Doğum Günü Partisi"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
