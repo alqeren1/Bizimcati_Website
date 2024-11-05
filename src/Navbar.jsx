@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FaXmark } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from 'react-scroll';
+
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -73,6 +75,9 @@ export default function Navbar() {
           <a className={linkClasses} onClick={() => navigate('/hakkimizda')}>
             Hakkımızda
           </a>
+          <Link className={linkClasses} to="organizasyonlar" smooth={true} duration={500}>
+            Organizasyonlarımız
+          </Link>
           <a className={linkClasses} onClick={() => navigate('/galeri')}>
             Galeri
           </a>

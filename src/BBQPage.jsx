@@ -21,14 +21,23 @@ const BBQPage = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-6">BBQ ve Mangal</h2>
             <div className="text-lg text-gray-700 mb-6">
               <h2 className="text-2xl font-semibold mb-4">Barbekünün ve Mangalın Eşsiz Lezzetlerine Hoş Geldiniz!</h2>
-              <p className="mb-4">
+              <p className="mb-4 text-base">
                 Canlı ateşin başında, mis gibi duman kokuları eşliğinde pişen etlerin ve sebzelerin tadına kim hayır diyebilir?
                 Dünyanın dört bir yanında farklı isimlerle anılan bu eşsiz pişirme yöntemi, İngiltere ve ABD'de "BBQ",
                 Avustralya'da "barbie", Güney Afrika'da "braai" ve bizim kültürümüzde "mangal" olarak bilinir. Her kültürün
                 kendine özgü barbekü ve mangal gelenekleri vardır, ancak hepsinin ortak noktası ateşin ve dumanın büyüsüdür.
               </p>
 
-              <h3 className="text-xl font-semibold mb-2">Mangalın Tadını Çıkarın</h3>
+             
+          </div>
+        </div>
+        
+            
+</div>
+<br/>
+<div className="container px-4 grid grid-cols-1 mx-auto items-center text-black">
+          
+        <h3 className="text-xl font-semibold mb-2">Mangalın Tadını Çıkarın</h3>
               <p className="mb-4">
                 Mangal, Türk kültüründe sadece bir pişirme yöntemi değil, aynı zamanda dostlukların pekiştiği,
                 keyifli sohbetlerin yapıldığı bir gelenektir. Restoranımızda bu geleneği en lezzetli haliyle yaşatıyoruz.
@@ -56,15 +65,16 @@ const BBQPage = () => {
                 Siz de ateşin ve dumanın büyülü dünyasında eşsiz bir lezzet yolculuğuna çıkmak isterseniz,
                 restoranımıza davetlisiniz. Unutulmaz anlar ve damak çatlatan tatlar için doğru adres!
               </p>
+
+              <div className="container mx-auto text-left">
+  <a
+    href="/iletisim"
+    className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+  >
+    İletişim
+  </a>
+</div>
             </div>
-            <a
-              href="/iletisim"
-              className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
-            >
-              İletişim
-            </a>
-          </div>
-        </div>
       </section>
       <Footer />
     </>

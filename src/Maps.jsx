@@ -20,8 +20,11 @@ export default function Intro() {
   return (
     <APIProvider apiKey={apiKey}>
       <div style={{ height: "70vh", width: "100%" }}>
-        <Map zoom={15} center={position} >
+        <Map defaultZoom={15} defaultCenter={position} >
           {/* Your map components */}
+        
+ 
+
         </Map>
       </div>
     </APIProvider>

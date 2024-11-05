@@ -31,6 +31,8 @@ const SeminarPage = () =>{
         </a>
       </div>
     </div>
+
+   
   </section>
         <Footer/>
         </>

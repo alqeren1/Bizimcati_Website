@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
@@ -50,6 +50,15 @@ const ContactPage = () => {
                   </a>
                 </p>
               </div>
+              {/* Adres */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                  <FaMapMarkerAlt className="text-blue-600 mr-2" /> Adresimiz
+                </h3>
+                <p className="text-gray-700">
+                  Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı
+                </p>
+              </div>
               {/* Sosyal Medya */}
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">Sosyal Medyada Biz</h3>
@@ -79,7 +88,7 @@ const ContactPage = () => {
             {/* Resim */}
             <div className="md:w-1/2">
               <img
-                src="/images/1.jpg"
+                src="/images/25.jpg"
                 alt="Bize Ulaşın"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
