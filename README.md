@@ -1,4 +1,4 @@
-#Restaurant Website
+Restaurant Website Project
 
 A modern and responsive restaurant website built using React and Vite.
 
