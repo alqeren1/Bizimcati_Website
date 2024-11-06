@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Hero() {
   return (
@@ -22,11 +23,16 @@ function Hero() {
             kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.
           </p>
 
-        
-
-          <Link to="/iletisim" className="btn btn-primary">
+        <div className="flex flex-row gap-4 justify-center items-center">
+        <Link to="/iletisim" className="btn btn-primary">
             Reservasyon
           </Link>
+          <ScrollLink to="organizasyonlar"  className="btn btn-primary" smooth={true} duration={500}>
+            Organizasyonlarımız
+          </ScrollLink>
+        </div>
+
+          
         </div>
       </div>
     </div>
