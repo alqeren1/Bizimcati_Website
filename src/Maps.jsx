@@ -18,15 +18,21 @@ export default function Intro() {
   console.log('All env variables:', import.meta.env);
 
   return (
-    <APIProvider apiKey={apiKey}>
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Lokasyon</h2>
+          <p className="text-lg text-gray-600">
+          Restoranımız, Mogan Gölü'nün kıyısında kolay ulaşılabilir bir lokasyonda servis vermektedir.
+          </p>
+        </div>
+      <APIProvider apiKey={apiKey}>
       <div style={{ height: "70vh", width: "100%" }}>
         <Map defaultZoom={15} defaultCenter={position} >
           {/* Your map components */}
-        
- 
-
         </Map>
       </div>
     </APIProvider>
+    </div>
+    
   );
 }

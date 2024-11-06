@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero-overlay bg-black bg-opacity-50"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-center justify-center min-h-screen text-white">
+        <div className="flex flex-col items-start justify-center min-h-screen text-white">
           <h1 className="text-5xl font-bold mb-6 text-center">
             Bizim Çatı Restorant & Hotel
           </h1>
@@ -23,7 +23,7 @@ function Hero() {
             kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.
           </p>
 
-        <div className="flex flex-row gap-4 justify-center items-center">
+        <div className="flex flex-row gap-4 ">
         <Link to="/iletisim" className="btn btn-primary">
             Reservasyon
           </Link>
