@@ -2,8 +2,12 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
+
 
 const SeminarPage = () =>{
+  const { t, i18n } = useTranslation();
+  
     return(
         <>
         <Navbar/>

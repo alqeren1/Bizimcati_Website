@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+import { useTranslation } from 'react-i18next';
 
 
 const AboutPage = () => {
+  const { t, i18n } = useTranslation();
   return (
     <> 
     <Navbar></Navbar>

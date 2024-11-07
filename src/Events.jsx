@@ -1,19 +1,20 @@
 // EventTypesSection.jsx
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const EventTypesSection = () => {
   // Array of event types with images and names
-
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   const eventTypes = [
-    { name: 'Kır Düğünü', image: 'images/wedding.jpg', navKey: 'kirdugunu' },
-    { name: 'BBQ ve Mangal', image: 'images/bbq.jpg', navKey: 'bbq' },
-    { name: 'Şirket Organizasyonu', image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
-    { name: 'Doğum Günü Partisi', image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
-    { name: 'Mezuniyet Partisi', image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
-    { name: 'Seminer & Workshop', image: 'images/seminar.jpg', navKey: 'seminer' },
+    { name: t('event_types_section.event_types.0'), image: 'images/wedding.jpg', navKey: 'kirdugunu' },
+    { name: t('event_types_section.event_types.1'), image: 'images/bbq.jpg', navKey: 'bbq' },
+    { name: t('event_types_section.event_types.2'), image: 'images/corporatemeeting.jpg' , navKey: 'sirkettoplantisi'},
+    { name: t('event_types_section.event_types.3'), image: 'images/birthday.jpg' , navKey: 'dogumgunu'},
+    { name: t('event_types_section.event_types.4'), image: 'images/graduation_party.jpg' , navKey: 'mezuniyet'},
+    { name: t('event_types_section.event_types.5'), image: 'images/seminar.jpg', navKey: 'seminer' },
   ];
 
  
@@ -23,10 +24,9 @@ const EventTypesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Organizasyonlarımız</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">{t('event_types_section.header')}</h2>
           <p className="text-lg text-gray-600">
-          Restoranımız her türlü etkinlik için mükemmel bir mekandır. Sizin için düzenleyebileceğimiz etkinlik türlerini keşfedin.
-          </p>
+          {t('event_types_section.intro_paragraph')}          </p>
         </div>
         {/* Event Types Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">

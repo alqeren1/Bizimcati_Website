@@ -28,9 +28,7 @@ function Hero() {
         <Link to="/iletisim" className="btn btn-primary">
         {t('hero_section.buttons.0')}
           </Link>
-          <ScrollLink to="organizasyonlar"  className="btn btn-primary" smooth={true} duration={500}>
-          {t('hero_section.buttons.1')}
-          </ScrollLink>
+         
         </div>
 
           

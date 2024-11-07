@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { FaXmark } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useTranslation } from 'react-i18next';
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ export default function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
   const isOnHomePage = location.pathname === '/';
 
@@ -61,6 +63,7 @@ export default function Navbar() {
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
+    setIsLanguageDropdownOpen(false);
   };
 
   return (
@@ -68,7 +71,13 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo/Home Link */}
         <a
-          className={`text-xl font-bold cursor-pointer ${linkClasses}`}
+          className={`text-xl font-bold cursor-pointer ${
+            isOnHomePage
+              ? scrolled
+                ? 'text-gray-800'
+                : 'text-white'
+              : 'text-gray-800'
+          }`}
           onClick={() => navigate('/')}
         >
           Bizim Çatı
@@ -87,26 +96,36 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Language Switcher */}
-        <div className="hidden lg:flex space-x-4">
+        {/* Language Switcher Dropdown */}
+        <div className="hidden lg:flex relative">
           <button
-            className={`btn btn-ghost ${i18n.language === 'tr' ? 'font-bold' : ''}`}
-            onClick={() => handleLanguageChange('tr')}
+            className="btn btn-ghost flex items-center"
+            onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
           >
-            TR
+            {i18n.language.toUpperCase()} <FaChevronDown className="ml-2" />
           </button>
-          <button
-            className={`btn btn-ghost ${i18n.language === 'en' ? 'font-bold' : ''}`}
-            onClick={() => handleLanguageChange('en')}
-          >
-            EN
-          </button>
-          <button
-            className={`btn btn-ghost ${i18n.language === 'de' ? 'font-bold' : ''}`}
-            onClick={() => handleLanguageChange('de')}
-          >
-            DE
-          </button>
+          {isLanguageDropdownOpen && (
+            <div className="absolute right-0 mt-2 w-28 bg-white border border-gray-200 shadow-lg rounded-lg">
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'tr' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('tr')}
+              >
+                TR
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'en' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('en')}
+              >
+                EN
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'de' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('de')}
+              >
+                DE
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Mobile Menu Icon */}
@@ -177,26 +196,36 @@ export default function Navbar() {
               {t('navbar.links.2')}
             </a>
           </button>
-          <div className="flex flex-col space-y-1 mt-10">
-            <button
-              className={`btn btn-ghost ${i18n.language === 'tr' ? 'font-bold' : ''}`}
-              onClick={() => handleLanguageChange('tr')}
-            >
-              TR
-            </button>
-            <button
-              className={`btn btn-ghost ${i18n.language === 'en' ? 'font-bold' : ''}`}
-              onClick={() => handleLanguageChange('en')}
-            >
-              EN
-            </button>
-            <button
-              className={`btn btn-ghost ${i18n.language === 'de' ? 'font-bold' : ''}`}
-              onClick={() => handleLanguageChange('de')}
-            >
-              DE
-            </button>
-          </div>
+          <div className=" lg:flex relative">
+          <button
+            className="btn btn-ghost flex items-center"
+            onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+          >
+            {i18n.language.toUpperCase()} <FaChevronDown className="ml-2" />
+          </button>
+          {isLanguageDropdownOpen && (
+            <div className="absolute right-0 mt-2 w-28 bg-white border border-gray-200 shadow-lg rounded-lg">
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'tr' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('tr')}
+              >
+                TR
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'en' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('en')}
+              >
+                EN
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'de' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('de')}
+              >
+                DE
+              </button>
+            </div>
+          )}
+        </div>
         </div>
       </div>
     </div>
