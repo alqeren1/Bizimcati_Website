@@ -1,4 +1,91 @@
 {
-    "intro": "Vilkommen, das ist Bizim Cati",
-    "header1": "Uber Uns"
-}
+    "navbar": {
+      "logo": "Bizim Çatı",
+      "links": [
+        "Über Uns",
+        "Galerie",
+        "Kontakt",
+        "Startseite"
+      ]
+    },
+    "hero_section": {
+      "header": "Bizim Çatı Restaurant & Hotel",
+      "intro_paragraph": "Das Bizim Çatı Hotel Restaurant befindet sich am Ufer des Mogan-Sees in Gölbaşı, einem der schönsten Orte in Ankara, wo Sie zu jeder Jahreszeit verschiedene Schönheiten genießen können. Sie sind inmitten der Natur, genießen köstliche Speisen zu erschwinglichen Preisen und verbringen mit freundlichem Personal und qualitativ hochwertigem Service eine schöne Zeit.",
+      "buttons": [
+        "Reservierung",
+        "Unsere Veranstaltungen"
+      ]
+    },
+    "event_types_section": {
+      "header": "Unsere Veranstaltungen",
+      "intro_paragraph": "Unser Restaurant ist ein idealer Veranstaltungsort für alle Arten von Events. Entdecken Sie die Veranstaltungsarten, die wir für Sie organisieren können.",
+      "event_types": [
+        "Gartenhochzeit",
+        "BBQ und Grill",
+        "Firmenveranstaltung",
+        "Geburtstagsfeier",
+        "Abschlussfeier",
+        "Seminar & Workshop"
+      ]
+    },
+    "wedding_section": {
+      "header": "Gartenhochzeit",
+      "intro_paragraph": "Gartenhochzeiten Ihrer Träume im Bizim Çatı\n\nDas Bizim Çatı Restaurant & Hotel befindet sich in Gölbaşı, der Perle von Ankara, und erwartet Sie, um den schönsten Tag Ihres Lebens unvergesslich zu machen – in einem Ort, der von der einzigartigen Schönheit der Natur umgeben ist. In der romantischen und natürlichen Atmosphäre unseres Gartenhochzeitskonzepts können Sie mit Ihren Lieben eine märchenhafte Hochzeit erleben.",
+      "why_choose_us_header": "Warum Bizim Çatı für eine Gartenhochzeit wählen?",
+      "features": [
+        "Wundervolle Naturkulisse: Wir bieten eine geräumige Hochzeitsumgebung im Freien mit einzigartiger See- und Naturlandschaft von Gölbaşı.",
+        "Spezielle Dekorationsoptionen: Wir machen Ihre Hochzeit mit Dekorationsalternativen, die zu Ihrem persönlichen Geschmack passen, einzigartig.",
+        "Leckere Menüoptionen: Unsere erfahrenen Köche bereiten reichhaltige Menüs zu, um Ihren Gästen ein unvergessliches Geschmackserlebnis zu bieten.",
+        "Professioneller Serviceansatz: Unser erfahrenes Team steht Ihnen bei allen Phasen der Organisation zur Seite, um sicherzustellen, dass jedes Detail perfekt ist.",
+        "Übernachtungsmöglichkeiten: Mit den von uns angebotenen Übernachtungsmöglichkeiten im Hotel können Sie sicherstellen, dass Ihre Gäste von außerhalb bequem untergebracht sind."
+      ],
+      "additional_paragraphs": [
+        "Bei Bizim Çatı arbeiten wir daran, die Hochzeit zu verwirklichen, von der jedes Paar träumt. Ob Sie eine intime Zeremonie oder eine große Feier planen – wir erfüllen Ihre Erwartungen mit flexiblen Paketoptionen und personalisierten Dienstleistungen.",
+        "Eine Feier inmitten der Natur\nSind Sie bereit, \"Ja\" zu sagen, in einer Umgebung, die mit Vogelgezwitscher, einer leichten Brise und all den Farben der Natur geschmückt ist? Unser Garten wird mit seiner großzügigen Fläche und natürlichen Schönheit auch eine außergewöhnliche Kulisse für Ihre Fotos bieten.",
+        "Für Reservierungen und detaillierte Informationen"
+      ],
+      "contact_button": "Kontakt"
+    },
+    "seminar_section": {
+      "header": "Seminar & Workshop",
+      "intro_paragraph": "Das Bizim Çatı Restaurant & Hotel, das sich in der friedlichen Natur von Gölbaşı, Ankara befindet, bietet den idealen Veranstaltungsort für Ihre Seminar- und Workshop-Events. Mit unseren modernen und voll ausgestatteten Tagungsräumen, unserer professionellen Servicehaltung und einer Atmosphäre inmitten der Natur machen wir Ihre Geschäftsveranstaltungen produktiv und unvergesslich.",
+      "contact_button": "Kontakt"
+    },
+    "graduation_section": {
+      "header": "Abschlussfeier",
+      "intro_paragraphs": [
+        "Feiern Sie Ihren Geburtstag in der einzigartigen Atmosphäre von Bizim Çatı",
+        "Das Bizim Çatı Restaurant & Hotel, gelegen in der einzigartigen Natur von Gölbaşı, Ankara, bietet Ihnen den idealen Veranstaltungsort für Ihre Abschlussfeier. Mit unserer natürlichen Atmosphäre, köstlichen Menüs, Live-Musik und einem professionellen Serviceansatz können Sie diesen wichtigen Meilenstein in Ihrem Bildungsleben mit Ihren Lieben unvergesslich machen."
+      ],
+      "contact_button": "Kontakt"
+    },
+    "corporate_meeting_section": {
+      "header": "Firmenveranstaltungen",
+      "intro_paragraphs": [
+        "Neben seiner gesamten Ausstattung steht Ihnen das Bizim Çatı Restaurant & Hotel mit einem Konferenzraum mit einer Kapazität für 85 Personen für Meetings, Kurse, Seminare, Konferenzen, Workshops usw. zur Verfügung, sowie mit einem Kinderzimmer und Spielplatz für Ihre Kinder und einem kleinen Zoo, alles im Rahmen eines ethischen und prinzipientreuen Serviceansatzes."
+      ],
+      "contact_button": "Kontakt"
+    },
+    "contact_section": {
+      "header": "Kontakt",
+      "intro_paragraph": "Für Ihre Reservierungen und Anfragen können Sie uns über die untenstehenden Methoden erreichen.",
+      "contact_details": {
+        "reservation_header": "Für Reservierungen",
+        "phone_numbers": [
+          "+90 312 498 21 21",
+          "+90 555 800 92 61"
+        ],
+        "email_header": "Unsere E-Mail-Adresse",
+        "email": "info@bizimcati.com.tr",
+        "address_header": "Unsere Adresse",
+        "address": "Mogan Seeufer, Haymana Straße 7. km Nr: 281 Gölbaşı",
+        "social_media_header": "Finden Sie uns in den sozialen Medien",
+        "social_media_links": [
+          "Facebook",
+          "Twitter",
+          "Instagram"
+        ]
+      }
+    }
+  }
+  

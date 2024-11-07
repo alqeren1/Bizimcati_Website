@@ -6,7 +6,6 @@ import HomeCarousel from './HomeCarousel';
 import EventTypesSection from './Events';
 import Footer from './Footer';
 import Intro from './Maps';
-import LocationContactSection from './Location';
 
 
 function HomePage(){

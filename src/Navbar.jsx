@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FaXmark } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
-
-
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -59,6 +59,10 @@ export default function Navbar() {
       : 'text-gray-800'
   }`;
 
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <div className={navbarClasses}>
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
@@ -73,16 +77,36 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-6">
           <a className={linkClasses} onClick={() => navigate('/hakkimizda')}>
-            Hakkımızda
+            {t('navbar.links.0')}
           </a>
-        
           <a className={linkClasses} onClick={() => navigate('/galeri')}>
-            Galeri
+            {t('navbar.links.1')}
           </a>
           <a className={linkClasses} onClick={() => navigate('/iletisim')}>
-            İletişim
+            {t('navbar.links.2')}
           </a>
-          {/* Add other links as needed */}
+        </div>
+
+        {/* Language Switcher */}
+        <div className="hidden lg:flex space-x-4">
+          <button
+            className={`btn btn-ghost ${i18n.language === 'tr' ? 'font-bold' : ''}`}
+            onClick={() => handleLanguageChange('tr')}
+          >
+            TR
+          </button>
+          <button
+            className={`btn btn-ghost ${i18n.language === 'en' ? 'font-bold' : ''}`}
+            onClick={() => handleLanguageChange('en')}
+          >
+            EN
+          </button>
+          <button
+            className={`btn btn-ghost ${i18n.language === 'de' ? 'font-bold' : ''}`}
+            onClick={() => handleLanguageChange('de')}
+          >
+            DE
+          </button>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -93,12 +117,11 @@ export default function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
-            
             {isMenuOpen ? (
-        <FaXmark className='text-black' />
-      ) : (
-        <RxHamburgerMenu/>
-      )}
+              <FaXmark className='text-black' />
+            ) : (
+              <RxHamburgerMenu/>
+            )}
           </button>
         </div>
       </div>
@@ -110,54 +133,70 @@ export default function Navbar() {
         } transition-transform duration-300 ease-in-out z-40`}
       >
         <div className="flex flex-col p-48 items-end justify-start h-full space-y-8 w-full bg-slate-200">
-          
-      
-        <button className="border-b border-gray-500 text-black"><a
-            className="text-2xl font-bold"
-            onClick={() => {
-              navigate('/');
-              toggleMenu();
-            }}
-          >
-            Anasayfa
-          </a></button>
-          
-          <button className="border-b border-gray-500  text-black">
-          <a
-            className="text-2xl font-bold"
-            onClick={() => {
-              navigate('/hakkimizda');
-              toggleMenu();
-            }}
-          >
-            Hakkımızda
-          </a>
+          <button className="border-b border-gray-500 text-black">
+            <a
+              className="text-2xl font-bold"
+              onClick={() => {
+                navigate('/');
+                toggleMenu();
+              }}
+            >
+              {t('navbar.links.3')}
+            </a>
           </button>
-          
-          <button className="border-b border-gray-500   text-black"><a
-            className="text-2xl font-bold"
-            onClick={() => {
-              navigate('/galeri');
-              toggleMenu();
-            }}
-          >
-            Galeri
-          </a></button>
-          
-
-          <button className="border-b border-gray-500  text-black">
-          <a
-            className="text-2xl font-bold"
-            onClick={() => {
-              navigate('/iletisim');
-              toggleMenu();
-            }}
-          >
-            İletişim
-          </a>
+          <button className="border-b border-gray-500 text-black">
+            <a
+              className="text-2xl font-bold"
+              onClick={() => {
+                navigate('/hakkimizda');
+                toggleMenu();
+              }}
+            >
+              {t('navbar.links.0')}
+            </a>
           </button>
-         
-          {/* Add other links as needed */}
+          <button className="border-b border-gray-500 text-black">
+            <a
+              className="text-2xl font-bold"
+              onClick={() => {
+                navigate('/galeri');
+                toggleMenu();
+              }}
+            >
+              {t('navbar.links.1')}
+            </a>
+          </button>
+          <button className="border-b border-gray-500 text-black">
+            <a
+              className="text-2xl font-bold"
+              onClick={() => {
+                navigate('/iletisim');
+                toggleMenu();
+              }}
+            >
+              {t('navbar.links.2')}
+            </a>
+          </button>
+          <div className="flex flex-col space-y-1 mt-10">
+            <button
+              className={`btn btn-ghost ${i18n.language === 'tr' ? 'font-bold' : ''}`}
+              onClick={() => handleLanguageChange('tr')}
+            >
+              TR
+            </button>
+            <button
+              className={`btn btn-ghost ${i18n.language === 'en' ? 'font-bold' : ''}`}
+              onClick={() => handleLanguageChange('en')}
+            >
+              EN
+            </button>
+            <button
+              className={`btn btn-ghost ${i18n.language === 'de' ? 'font-bold' : ''}`}
+              onClick={() => handleLanguageChange('de')}
+            >
+              DE
+            </button>
+          </div>
         </div>
       </div>
     </div>

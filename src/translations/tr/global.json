@@ -1,4 +1,91 @@
 {
-    "intro": "Merhaba, burasi Bizim Cati",
-    "header1": "Hakkimizda"
-}
+    "navbar": {
+      "logo": "Bizim Çatı",
+      "links": [
+        "Hakkımızda",
+        "Galeri",
+        "İletişim",
+        "Anasayfa"
+      ]
+    },
+    "hero_section": {
+      "header": "Bizim Çatı Restorant & Hotel",
+      "intro_paragraph": "Bizim Çatı Hotel Restorant, Ankara’nın en güzel yerlerinden biri olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli yemekleri ve makul fiyatlarıyla, güler yüzlü personeli ve kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.",
+      "buttons": [
+        "Reservasyon",
+        "Organizasyonlarımız"
+      ]
+    },
+    "event_types_section": {
+      "header": "Organizasyonlarımız",
+      "intro_paragraph": "Restoranımız her türlü etkinlik için mükemmel bir mekandır. Sizin için düzenleyebileceğimiz etkinlik türlerini keşfedin.",
+      "event_types": [
+        "Kır Düğünü",
+        "BBQ ve Mangal",
+        "Şirket Organizasyonu",
+        "Doğum Günü Partisi",
+        "Mezuniyet Partisi",
+        "Seminer & Workshop"
+      ]
+    },
+    "wedding_section": {
+      "header": "Kır Düğünü",
+      "intro_paragraph": "Bizim Çatı'da Hayallerinizi Süsleyen Kır Düğünleri\n\nAnkara'nın incisi Gölbaşı'nda yer alan Bizim Çatı Restoran & Otel, doğanın eşsiz güzellikleriyle çevrili mekânında, hayatınızın en özel gününü unutulmaz kılmak için sizleri bekliyor. Kır düğünü konseptimizin sunduğu romantik ve doğal atmosferde, sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.",
+      "why_choose_us_header": "Neden Bizim Çatı Kır Düğünü?",
+      "features": [
+        "Muhteşem Doğa Manzarası: Gölbaşı'nın eşsiz göl ve doğa manzarası eşliğinde, açık havada ferah bir düğün ortamı sunuyoruz.",
+        "Özel Dekorasyon Seçenekleri: Kişisel zevklerinize uygun dekorasyon alternatifleriyle düğününüzü tamamen size özel hale getiriyoruz.",
+        "Lezzetli Menü Seçenekleri: Usta şeflerimizin hazırladığı zengin menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz.",
+        "Profesyonel Hizmet Anlayışı: Deneyimli ekibimiz, organizasyonun tüm aşamalarında yanınızda olarak her detayın kusursuz olmasını sağlıyor.",
+        "Konaklama İmkanı: Otelimizde sunduğumuz konaklama seçenekleriyle şehir dışından gelen misafirlerinizi rahat ettirebilirsiniz."
+      ],
+      "additional_paragraphs": [
+        "Bizim Çatı olarak, her çiftin hayalini kurduğu düğünü gerçekleştirmek için çalışıyoruz. İster samimi bir tören, ister görkemli bir kutlama planlayın; esnek paket seçeneklerimiz ve kişiselleştirilmiş hizmetlerimizle beklentilerinizi karşılıyoruz.",
+        "Doğayla İç İçe Bir Kutlama\nKuş cıvıltıları, hafif esen bir rüzgâr ve doğanın tüm renkleriyle bezenmiş bir ortamda \"Evet\" demeye hazır mısınız? Kır bahçemiz, geniş alanı ve doğal güzelliğiyle fotoğraflarınıza da eşsiz bir fon oluşturacak.",
+        "Rezervasyon ve Detaylı Bilgi İçin"
+      ],
+      "contact_button": "İletişim"
+    },
+    "seminar_section": {
+      "header": "Seminar & Workshop",
+      "intro_paragraph": "Ankara Gölbaşı'nın huzur veren doğası içinde bulunan Bizim Çatı Restoran & Otel, seminer ve workshop etkinlikleriniz için mükemmel bir mekân sunuyor. Modern ve tam donanımlı toplantı salonlarımız, profesyonel hizmet anlayışımız ve doğayla iç içe atmosferimizle, iş etkinliklerinizi verimli ve unutulmaz kılıyoruz.",
+      "contact_button": "İletişim"
+    },
+    "graduation_section": {
+      "header": "Mezuniyet Kutlaması",
+      "intro_paragraphs": [
+        "Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın",
+        "Ankara Gölbaşı'nın eşsiz doğası içinde yer alan Bizim Çatı Restoran & Otel, mezuniyet kutlamalarınız için ideal bir mekân sunuyor. Doğayla iç içe atmosferimizde lezzetli menüler, canlı müzik ve profesyonel hizmet anlayışımızla, eğitim hayatınızın bu önemli dönüm noktasını sevdiklerinizle birlikte unutulmaz kılabilirsiniz."
+      ],
+      "contact_button": "İletişim"
+    },
+    "corporate_meeting_section": {
+      "header": "Şirket Organizasyonları",
+      "intro_paragraphs": [
+        "Tüm ekipmanlarının yanı sıra sinema düzeninde 85 kişi kapasitesiyle toplantı, kurs, seminer, konferans, workshop vb. çalışmalarınız için konferans salonu, çocuklarınızın da hoş vakit geçirebilmesi için hazırlanmış çocuk bahçesi ve çocuk oyun odası ve mini hayvanat bahçesi ile etik ve ilkeli hizmet anlayışıyla Bizim Çatı Otel Restoran hizmetinizdedir."
+      ],
+      "contact_button": "İletişim"
+    },
+    "contact_section": {
+      "header": "İletişim",
+      "intro_paragraph": "Rezervasyonlarınız ve talepleriniz için, bize aşağıdaki yöntemlerden herhangi biriyle ulaşabilirsiniz.",
+      "contact_details": {
+        "reservation_header": "Rezervasyonlarınız İçin",
+        "phone_numbers": [
+          "+90 312 498 21 21",
+          "+90 555 800 92 61"
+        ],
+        "email_header": "E-posta Adresimiz",
+        "email": "info@bizimcati.com.tr",
+        "address_header": "Adresimiz",
+        "address": "Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı",
+        "social_media_header": "Sosyal Medyada Biz",
+        "social_media_links": [
+          "Facebook",
+          "Twitter",
+          "Instagram"
+        ]
+      }
+    }
+  }
+  
