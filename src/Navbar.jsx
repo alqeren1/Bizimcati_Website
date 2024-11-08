@@ -71,7 +71,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo/Home Link */}
         <a
-          className={`text-xl font-bold cursor-pointer ${
+          className={`text-xl font-bold cursor-pointer  ${
             isOnHomePage
               ? scrolled
                 ? 'text-gray-800'
@@ -123,6 +123,12 @@ export default function Navbar() {
                 onClick={() => handleLanguageChange('de')}
               >
                 DE
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'ru' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('ru')}
+              >
+                RU
               </button>
             </div>
           )}
@@ -222,6 +228,12 @@ export default function Navbar() {
                 onClick={() => handleLanguageChange('de')}
               >
                 DE
+              </button>
+              <button
+                className={`block w-full text-left px-4 py-2 ${i18n.language === 'ru' ? 'font-bold' : ''}`}
+                onClick={() => handleLanguageChange('ru')}
+              >
+                RU
               </button>
             </div>
           )}

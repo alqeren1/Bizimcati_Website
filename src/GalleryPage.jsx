@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import { useTranslation } from 'react-i18next';
 
 const images = [];
 
@@ -13,6 +14,8 @@ for (let i = 1; i <= 48; i++) {
 const GalleryPage = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const { t, i18n } = useTranslation();
+
 
   return (
     <>
@@ -21,10 +24,9 @@ const GalleryPage = () => {
         <div className="container mx-auto px-4">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Galeri</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">{t('gallery.header')}</h2>
             <p className="text-lg text-gray-600">
-              Restoranımızı en doğal haliyle keşfedin.
-            </p>
+            {t('gallery.intro')}            </p>
           </div>
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

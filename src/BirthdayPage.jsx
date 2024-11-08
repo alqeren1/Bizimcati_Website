@@ -1,8 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { useTranslation, Trans } from 'react-i18next';
+
 
 const BirthdayPage = () => {
+  const { t, i18n } = useTranslation();
+
+
   return (
     <>
       <Navbar />
@@ -18,41 +23,35 @@ const BirthdayPage = () => {
           </div>
           {/* Content Section */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Doğum Günü Partisi</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6"> 
+              {t('birthday_section.header')}
+
+            </h2>
             <div className="text-lg text-gray-700 mb-6">
               <p className="mb-4">
-                Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın
+              {t('birthday_section.intro_paragraphs.0')}
               </p>
               <p className="mb-4">
-                Ankara Gölbaşı'nın huzur dolu doğasında yer alan Bizim Çatı Restoran &amp; Otel,
-                sevdiklerinizle birlikte unutulmaz doğum günü partilerine ev sahipliği yapıyor.
-                Doğanın içinde, sıcak ve samimi bir ortamda özel günlerinizi taçlandırmak için
-                mükemmel bir mekân arıyorsanız doğru yerdesiniz.
+              {t('birthday_section.intro_paragraphs.1')}
               </p>
               <h3 className="text-2xl font-semibold mb-4">
-                Neden Doğum Günü Partiniz İçin Bizim Çatı'yı Seçmelisiniz?
+              {t('birthday_section.header2')}
               </h3>
               <ul className="list-disc list-inside mb-4">
                 <li className="mb-2">
-                  <strong>Doğayla İç İçe Mekân:</strong> Yeşillikler arasında, ferah ve şık bir
-                  ortamda hem çocuklar hem de yetişkinler için ideal bir kutlama alanı sunuyoruz.
+                  <strong>{t('birthday_section.li_headers.0')}</strong> {t('birthday_section.li_content.0')}
                 </li>
                 <li className="mb-2">
-                  <strong>Özel Menü Alternatifleri:</strong> Usta şeflerimizin hazırladığı lezzetli
-                  ve çeşitli menülerle misafirlerinize gastronomik bir şölen yaşatıyoruz.
+                  <strong>{t('birthday_section.li_headers.1')}</strong> {t('birthday_section.li_content.1')}
                 </li>
                 <li className="mb-2">
-                  <strong>Kişiye Özel Organizasyon:</strong> İsteklerinize göre şekillenen
-                  dekorasyon ve etkinliklerle doğum günü partinizi benzersiz hale getiriyoruz.
+                  <strong>{t('birthday_section.li_headers.2')}</strong> {t('birthday_section.li_content.2')}
                 </li>
                 <li className="mb-2">
-                  <strong>Eğlence Seçenekleri:</strong> Canlı müzik, DJ performansı ve çocuklar
-                  için oyun alanları gibi farklı eğlence alternatifleriyle partinizi
-                  renklendiriyoruz.
+                  <strong>{t('birthday_section.li_headers.3')}</strong> {t('birthday_section.li_content.3')}
                 </li>
                 <li className="mb-2">
-                  <strong>Konforlu Konaklama:</strong> Otelimizde sunulan konaklama imkânlarıyla
-                  şehir dışından gelen misafirlerinizi rahat ettiriyoruz.
+                  <strong>{t('birthday_section.li_headers.4')}</strong> {t('birthday_section.li_content.4')}
                 </li>
               </ul>
             </div>
@@ -60,7 +59,7 @@ const BirthdayPage = () => {
               href="/iletisim"
               className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
             >
-              İletişim
+             {t('contact_section.header')}
             </a>
           </div>
         </div>

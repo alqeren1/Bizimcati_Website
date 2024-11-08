@@ -3,8 +3,12 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
+
 
 const ContactPage = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <Navbar />
@@ -12,10 +16,11 @@ const ContactPage = () => {
         <div className="container mx-auto px-4">
           {/* Bölüm Başlığı */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">İletişim</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              {t('contact_section.header')}
+            </h2>
             <p className="text-lg text-gray-600">
-              Rezervasyonlarınız ve talepleriniz için, bize aşağıdaki yöntemlerden herhangi biriyle ulaşabilirsiniz.
-            </p>
+            {t('contact_section.intro_paragraph')}            </p>
           </div>
           {/* İletişim Bilgileri */}
           <div className="flex flex-col md:flex-row md:space-x-8">
@@ -24,44 +29,47 @@ const ContactPage = () => {
               {/* Rezervasyonlar */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaPhoneAlt className="text-blue-600 mr-2" /> Rezervasyonlarınız İçin
+                  <FaPhoneAlt className="text-blue-600 mr-2" /> {t('contact_section.contact_details.reservation_header')}
                 </h3>
                 <p className="text-gray-700 mb-2">
                   <strong>Telefon 1:</strong>{' '}
                   <a href="tel:+903124982121" className="hover:underline">
-                    +90 312 498 21 21
+                  {t('contact_section.contact_details.phone_numbers.0')}
                   </a>
                 </p>
                 <p className="text-gray-700">
                   <strong>Telefon 2:</strong>{' '}
                   <a href="tel:+905558009261" className="hover:underline">
-                    +90 555 800 92 61
+                  {t('contact_section.contact_details.phone_numbers.1')}
                   </a>
                 </p>
               </div>
               {/* E-posta Adresi */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaEnvelope className="text-blue-600 mr-2" /> E-posta Adresimiz
+                  <FaEnvelope className="text-blue-600 mr-2" /> {t('contact_section.contact_details.email_header')}
                 </h3>
                 <p className="text-gray-700">
                   <a href="mailto:info@bizimcati.com.tr" className="hover:underline">
-                    info@bizimcati.com.tr
+                  {t('contact_section.contact_details.email')}
                   </a>
                 </p>
               </div>
               {/* Adres */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaMapMarkerAlt className="text-blue-600 mr-2" /> Adresimiz
+                  <FaMapMarkerAlt className="text-blue-600 mr-2" />  {t('contact_section.contact_details.address_header')}
                 </h3>
                 <p className="text-gray-700">
-                  Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı
+                {t('contact_section.contact_details.address')}
                 </p>
               </div>
               {/* Sosyal Medya */}
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Sosyal Medyada Biz</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4"> 
+                  {t('contact_section.contact_details.social_media_header')}
+
+                </h3>
                 <div className="flex space-x-6">
                   <a
                     href="https://www.facebook.com/yourpage"

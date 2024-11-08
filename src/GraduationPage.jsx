@@ -2,8 +2,13 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { useTranslation, Trans } from 'react-i18next';
+
 
 const GraduationPage = () =>{
+  const { t, i18n } = useTranslation();
+
+
     return(
 
 <>
@@ -20,14 +25,13 @@ const GraduationPage = () =>{
     </div>
     {/* Content Section */}
     <div>
-      <h2 className="text-4xl font-bold text-gray-800 mb-6">Mezuniyet Kutlaması</h2>
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">{t('graduation_section.header')}</h2>
       <div className="text-lg text-gray-700 mb-6">
         <p className="mb-4">
-          Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın
-        </p>
+        {t('graduation_section.intro_paragraphs.0')}
+                </p>
         <p className="mb-4">
-        Ankara Gölbaşı'nın eşsiz doğası içinde yer alan Bizim Çatı Restoran & Otel, mezuniyet kutlamalarınız için ideal bir mekân sunuyor. Doğayla iç içe atmosferimizde lezzetli menüler, canlı müzik ve profesyonel hizmet anlayışımızla, eğitim hayatınızın bu önemli dönüm noktasını sevdiklerinizle birlikte unutulmaz kılabilirsiniz.
-
+        {t('graduation_section.intro_paragraphs.1')}
         </p>
        
       </div>
@@ -35,7 +39,7 @@ const GraduationPage = () =>{
         href="/iletisim"
         className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
       >
-        İletişim
+        {t('contact_section.header')}
       </a>
     </div>
   </div>

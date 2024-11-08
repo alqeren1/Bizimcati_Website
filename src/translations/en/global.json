@@ -1,91 +1,164 @@
 {
-    "navbar": {
-      "logo": "Bizim Çatı",
-      "links": [
-        "About Us",
-        "Gallery",
-        "Contact",
-        "Home"
+  "navbar": {
+    "logo": "Bizim Çatı",
+    "links": [
+      "About Us",
+      "Gallery",
+      "Contact",
+      "Home"
+    ]
+  },
+  "hero_section": {
+    "header": "Bizim Çatı Restaurant & Hotel",
+    "intro_paragraph": "Bizim Çatı Hotel Restaurant, located on the shores of Lake Mogan in Gölbaşı, one of the most beautiful spots in Ankara, is a place where you can enjoy delicious food and reasonable prices, surrounded by nature with friendly staff and quality service.",
+    "buttons": [
+      "Reservation",
+      "Our Events"
+    ]
+  },
+  "event_types_section": {
+    "header": "Our Events",
+    "intro_paragraph": "Our restaurant is an ideal venue for all kinds of events. Discover the types of events we can organize for you.",
+    "event_types": [
+      "Garden Wedding",
+      "BBQ and Grill",
+      "Corporate Events",
+      "Birthday Party",
+      "Graduation Party",
+      "Seminar & Workshop"
+    ]
+  },
+  "location": {
+    "header": "Location",
+    "intro": "Our restaurant serves at an easily accessible location on the shores of Lake Mogan."
+  },
+
+  "about_page": {
+    "header": "About Us",
+    "paragraphs": [
+      "Bizim Çatı Hotel Restaurant, located on the shores of Lake Mogan in Gölbaşı, one of the most beautiful spots in Ankara, is a place where you can enjoy delicious food and reasonable prices, surrounded by nature with friendly staff and quality service.",
+      "Seasonal events, including sausage grill parties around the shepherd's fire, anchovy BBQ parties, New Year's celebrations, etc., are some of the fun and unforgettable events associated with our establishment.",
+      "Bizim Çatı Hotel Restaurant provides rooms where you can stay safely and comfortably with your family, a meeting room for your meetings and business studies, a lakeside restaurant offering various flavors, a garden area adorned with weeping willows and other trees with a capacity of a thousand people for events like weddings, engagements, circumcision ceremonies, group dinners, company picnics, etc., and a poolside area that can accommodate four hundred people, ensuring your special days become unforgettable memories with our experience and quality service.",
+      "Bizim Çatı Hotel Restaurant is also equipped with open and closed play areas and a mini zoo to ensure that your children have a delightful time.",
+      "We invite you to Bizim Çatı Hotel Restaurant for a beautiful day that rivals the warmth and comfort of your home."
+    ]
+  },
+
+  "gallery": {
+    "header": "Gallery",
+    "intro": "Discover our restaurant in its most natural state."
+  },
+
+  "contact_section": {
+    "header": "Contact",
+    "intro_paragraph": "For your reservations and inquiries, you can reach us through any of the following methods.",
+    "contact_details": {
+      "reservation_header": "For Your Reservations",
+      "phone_numbers": [
+        "+90 312 498 21 21",
+        "+90 555 800 92 61"
+      ],
+      "email_header": "Our Email Address",
+      "email": "info@bizimcati.com.tr",
+      "address_header": "Our Address",
+      "address": "Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı",
+      "social_media_header": "Find Us on Social Media",
+      "social_media_links": [
+        "Facebook",
+        "Twitter",
+        "Instagram"
       ]
-    },
-    "hero_section": {
-      "header": "Bizim Çatı Restaurant & Hotel",
-      "intro_paragraph": "Bizim Çatı Hotel Restaurant is a place located on the shores of Gölbaşı Mogan Lake, one of the most beautiful spots in Ankara, where you can enjoy different beauties in every season, be in touch with nature, enjoy delicious food at reasonable prices, with friendly staff and quality service.",
-      "buttons": [
-        "Reservation",
-        "Our Events"
-      ]
-    },
-    "event_types_section": {
-      "header": "Our Events",
-      "intro_paragraph": "Our restaurant is an ideal venue for all kinds of events. Discover the types of events we can organize for you.",
-      "event_types": [
-        "Garden Wedding",
-        "BBQ and Grill",
-        "Corporate Event",
-        "Birthday Party",
-        "Graduation Party",
-        "Seminar & Workshop"
-      ]
-    },
-    "wedding_section": {
-      "header": "Garden Wedding",
-      "intro_paragraph": "Garden Weddings of Your Dreams at Bizim Çatı\n\nLocated in Gölbaşı, the pearl of Ankara, Bizim Çatı Restaurant & Hotel awaits you to make the most special day of your life unforgettable, in a venue surrounded by the unique beauty of nature. In the romantic and natural atmosphere offered by our garden wedding concept, you can experience a fairy-tale wedding with your loved ones.",
-      "why_choose_us_header": "Why Choose Bizim Çatı for a Garden Wedding?",
-      "features": [
-        "Magnificent Nature View: We offer a spacious outdoor wedding environment with Gölbaşı's unique lake and nature view.",
-        "Special Decoration Options: We make your wedding unique with decoration alternatives that suit your personal tastes.",
-        "Delicious Menu Options: Our skilled chefs prepare rich menus to offer your guests an unforgettable taste experience.",
-        "Professional Service Approach: Our experienced team is with you at all stages of the organization to ensure every detail is flawless.",
-        "Accommodation Options: With the accommodation options we provide in our hotel, you can ensure your guests from out of town are comfortable."
-      ],
-      "additional_paragraphs": [
-        "At Bizim Çatı, we work to realize the wedding of every couple's dreams. Whether you are planning an intimate ceremony or a grand celebration, we meet your expectations with flexible package options and personalized services.",
-        "A Celebration in Touch with Nature\nAre you ready to say \"Yes\" in an environment adorned with birds chirping, a gentle breeze, and all the colors of nature? Our garden, with its spacious area and natural beauty, will also create an exceptional backdrop for your photos.",
-        "For Reservations and Detailed Information"
-      ],
-      "contact_button": "Contact"
-    },
-    "seminar_section": {
-      "header": "Seminar & Workshop",
-      "intro_paragraph": "Located in the peaceful nature of Gölbaşı, Ankara, Bizim Çatı Restaurant & Hotel offers an ideal venue for your seminar and workshop events. With our modern and fully equipped meeting rooms, professional service approach, and atmosphere integrated with nature, we make your business events productive and unforgettable.",
-      "contact_button": "Contact"
-    },
-    "graduation_section": {
-      "header": "Graduation Celebration",
-      "intro_paragraphs": [
-        "Celebrate Your Birthday in the Unique Atmosphere of Bizim Çatı",
-        "Located in the unique nature of Gölbaşı, Ankara, Bizim Çatı Restaurant & Hotel offers an ideal venue for your graduation celebrations. With our natural atmosphere, delicious menus, live music, and professional service approach, you can make this important milestone of your educational life unforgettable with your loved ones."
-      ],
-      "contact_button": "Contact"
-    },
-    "corporate_meeting_section": {
-      "header": "Corporate Events",
-      "intro_paragraphs": [
-        "In addition to all its equipment, Bizim Çatı Restaurant & Hotel is at your service with an 85-person capacity conference hall for meetings, courses, seminars, conferences, workshops, etc., a children's garden and playroom for your kids to have a good time, and a mini zoo, all with an ethical and principled service approach."
-      ],
-      "contact_button": "Contact"
-    },
-    "contact_section": {
-      "header": "Contact",
-      "intro_paragraph": "For your reservations and inquiries, you can reach us by any of the methods below.",
-      "contact_details": {
-        "reservation_header": "For Reservations",
-        "phone_numbers": [
-          "+90 312 498 21 21",
-          "+90 555 800 92 61"
-        ],
-        "email_header": "Our Email Address",
-        "email": "info@bizimcati.com.tr",
-        "address_header": "Our Address",
-        "address": "Mogan Lake Side, Haymana Road 7th km No: 281 Gölbaşı",
-        "social_media_header": "Find Us on Social Media",
-        "social_media_links": [
-          "Facebook",
-          "Twitter",
-          "Instagram"
-        ]
-      }
     }
+  },
+
+  "wedding_section": {
+    "header": "Garden Wedding",
+    "intro_paragraph": "Celebrate Your Dreams at Bizim Çatı. Located in Gölbaşı, Ankara's gem, Bizim Çatı Restaurant & Hotel awaits you to make the most special day of your life unforgettable in a venue surrounded by the unique beauties of nature. Experience a fairy-tale wedding in our romantic and natural garden wedding concept with your loved ones.",
+    "why_choose_us_header": "Why Choose Bizim Çatı Garden Wedding?",
+    "features": [
+      "Stunning Natural Scenery: We offer an open-air wedding environment with the unique lake and nature views of Gölbaşı.",
+      "Custom Decoration Options: We make your wedding entirely personalized with decoration alternatives that suit your personal tastes.",
+      "Delicious Menu Options: We provide an unforgettable culinary experience to your guests with our chefs' rich menus.",
+      "Professional Service Approach: Our experienced team ensures every detail is flawless by being by your side throughout all stages of the organization.",
+      "Accommodation Options: You can comfortably accommodate your out-of-town guests with the lodging options we offer in our hotel."
+    ],
+    "additional_paragraphs": [
+      "At Bizim Çatı, we work to realize every couple's dream wedding. Whether you plan an intimate ceremony or a grand celebration, our flexible package options and personalized services meet your expectations.",
+      "A Celebration in Harmony with Nature",
+      "Are you ready to say \"Yes\" in an environment adorned with birdsong, a gentle breeze, and all the colors of nature? Our garden offers a spacious area and natural beauty that will also create a unique backdrop for your photos.",
+      "For Reservation and Detailed Information"
+    ],
+    "contact_button": "Contact"
+  },
+  "bbq_section": {
+    "headers": [
+      "BBQ and Grill",
+      "Welcome to the Unique Flavors of Barbecue and Grill!",
+      "Enjoy the Taste of Grill",
+      "The Best Address for Barbecue and Grill",
+      "Why Choose Us?"
+    ],
+    "paragraphs": [
+      "Who can say no to the taste of meats and vegetables cooked over a live fire with delightful smoky aromas? This unique cooking method, known by different names around the world—'BBQ' in England and the USA, 'barbie' in Australia, 'braai' in South Africa, and 'mangal' in our culture—has its own distinct traditions in each culture, but they all share the magic of fire and smoke.",
+      "In Turkish culture, mangal is not just a cooking method but also a tradition where friendships are strengthened and enjoyable conversations take place. At our restaurant, we preserve this tradition in the most delicious way. Our specially marinated meats are expertly grilled over charcoal fires and served to you. Whether you try our classic kebabs or taste our grilled vegetables, discover the indispensable flavors of mangal.",
+      "Our restaurant offers an unforgettable culinary experience with chefs specialized in barbecue and grill. Our open-air cooked dishes appeal both visually and gastronomically. From slow-smoked meats over wood fires to quickly grilled delights on hot coals, a wide menu awaits you.",
+      "If you wish to embark on a unique flavor journey in the magical world of fire and smoke, you are invited to our restaurant. The right address for unforgettable moments and mouth-watering tastes!"
+    ],
+    "li_headers": [
+      "Quality and Freshness",
+      "Expert Chefs",
+      "Warm Atmosphere",
+      "Extensive Menu"
+    ],
+    "li_content": [
+      "We always use the freshest and highest quality ingredients.",
+      "Achieve perfect flavor with our chefs experienced in barbecue and grill.",
+      "We offer a friendly environment where you can enjoy quality time with your family and friends.",
+      "A rich variety of barbecue and grill options catering to different palates."
+    ]
+  },
+
+  "seminar_section": {
+    "header": "Seminar & Workshop",
+    "intro_paragraph": "Located in the serene nature of Ankara's Gölbaşı, Bizim Çatı Restaurant & Hotel offers the perfect venue for your seminars and workshops. With our modern and fully equipped meeting rooms, professional service approach, and nature-integrated atmosphere, we make your business events productive and unforgettable.",
+    "contact_button": "Contact"
+  },
+  "graduation_section": {
+    "header": "Graduation Celebration",
+    "intro_paragraphs": [
+      "Celebrate Your Graduation at Bizim Çatı's Unique Atmosphere",
+      "Located in the unique nature of Ankara Gölbaşı, Bizim Çatı Restaurant & Hotel offers an ideal venue for your graduation celebrations. In our nature-integrated atmosphere with delicious menus, live music, and our professional service approach, you can make this important milestone of your education life unforgettable with your loved ones."
+    ],
+    "contact_button": "Contact"
+  },
+  "birthday_section": {
+    "header": "Birthday Party",
+    "intro_paragraphs": [
+      "Celebrate Your Birthday at Bizim Çatı's Unique Atmosphere",
+      "Located in the serene nature of Ankara Gölbaşı, Bizim Çatı Restaurant & Hotel hosts unforgettable birthday parties with your loved ones. If you're looking for the perfect venue to crown your special day in a warm and friendly environment amidst nature, you're in the right place."
+    ],
+    "header2": "Why Choose Bizim Çatı for Your Birthday Party?",
+    "li_headers": [
+      "Nature-Integrated Venue:",
+      "Special Menu Options:",
+      "Personalized Organization:",
+      "Entertainment Options:",
+      "Comfortable Accommodation:"
+    ],
+    "li_content": [
+      "We offer a spacious and elegant environment surrounded by greenery, ideal for both children and adults.",
+      "Delight your guests with delicious and varied menus prepared by our expert chefs.",
+      "Make your birthday party unique with decorations and events tailored to your preferences.",
+      "Enhance your party with different entertainment options such as live music, DJ performances, and play areas for children.",
+      "Comfort your out-of-town guests with the accommodation facilities offered in our hotel."
+    ],
+    "contact_button": "Contact"
+  },
+  "corporate_meeting_section": {
+    "header": "Corporate Events",
+    "intro_paragraphs": [
+      "With all its equipment and a cinema-style capacity for 85 people, Bizim Çatı Restaurant & Hotel offers a conference hall for your meetings, courses, seminars, conferences, workshops, etc. Additionally, we provide a children's garden, a children's playroom, and a mini zoo to ensure that your children have a pleasant time, all while maintaining an ethical and principled service approach."
+    ],
+    "contact_button": "Contact"
   }
-  
+}
