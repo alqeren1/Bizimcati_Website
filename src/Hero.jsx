@@ -10,10 +10,12 @@ function Hero() {
   return (
     <div
       className="relative top-0 hero min-h-screen bg-cover bg-center "
-      style={{ backgroundImage: `url('/images/lake-bg.jpg')` }}
+      style={{ backgroundImage: `url('/images/background.jpg')` }}
     >
       {/* Overlay to make text readable over the background image */}
-      <div className="hero-overlay bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-overlay"></div>
+
+
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-start justify-center min-h-screen text-white">

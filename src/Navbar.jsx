@@ -45,7 +45,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   // Conditional classes
-  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-16 ${
+  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-24 ${
     isOnHomePage
       ? scrolled
         ? 'bg-white shadow-md'
@@ -53,7 +53,9 @@ export default function Navbar() {
       : 'bg-white'
   }`;
 
-  const linkClasses = `btn btn-ghost hover:text-navbar-teal-blue active:text-navbar-red ${
+ 
+
+  const linkClasses = `text-lg btn btn-ghost hover:text-navbar-teal-blue active:text-navbar-red ${
     isOnHomePage
       ? scrolled
         ? 'text-gray-800'
@@ -70,21 +72,18 @@ export default function Navbar() {
     <div className={navbarClasses}>
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo/Home Link */}
-        <a
-          className={`text-xl font-bold cursor-pointer  ${
-            isOnHomePage
-              ? scrolled
-                ? 'text-gray-800'
-                : 'text-white'
-              : 'text-gray-800'
-          }`}
-          onClick={() => navigate('/')}
-        >
-          Bizim Çatı
-        </a>
+        <a onClick={() => router.push('/')} className="cursor-pointer">
+            <img
+              src="/images/logo.png" // Replace with the path to your logo
+              alt="Logo"
+              onClick={() => navigate('/')}
+              className="h-16 "
+            />
+          </a>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex space-x-6">
+        <div className='flex items-center'>
+        <div className="hidden lg:flex space-x-4 mr-8">
           <a className={linkClasses} onClick={() => navigate('/hakkimizda')}>
             {t('navbar.links.0')}
           </a>
@@ -99,40 +98,109 @@ export default function Navbar() {
         {/* Language Switcher Dropdown */}
         <div className="hidden lg:flex relative">
           <button
-            className="btn btn-ghost flex items-center"
+            className= {`py-3 px-5  w-22   flex items-center font-bold  ${
+              scrolled
+                  ? 'text-gray-800 hover:bg-opacity-35 '
+                  : isLanguageDropdownOpen ?'text-gray-800 ' :'text-white hover:bg-opacity-15'
+                
+            } ${
+              isLanguageDropdownOpen
+                  ? 'bg-white text-gray-800 rounded-t-lg border-l border-r border-t  border-gray-200'
+                  : 'hover:bg-gray-300 rounded-lg border border-transparent'
+                
+            }`} 
             onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
           >
-            {i18n.language.toUpperCase()} <FaChevronDown className="ml-2" />
+            {i18n.language.toUpperCase()}  <FaChevronDown
+          className={`ml-2 transform transition-transform duration-200 ${
+            isLanguageDropdownOpen ? 'rotate-180' : 'rotate-0'
+          }`}
+        />
           </button>
           {isLanguageDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-28 bg-white border border-gray-200 shadow-lg rounded-lg">
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'tr' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('tr')}
-              >
-                TR
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'en' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('en')}
-              >
-                EN
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'de' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('de')}
-              >
-                DE
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'ru' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('ru')}
-              >
-                RU
-              </button>
-            </div>
-          )}
+        <div
+          className="absolute top-full  mt-[-1px] w-full text-black text-sm bg-white border-l border-r border-b  border-gray-200 shadow-lg rounded-b-lg"
+        >
+          <div className='hover:bg-gray-100 flex items-center cursor-pointer rounded-lg'
+          onClick={() => handleLanguageChange('tr')}>
+            <img
+            src="/images/turkey.png" // Path to the Turkey flag icon
+            alt="tr flag"
+            className={`w-5 h-5 ml-4 mr-1 ${
+              i18n.language === 'tr' ? 'hidden' : ''
+            }`}// Adjust size as needed
+            
+          />
+  
+          <button
+            className={`block ml-1  text-left  py-2 ${
+              i18n.language === 'tr' ? 'hidden' : ''
+            }`}
+            
+          >
+            TR
+          </button>
+          </div>
+          <div className='hover:bg-gray-100 flex items-center cursor-pointer rounded-lg'
+          onClick={() => handleLanguageChange('en')}>
+            <img
+    src="/images/uk.png" // Path to the Turkey flag icon
+    alt="uk flag"
+    className={`w-5 h-5 ml-4 mr-1 ${
+      i18n.language === 'en' ? 'hidden' : ''
+    }`}// Adjust size as needed
+  />
+  
+          <button
+            className={`block ml-1  text-left  py-2 ${
+              i18n.language === 'en' ? 'hidden' : ''
+            }`}
+            
+          >
+            EN
+          </button>
+          </div>
+          <div className='hover:bg-gray-100 flex items-center cursor-pointer rounded-lg'
+          onClick={() => handleLanguageChange('de')}>
+            <img
+    src="/images/de.png" // Path to the Turkey flag icon
+    alt="de flag"
+    className={`w-5 h-5 ml-4 mr-1 ${
+      i18n.language === 'de' ? 'hidden' : ''
+    }`}// Adjust size as needed
+  />
+  
+          <button
+            className={`block ml-1  text-left  py-2 ${
+              i18n.language === 'de' ? 'hidden' : ''
+            }`}
+            
+          >
+            DE
+          </button>
+          </div>
+          <div className='hover:bg-gray-100 flex items-center cursor-pointer rounded-lg'
+          onClick={() => handleLanguageChange('ru')}>
+            <img
+    src="/images/ru.png" // Path to the Turkey flag icon
+    alt="ru flag"
+    className={`w-5 h-5 ml-4 mr-1 ${
+      i18n.language === 'ru' ? 'hidden' : ''
+    }`}// Adjust size as needed
+  />
+  
+          <button
+            className={`block ml-1  text-left  py-2 ${
+              i18n.language === 'ru' ? 'hidden' : ''
+            }`}
+            
+          >
+            RU
+          </button>
+          </div>
         </div>
+      )}
+        </div></div>
 
         {/* Mobile Menu Icon */}
         <div className="lg:hidden z-50">
