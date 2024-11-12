@@ -45,7 +45,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   // Conditional classes
-  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-24 ${
+  const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-20 ${
     isOnHomePage
       ? scrolled
         ? 'bg-white shadow-md'
@@ -55,7 +55,7 @@ export default function Navbar() {
 
  
 
-  const linkClasses = `text-lg btn btn-ghost hover:text-navbar-teal-blue active:text-navbar-red ${
+  const linkClasses = `text-md btn btn-ghost hover:text-navbar-teal-blue active:text-navbar-red ${
     isOnHomePage
       ? scrolled
         ? 'text-gray-800'
@@ -72,14 +72,25 @@ export default function Navbar() {
     <div className={navbarClasses}>
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo/Home Link */}
-        <a onClick={() => router.push('/')} className="cursor-pointer">
+        <div className="cursor-pointer ">
             <img
               src="/images/logo.png" // Replace with the path to your logo
               alt="Logo"
               onClick={() => navigate('/')}
-              className="h-16 "
+              className={`h-14  ${
+                scrolled ?  '' : 'hidden'
+              }`}// Adjust size as needed
             />
-          </a>
+             <img
+              src="/images/logo_white.png" // Replace with the path to your logo
+              alt="Logo"
+              onClick={() => navigate('/')}
+              className={`h-14  ${
+                scrolled ?  'hidden' : ''
+              }`}// Adjust size as needed
+            />
+          </div>
+          
 
         {/* Desktop Menu */}
         <div className='flex items-center'>
@@ -98,7 +109,7 @@ export default function Navbar() {
         {/* Language Switcher Dropdown */}
         <div className="hidden lg:flex relative">
           <button
-            className= {`py-3 px-5  w-22   flex items-center font-bold  ${
+            className= {`py-3 px-5  w-22 text-sm  flex items-center font-bold  ${
               scrolled
                   ? 'text-gray-800 hover:bg-opacity-35 '
                   : isLanguageDropdownOpen ?'text-gray-800 ' :'text-white hover:bg-opacity-15'
