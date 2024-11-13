@@ -70,7 +70,7 @@ const WeddingPage = () => {
             <div className="container mx-auto text-left mt-4">
   <a
     href="/iletisim"
-    className="inline-block mt-4 w-full flex justify-center py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+    className="inline-block mt-4 w-full flex justify-center py-3 hover:bg-[#0a72bf] bg-[#0D92F4] text-white font-semibold rounded-md  transition duration-300"
   >
    {t('wedding_section.contact_button')}
   </a>

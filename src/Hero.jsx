@@ -28,7 +28,7 @@ function Hero() {
           </p>
           
         <div className="flex flex-row gap-4 ">
-        <Link to="/iletisim" className="btn w-full text-lg text-white hover:bg-[#0a72bf] hover:border-[#0a72bf] border-[#0D92F4] bg-[#0D92F4]">
+        <Link to="/iletisim" className="btn w-full text-lg text-white hover:bg-[#0a72bf] bg-[#0D92F4] hover:border-[#0a72bf] border-[#0D92F4] ">
         {t('hero_section.buttons.0')}
           </Link>
          

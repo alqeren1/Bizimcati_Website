@@ -73,23 +73,44 @@
 
   "wedding_section": {
     "header": "Garden Wedding",
-    "intro_paragraph": "Celebrate Your Dreams at Bizim Çatı. Located in Gölbaşı, Ankara's gem, Bizim Çatı Restaurant & Hotel awaits you to make the most special day of your life unforgettable in a venue surrounded by the unique beauties of nature. Experience a fairy-tale wedding in our romantic and natural garden wedding concept with your loved ones.",
+    "intro_paragraph": "Celebrate your dreams at Bizim Çatı. Located in Gölbaşı, the gem of Ankara, Bizim Çatı Restaurant & Hotel awaits you to make the most special day of your life unforgettable, surrounded by the unique beauties of nature. Experience a fairy-tale wedding in our romantic and natural garden wedding setting with your loved ones.",
     "why_choose_us_header": "Why Choose Bizim Çatı Garden Wedding?",
     "features": [
-      "Stunning Natural Scenery: We offer an open-air wedding environment with the unique lake and nature views of Gölbaşı.",
-      "Custom Decoration Options: We make your wedding entirely personalized with decoration alternatives that suit your personal tastes.",
-      "Delicious Menu Options: We provide an unforgettable culinary experience to your guests with our chefs' rich menus.",
-      "Professional Service Approach: Our experienced team ensures every detail is flawless by being by your side throughout all stages of the organization.",
-      "Accommodation Options: You can comfortably accommodate your out-of-town guests with the lodging options we offer in our hotel."
+      {
+        "bold": "Stunning Natural Scenery",
+        "text": "We offer a refreshing open-air wedding environment accompanied by the unique lake and nature views of Gölbaşı."
+      },
+      {
+        "bold": "Custom Decoration Options",
+        "text": "We make your wedding entirely unique with decoration alternatives that suit your personal tastes."
+      },
+      {
+        "bold": "Delicious Menu Options",
+        "text": "Our master chefs provide your guests with an unforgettable culinary experience with our rich menus."
+      },
+      {
+        "bold": "Professional Service Philosophy",
+        "text": "Our experienced team ensures every detail is perfect, supporting you at every stage of the event."
+      },
+      {
+        "bold": "Accommodation Options",
+        "text": "We provide comfortable accommodation options for your out-of-town guests at our hotel."
+      }
     ],
+    "header3": "Our Goal",
     "additional_paragraphs": [
-      "At Bizim Çatı, we work to realize every couple's dream wedding. Whether you plan an intimate ceremony or a grand celebration, our flexible package options and personalized services meet your expectations.",
-      "A Celebration in Harmony with Nature",
-      "Are you ready to say \"Yes\" in an environment adorned with birdsong, a gentle breeze, and all the colors of nature? Our garden offers a spacious area and natural beauty that will also create a unique backdrop for your photos.",
-      "For Reservation and Detailed Information"
+      "At Bizim Çatı, we work to realize every couple's dream wedding. Whether you plan an intimate ceremony or a grand celebration, our flexible package options and personalized services meet your expectations."
+    ],
+    "header4": "A Celebration in Harmony with Nature",
+    "additional_paragraphs2": [
+      "Are you ready to say 'Yes' in an environment adorned with birdsong, a gentle breeze, and all the colors of nature? Our garden offers a spacious area and natural beauty that will also create a unique backdrop for your photos.",
+      "For Reservations and Detailed Information"
     ],
     "contact_button": "Contact"
-  },
+  }
+  
+  
+  ,
   "bbq_section": {
     "headers": [
       "BBQ and Grill",

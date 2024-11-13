@@ -73,23 +73,43 @@
 
   "wedding_section": {
     "header": "Gartenhochzeit",
-    "intro_paragraph": "Feiern Sie Ihre Träume bei Bizim Çatı. Das Bizim Çatı Restaurant & Hotel, gelegen in Gölbaşı, dem Juwel von Ankara, erwartet Sie, um den schönsten Tag Ihres Lebens in einem von der Natur umgebenen Ambiente unvergesslich zu machen. Erleben Sie eine Märchenhochzeit in unserem romantischen und natürlichen Gartenhochzeitskonzept mit Ihren Lieben.",
-    "why_choose_us_header": "Warum eine Gartenhochzeit bei Bizim Çatı?",
+    "intro_paragraph": "Feiern Sie Ihre Träume bei Bizim Çatı. Gelegen in Gölbaşı, dem Juwel von Ankara, erwartet Sie das Bizim Çatı Restaurant & Hotel, um den wichtigsten Tag Ihres Lebens unvergesslich zu machen, umgeben von der einzigartigen Schönheit der Natur. Erleben Sie eine märchenhafte Hochzeit in unserem romantischen und natürlichen Gartenhochzeits-Konzept zusammen mit Ihren Liebsten.",
+    "why_choose_us_header": "Warum sollten Sie sich für eine Gartenhochzeit bei Bizim Çatı entscheiden?",
     "features": [
-      "Atemberaubende Naturlandschaft: Wir bieten eine Hochzeitsumgebung im Freien mit einzigartigem Blick auf den See und die Natur von Gölbaşı.",
-      "Individuelle Dekorationsmöglichkeiten: Wir gestalten Ihre Hochzeit ganz persönlich mit Dekorationsalternativen, die Ihrem Geschmack entsprechen.",
-      "Köstliche Menüoptionen: Wir bieten Ihren Gästen ein unvergessliches kulinarisches Erlebnis mit den reichen Menüs unserer Köche.",
-      "Professioneller Service: Unser erfahrenes Team sorgt dafür, dass jedes Detail perfekt ist, indem es Sie in allen Phasen der Veranstaltung unterstützt.",
-      "Übernachtungsmöglichkeiten: Sie können Ihre Gäste von außerhalb bequem in unserem Hotel unterbringen."
+      {
+        "bold": "Atemberaubende Naturlandschaft",
+        "text": "Wir bieten eine Hochzeit im Freien mit der einzigartigen Sehenswürdigkeit des Sees und der Natur von Gölbaşı."
+      },
+      {
+        "bold": "Individuelle Dekorationsmöglichkeiten",
+        "text": "Wir gestalten Ihre Hochzeit vollkommen individuell mit Dekorationsalternativen, die Ihren persönlichen Geschmack treffen."
+      },
+      {
+        "bold": "Köstliche Menüoptionen",
+        "text": "Unsere Meisterköche bieten Ihren Gästen ein unvergessliches kulinarisches Erlebnis mit unseren reichhaltigen Menüs."
+      },
+      {
+        "bold": "Professionelle Serviceauffassung",
+        "text": "Unser erfahrenes Team stellt sicher, dass jedes Detail perfekt ist, indem es Sie in allen Phasen der Veranstaltung begleitet."
+      },
+      {
+        "bold": "Unterkunftsmöglichkeiten",
+        "text": "Wir bieten komfortable Unterbringungsmöglichkeiten für Ihre Gäste von außerhalb in unserem Hotel."
+      }
     ],
+    "header3": "Unser Ziel",
     "additional_paragraphs": [
-      "Bei Bizim Çatı arbeiten wir daran, die Traumhochzeit jedes Paares zu verwirklichen. Ob Sie eine intime Zeremonie oder eine große Feier planen, unsere flexiblen Paketoptionen und personalisierten Dienstleistungen erfüllen Ihre Erwartungen.",
-      "Eine Feier in Einklang mit der Natur",
-      "Sind Sie bereit, \"Ja\" in einer Umgebung voller Vogelgezwitscher, einer sanften Brise und aller Farben der Natur zu sagen? Unser Garten bietet eine weitläufige Fläche und natürliche Schönheit, die auch eine einzigartige Kulisse für Ihre Fotos bildet.",
+      "Bei Bizim Çatı arbeiten wir daran, die Traumhochzeit jedes Paares zu verwirklichen. Ob Sie eine intime Zeremonie oder eine prächtige Feier planen, unsere flexiblen Paketoptionen und personalisierten Dienstleistungen erfüllen Ihre Erwartungen."
+    ],
+    "header4": "Eine Feier in Harmonie mit der Natur",
+    "additional_paragraphs2": [
+      "Sind Sie bereit, 'Ja' zu sagen, umgeben von Vogelgezwitscher, einer sanften Brise und allen Farben der Natur? Unser Garten bietet eine geräumige Fläche und natürliche Schönheit, die auch eine einzigartige Kulisse für Ihre Fotos schaffen wird.",
       "Für Reservierungen und detaillierte Informationen"
     ],
     "contact_button": "Kontakt"
-  },
+  }
+  
+  ,
   "bbq_section": {
     "headers": [
       "BBQ und Grill",
