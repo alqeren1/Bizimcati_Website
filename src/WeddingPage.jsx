@@ -8,14 +8,20 @@ const WeddingPage = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-white py-20">
-        <div
-          className="
-            container mx-auto px-4
-            grid grid-cols-1 md:grid-cols-2 gap-8
-          "
-        >
+      <section className="bg-white py-20 flex text-justify justify-center">
+        <div className='w-full md:w-[800px] px-8 md:px-0'>
+        <div className='mt-8' >
+            <h2 className="text-4xl font-bold  text-gray-800 mb-6"> {t('wedding_section.header')} </h2>
+            <p className="text-lg text-gray-700 mb-6">
+            {t('wedding_section.intro_paragraph')}
+              
+            </p>
+          
+            
+          </div>
+       
           {/* Image Section */}
+          <div className='w-full items-center justify-center flex mt-8 mb-16'>
           <div className="md:h-auto">
             <img
               src="/images/36.jpg"
@@ -24,62 +30,47 @@ const WeddingPage = () => {
             />
           </div>
           {/* Content Section */}
-          <div >
-            <h2 className="text-4xl font-bold text-gray-800 mb-6"> {t('wedding_section.header')} </h2>
-            <p className="text-lg text-gray-700 mb-6">
-            {t('wedding_section.intro_paragraph')}
-              
-            </p>
           
-            
           </div>
-
           
-        </div>
+       
+       
         <div className="
-            container mx-auto px-4
-            grid grid-cols-1  gap-2
+           w-full
           ">
             <br />
-          <strong className="text-2xl text-black"> {t('wedding_section.why_choose_us_header')}</strong>
+          <strong className="text-2xl  text-gray-800"> {t('wedding_section.why_choose_us_header')}</strong>
             <br />
             
-            <ul className="list-none text-lg text-gray-700 mb-6">
-              <li className="mb-2">
-              {t('wedding_section.features.0')}
-              </li>
-              <li className="mb-2">
-              {t('wedding_section.features.1')}
-              </li>
-              <li className="mb-2">
-              {t('wedding_section.features.2')}
-              </li>
-              <li className="mb-2">
-              {t('wedding_section.features.3')}
-              </li>
-              <li className="mb-2">
-              {t('wedding_section.features.4')}
-              </li>
-            </ul>
+            <ul className="list-none text-lg text-gray-700 mt-12 mb-16">
+  {t('wedding_section.features', { returnObjects: true }).map((feature, index) => (
+    <li key={index} className="mb-6">
+      <strong>{feature.bold}</strong>: {feature.text}
+    </li>
+  ))}
+</ul>
 
-            <p className="text-lg text-gray-700 mb-6">
+            <strong className="text-2xl  text-gray-800"> {t('wedding_section.header3')}</strong>
+
+            <p className="text-lg text-gray-700 mt-8 mb-16">
             {t('wedding_section.additional_paragraphs.0')}
-              <br />
-              <br />
-              
-              {t('wedding_section.additional_paragraphs.1')}
-              <br />
-              <br />
-              {t('wedding_section.additional_paragraphs.2')}
-              <br />
-              <br />
-              <br />
-              <strong>{t('wedding_section.additional_paragraphs.3')}</strong>
+             
+
+            
             </p>
-            <div className="container mx-auto text-left">
+            <strong className="text-2xl  text-gray-800"> {t('wedding_section.header4')}</strong>
+            <p className="text-lg text-gray-700 mt-8 ">
+
+            {t('wedding_section.additional_paragraphs2.0')}
+            
+
+            <p className='mt-16 font-semibold'>{t('wedding_section.additional_paragraphs2.1')}</p>
+
+            </p>
+            <div className="container mx-auto text-left mt-4">
   <a
     href="/iletisim"
-    className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+    className="inline-block mt-4 w-full flex justify-center py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
   >
    {t('wedding_section.contact_button')}
   </a>
@@ -87,7 +78,7 @@ const WeddingPage = () => {
 
 
           </div>
-        
+          </div>
       </section>
       <Footer />
     </>

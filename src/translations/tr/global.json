@@ -76,15 +76,35 @@
       "intro_paragraph": "Bizim Çatı'da Hayallerinizi Süsleyen Kır Düğünleri Ankara'nın incisi Gölbaşı'nda yer alan Bizim Çatı Restoran & Otel, doğanın eşsiz güzellikleriyle çevrili mekânında, hayatınızın en özel gününü unutulmaz kılmak için sizleri bekliyor. Kır düğünü konseptimizin sunduğu romantik ve doğal atmosferde, sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.",
       "why_choose_us_header": "Neden Bizim Çatı Kır Düğünü?",
       "features": [
-        "Muhteşem Doğa Manzarası: Gölbaşı'nın eşsiz göl ve doğa manzarası eşliğinde, açık havada ferah bir düğün ortamı sunuyoruz.",
-        "Özel Dekorasyon Seçenekleri: Kişisel zevklerinize uygun dekorasyon alternatifleriyle düğününüzü tamamen size özel hale getiriyoruz.",
-        "Lezzetli Menü Seçenekleri: Usta şeflerimizin hazırladığı zengin menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz.",
-        "Profesyonel Hizmet Anlayışı: Deneyimli ekibimiz, organizasyonun tüm aşamalarında yanınızda olarak her detayın kusursuz olmasını sağlıyor.",
-        "Konaklama İmkanı: Otelimizde sunduğumuz konaklama seçenekleriyle şehir dışından gelen misafirlerinizi rahat ettirebilirsiniz."
+        {
+          "bold": "Muhteşem Doğa Manzarası",
+          "text": "Gölbaşı'nın eşsiz göl ve doğa manzarası eşliğinde, açık havada ferah bir düğün ortamı sunuyoruz."
+        },
+        {
+          "bold": "Özel Dekorasyon Seçenekleri",
+          "text": "Kişisel zevklerinize uygun dekorasyon alternatifleriyle düğününüzü tamamen size özel hale getiriyoruz."
+        },
+        {
+          "bold": "Lezzetli Menü Seçenekleri",
+          "text": "Usta şeflerimizin hazırladığı zengin menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz."
+        },
+        {
+          "bold": "Profesyonel Hizmet Anlayışı",
+          "text": "Deneyimli ekibimiz, organizasyonun tüm aşamalarında yanınızda olarak her detayın kusursuz olmasını sağlıyor."
+        },
+        {
+          "bold": "Konaklama İmkanı",
+          "text": "Otelimizde sunduğumuz konaklama seçenekleriyle şehir dışından gelen misafirlerinizi rahat ettirebilirsiniz."
+        }
       ],
+      "header3": "Hedefimiz",
       "additional_paragraphs": [
-        "Bizim Çatı olarak, her çiftin hayalini kurduğu düğünü gerçekleştirmek için çalışıyoruz. İster samimi bir tören, ister görkemli bir kutlama planlayın; esnek paket seçeneklerimiz ve kişiselleştirilmiş hizmetlerimizle beklentilerinizi karşılıyoruz.",
-        "Doğayla İç İçe Bir Kutlama", 
+        "Bizim Çatı olarak, her çiftin hayalini kurduğu düğünü gerçekleştirmek için çalışıyoruz. İster samimi bir tören, ister görkemli bir kutlama planlayın; esnek paket seçeneklerimiz ve kişiselleştirilmiş hizmetlerimizle beklentilerinizi karşılıyoruz."
+       
+        
+      ],
+      "header4": "Doğayla İç İçe Bir Kutlama",
+      "additional_paragraphs2": [
         "Kuş cıvıltıları, hafif esen bir rüzgâr ve doğanın tüm renkleriyle bezenmiş bir ortamda \"Evet\" demeye hazır mısınız? Kır bahçemiz, geniş alanı ve doğal güzelliğiyle fotoğraflarınıza da eşsiz bir fon oluşturacak.",
         "Rezervasyon ve Detaylı Bilgi İçin"
       ],
