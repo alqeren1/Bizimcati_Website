@@ -111,32 +111,33 @@
   
   ,
   "bbq_section": {
-    "headers": [
-      "BBQ und Grill",
-      "Willkommen bei den einzigartigen Aromen des Barbecues und Grills!",
-      "Genießen Sie den Geschmack des Grills",
-      "Die beste Adresse für Barbecue und Grill",
-      "Warum sollten Sie uns wählen?"
-    ],
-    "paragraphs": [
-      "Wer kann dem Geschmack von Fleisch und Gemüse, die über offenem Feuer mit köstlichen Rauch-Aromen gegrillt werden, widerstehen? Diese einzigartige Kochmethode, die weltweit unter verschiedenen Namen bekannt ist - 'BBQ' in England und den USA, 'Barbie' in Australien, 'Braai' in Südafrika und 'Mangal' in unserer Kultur - hat in jeder Kultur ihre eigenen Traditionen, doch das Feuer und der Rauch vereinen alle.",
-      "In der türkischen Kultur ist Mangal nicht nur eine Kochmethode, sondern auch eine Tradition, bei der Freundschaften gestärkt und angenehme Gespräche geführt werden. In unserem Restaurant bewahren wir diese Tradition in ihrer köstlichsten Form. Unser speziell mariniertes Fleisch wird meisterhaft über Holzkohle gegrillt und Ihnen serviert. Probieren Sie unsere klassischen Kebabs oder genießen Sie unser gegrilltes Gemüse und entdecken Sie die unverzichtbaren Aromen des Mangal.",
-      "Unser Restaurant bietet ein unvergessliches kulinarisches Erlebnis mit Köchen, die auf Barbecue und Grill spezialisiert sind. Unsere im Freien zubereiteten Gerichte sind ein Genuss für Auge und Gaumen. Von langsam geräuchertem Fleisch über Holzfeuer bis zu schnell gegrillten Köstlichkeiten über heißen Kohlen erwartet Sie eine breite Menüauswahl.",
-      "Wenn Sie eine einzigartige Geschmacksreise in der magischen Welt von Feuer und Rauch antreten möchten, sind Sie herzlich in unser Restaurant eingeladen. Die richtige Adresse für unvergessliche Momente und Gaumenfreuden!"
-    ],
-    "li_headers": [
-      "Qualität und Frische",
-      "Erfahrene Köche",
-      "Warme Atmosphäre",
-      "Breites Menü"
-    ],
-    "li_content": [
-      "Wir verwenden immer die frischesten und hochwertigsten Zutaten.",
-      "Erreichen Sie perfekten Geschmack mit unseren erfahrenen Köchen für Barbecue und Grill.",
-      "Wir bieten eine freundliche Umgebung, in der Sie mit Familie und Freunden eine schöne Zeit verbringen können.",
-      "Eine reiche Auswahl an Barbecue- und Grilloptionen für jeden Geschmack."
-    ]
-  },
+  "headers": [
+    "BBQ und Grill",
+    "Willkommen bei den einzigartigen Geschmäckern von Barbecue und Grill!",
+    "Genießen Sie das Grillen",
+    "Die beste Adresse für Barbecue und Grill",
+    "Warum sollten Sie uns wählen?"
+  ],
+  "paragraphs": [
+    "Wer kann schon dem Geschmack von Fleisch und Gemüse widerstehen, die über offenem Feuer gekocht werden, begleitet vom herrlichen Duft des Rauchs? Diese einzigartige Kochmethode ist weltweit bekannt - als 'BBQ' in Großbritannien und den USA, 'barbie' in Australien, 'braai' in Südafrika und 'mangal' in unserer Kultur. Bizim Çatı, gelegen in Gölbaşı, Ankara, ist berühmt dafür, einer der besten Orte zu sein, um ein unvergessliches Grill-Erlebnis zu haben, ob Sie selbst kochen oder direkt bei uns bestellen.",
+    "Grillen ist in der türkischen Kultur nicht nur eine Kochmethode, sondern auch eine Tradition, bei der Freundschaften vertieft und angenehme Gespräche geführt werden. Bei Bizim Çatı leben wir diese Tradition auf die köstlichste Weise. Unsere mit speziellen Marinaden vorbereiteten Fleischgerichte werden fachmännisch über Holzkohle gegrillt und Ihnen serviert. Probieren Sie unsere klassischen Kebabs oder genießen Sie unsere gegrillten Gemüse; entdecken Sie die unverzichtbaren Geschmäcker des Grills.",
+    "Unser Restaurant bietet mit seinen auf Barbecue und Grill spezialisierten Köchen ein unvergessliches Geschmackserlebnis. Unsere im Freien gekochten Speisen sprechen sowohl das Auge als auch den Gaumen an. Mit der Möglichkeit, 'selbst zu kochen' oder Ihre Mahlzeit von unseren Expertenköchen über heißen Kohlen zubereiten zu lassen, erwartet Sie eine breite Palette an gegrillten Köstlichkeiten.",
+    "Wenn Sie eine einzigartige kulinarische Reise durch die magische Welt von Feuer und Rauch beginnen möchten, sind Sie bei Bizim Çatı in Gölbaşı, Ankara, herzlich willkommen. Die richtige Adresse für unvergessliche Momente und Gaumenfreuden!"
+  ],
+  "li_headers": [
+    "Qualität und Frische",
+    "Fachkundige Köche",
+    "Warmes Ambiente",
+    "Umfangreiches Menü"
+  ],
+  "li_content": [
+    "Wir verwenden immer die frischesten und qualitativ hochwertigsten Zutaten.",
+    "Erreichen Sie den perfekten Geschmack mit unseren erfahrenen Köchen, die auf Barbecue und Grill spezialisiert sind.",
+    "Wir bieten eine warme Umgebung, in der Sie angenehme Zeit mit Ihrer Familie und Freunden verbringen können.",
+    "Eine umfangreiche Auswahl an Barbecue- und Grillgerichten, die verschiedenen Geschmäckern gerecht wird."
+  ]
+}
+,
 
   "seminar_section": {
     "header": "Seminar & Workshop",
@@ -146,16 +147,16 @@
   "graduation_section": {
     "header": "Abschlussfeier",
     "intro_paragraphs": [
-      "Feiern Sie Ihren Abschluss in der einzigartigen Atmosphäre von Bizim Çatı",
-      "Im einzigartigen Naturgebiet von Gölbaşı, Ankara, bietet das Bizim Çatı Restaurant & Hotel den idealen Ort für Ihre Abschlussfeiern. In unserer naturverbundenen Atmosphäre, mit köstlichen Menüs, Live-Musik und unserem professionellen Serviceansatz können Sie diesen wichtigen Meilenstein Ihres Bildungswegs mit Ihren Lieben unvergesslich machen."
+      "",
+      "Feiern Sie Ihren Abschluss in der einzigartigen Atmosphäre von Bizim Çatı. Gelegen in der wunderschönen Natur von Gölbaşı, Ankara, bietet das Bizim Çatı Restaurant & Hotel einen idealen Ort für Ihre Abschlussfeiern. Mit unseren köstlichen Menüs, Live-Musik und professionellem Service können Sie diesen wichtigen Meilenstein in Ihrem Bildungsweg zusammen mit Ihren Liebsten unvergesslich machen."
     ],
     "contact_button": "Kontakt"
   },
   "birthday_section": {
     "header": "Geburtstagsfeier",
     "intro_paragraphs": [
-      "Feiern Sie Ihren Geburtstag in der einzigartigen Atmosphäre von Bizim Çatı",
-      "Das Bizim Çatı Restaurant & Hotel im ruhigen Naturgebiet von Gölbaşı, Ankara, veranstaltet unvergessliche Geburtstagsfeiern mit Ihren Lieben. Wenn Sie den perfekten Ort suchen, um Ihren besonderen Tag in einer warmen und freundlichen Umgebung mitten in der Natur zu krönen, sind Sie hier richtig."
+      "",
+      "Feiern Sie Ihren Geburtstag in der einzigartigen Atmosphäre von Bizim Çatı. Das Bizim Çatı Restaurant & Hotel im ruhigen Naturgebiet von Gölbaşı, Ankara, veranstaltet unvergessliche Geburtstagsfeiern mit Ihren Lieben. Wenn Sie den perfekten Ort suchen, um Ihren besonderen Tag in einer warmen und freundlichen Umgebung mitten in der Natur zu krönen, sind Sie hier richtig."
     ],
     "header2": "Warum Bizim Çatı für Ihre Geburtstagsfeier wählen?",
     "li_headers": [

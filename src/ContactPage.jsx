@@ -15,7 +15,7 @@ const ContactPage = () => {
       <section className="bg-white py-28">
         <div className="container mx-auto px-4">
           {/* Bölüm Başlığı */}
-          <div className="text-center mb-12">
+          <div className="text-left mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               {t('contact_section.header')}
             </h2>
@@ -29,7 +29,7 @@ const ContactPage = () => {
               {/* Rezervasyonlar */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaPhoneAlt className="text-blue-600 mr-2" /> {t('contact_section.contact_details.reservation_header')}
+                  <FaPhoneAlt className="text-[#0D92F4]  mr-2" /> {t('contact_section.contact_details.reservation_header')}
                 </h3>
                 <p className="text-gray-700 mb-2">
                   <strong>Telefon 1:</strong>{' '}
@@ -47,7 +47,7 @@ const ContactPage = () => {
               {/* E-posta Adresi */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaEnvelope className="text-blue-600 mr-2" /> {t('contact_section.contact_details.email_header')}
+                  <FaEnvelope className="text-[#0D92F4] mr-2" /> {t('contact_section.contact_details.email_header')}
                 </h3>
                 <p className="text-gray-700">
                   <a href="mailto:info@bizimcati.com.tr" className="hover:underline">
@@ -58,7 +58,7 @@ const ContactPage = () => {
               {/* Adres */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FaMapMarkerAlt className="text-blue-600 mr-2" />  {t('contact_section.contact_details.address_header')}
+                  <FaMapMarkerAlt className="text-[#0D92F4] mr-2" />  {t('contact_section.contact_details.address_header')}
                 </h3>
                 <p className="text-gray-700">
                 {t('contact_section.contact_details.address')}

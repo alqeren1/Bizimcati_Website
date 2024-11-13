@@ -12,7 +12,7 @@ const SeminarPage = () =>{
         <>
         <Navbar/>
         <section className="bg-white py-16 h-screen">
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div className="container mx-auto text-justify md:mt-20 px-4 flex flex-col md:flex-row ">
       {/* Image Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
@@ -30,7 +30,7 @@ const SeminarPage = () =>{
        
         <a
           href="/iletisim"
-          className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+         className="inline-block mt-4 w-full flex justify-center py-3 hover:bg-[#0a72bf] bg-[#0D92F4] text-white font-semibold rounded-md  transition duration-300"
         >
         {t('seminar_section.contact_button')}
         </a>

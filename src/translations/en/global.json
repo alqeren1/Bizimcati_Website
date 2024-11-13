@@ -111,33 +111,34 @@
   
   
   ,
-  "bbq_section": {
-    "headers": [
-      "BBQ and Grill",
-      "Welcome to the Unique Flavors of Barbecue and Grill!",
-      "Enjoy the Taste of Grill",
-      "The Best Address for Barbecue and Grill",
-      "Why Choose Us?"
-    ],
-    "paragraphs": [
-      "Who can say no to the taste of meats and vegetables cooked over a live fire with delightful smoky aromas? This unique cooking method, known by different names around the world—'BBQ' in England and the USA, 'barbie' in Australia, 'braai' in South Africa, and 'mangal' in our culture—has its own distinct traditions in each culture, but they all share the magic of fire and smoke.",
-      "In Turkish culture, mangal is not just a cooking method but also a tradition where friendships are strengthened and enjoyable conversations take place. At our restaurant, we preserve this tradition in the most delicious way. Our specially marinated meats are expertly grilled over charcoal fires and served to you. Whether you try our classic kebabs or taste our grilled vegetables, discover the indispensable flavors of mangal.",
-      "Our restaurant offers an unforgettable culinary experience with chefs specialized in barbecue and grill. Our open-air cooked dishes appeal both visually and gastronomically. From slow-smoked meats over wood fires to quickly grilled delights on hot coals, a wide menu awaits you.",
-      "If you wish to embark on a unique flavor journey in the magical world of fire and smoke, you are invited to our restaurant. The right address for unforgettable moments and mouth-watering tastes!"
-    ],
-    "li_headers": [
-      "Quality and Freshness",
-      "Expert Chefs",
-      "Warm Atmosphere",
-      "Extensive Menu"
-    ],
-    "li_content": [
-      "We always use the freshest and highest quality ingredients.",
-      "Achieve perfect flavor with our chefs experienced in barbecue and grill.",
-      "We offer a friendly environment where you can enjoy quality time with your family and friends.",
-      "A rich variety of barbecue and grill options catering to different palates."
-    ]
-  },
+ "bbq_section": {
+  "headers": [
+    "BBQ and Grill",
+    "Welcome to the Unique Flavors of Barbecue and Grill!",
+    "Enjoy the Taste of Grilling",
+    "The Best Address for Barbecue and Grill",
+    "Why Choose Us?"
+  ],
+  "paragraphs": [
+    "Who can resist the taste of meats and vegetables cooked over a live fire, accompanied by the delightful scent of smoke? Known around the world by various names—'BBQ' in the UK and USA, 'barbie' in Australia, 'braai' in South Africa, and 'mangal' in our culture—this unique cooking method has universal appeal. Located in Gölbaşı, Ankara, Bizim Çatı is famous for being one of the best places to experience an unforgettable grilling experience, whether you cook it yourself or order directly from us.",
+    "Grilling is not just a cooking method in Turkish culture, it's also a tradition where friendships are strengthened and pleasant conversations are had. At Bizim Çatı, we keep this tradition alive in the most delicious way possible. Our meats, prepared with special marinades, are expertly grilled over charcoal and served to you. Whether you try our classic kebabs or taste our grilled vegetables, discover the indispensable flavors of the grill.",
+    "Our restaurant, with chefs specialized in barbecue and grilling, offers you an unforgettable taste experience. Our dishes, cooked outdoors, appeal to both the eye and the palate. With the option to 'cook your own' or have our expert chefs prepare your meal over hot coals, a wide menu full of grilled delights awaits you.",
+    "If you want to embark on a unique culinary journey through the magical world of fire and smoke, you are invited to Bizim Çatı in Gölbaşı, Ankara. The right address for unforgettable moments and mouth-watering flavors!"
+  ],
+  "li_headers": [
+    "Quality and Freshness",
+    "Expert Chefs",
+    "Warm Atmosphere",
+    "Extensive Menu"
+  ],
+  "li_content": [
+    "We always use the freshest and highest quality ingredients.",
+    "Achieve perfect flavor with our experienced chefs who specialize in barbecue and grill.",
+    "We offer a warm environment where you can enjoy time with your family and friends.",
+    "An extensive barbecue and grill selection that caters to various tastes."
+  ]
+}
+,
 
   "seminar_section": {
     "header": "Seminar & Workshop",
@@ -147,16 +148,16 @@
   "graduation_section": {
     "header": "Graduation Celebration",
     "intro_paragraphs": [
-      "Celebrate Your Graduation at Bizim Çatı's Unique Atmosphere",
-      "Located in the unique nature of Ankara Gölbaşı, Bizim Çatı Restaurant & Hotel offers an ideal venue for your graduation celebrations. In our nature-integrated atmosphere with delicious menus, live music, and our professional service approach, you can make this important milestone of your education life unforgettable with your loved ones."
+      "",
+      "Celebrate your graduation at the unique atmosphere of Bizim Çatı. Located in the beautiful natural surroundings of Gölbaşı, Ankara, Bizim Çatı Restaurant & Hotel offers an ideal venue for your graduation celebrations. With our menus full of delicious dishes, live music, and professional service, you can make this important milestone in your educational life unforgettable together with your loved ones."
     ],
     "contact_button": "Contact"
   },
   "birthday_section": {
     "header": "Birthday Party",
     "intro_paragraphs": [
-      "Celebrate Your Birthday at Bizim Çatı's Unique Atmosphere",
-      "Located in the serene nature of Ankara Gölbaşı, Bizim Çatı Restaurant & Hotel hosts unforgettable birthday parties with your loved ones. If you're looking for the perfect venue to crown your special day in a warm and friendly environment amidst nature, you're in the right place."
+      "",
+      "Celebrate Your Birthday at Bizim Çatı's Unique Atmosphere. Located in the serene nature of Ankara Gölbaşı, Bizim Çatı Restaurant & Hotel hosts unforgettable birthday parties with your loved ones. If you're looking for the perfect venue to crown your special day in a warm and friendly environment amidst nature, you're in the right place."
     ],
     "header2": "Why Choose Bizim Çatı for Your Birthday Party?",
     "li_headers": [

@@ -12,7 +12,7 @@ const BirthdayPage = () => {
     <>
       <Navbar />
       <section className="bg-white py-20">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="container text-justify md:mt-20 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Image Section */}
           <div className="md:h-auto">
             <img
@@ -28,13 +28,11 @@ const BirthdayPage = () => {
 
             </h2>
             <div className="text-lg text-gray-700 mb-6">
-              <p className="mb-4">
-              {t('birthday_section.intro_paragraphs.0')}
-              </p>
-              <p className="mb-4">
+              
+              <p className="mb-12">
               {t('birthday_section.intro_paragraphs.1')}
               </p>
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="text-2xl text-left text-gray-800 font-semibold mb-8">
               {t('birthday_section.header2')}
               </h3>
               <ul className="list-disc list-inside mb-4">
@@ -57,7 +55,7 @@ const BirthdayPage = () => {
             </div>
             <a
               href="/iletisim"
-              className="inline-block mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300"
+               className="inline-block mt-4 w-full flex justify-center py-3 hover:bg-[#0a72bf] bg-[#0D92F4] text-white font-semibold rounded-md  transition duration-300"
             >
              {t('contact_section.header')}
             </a>

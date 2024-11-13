@@ -111,32 +111,33 @@
       "contact_button": "İletişim"
     },
     "bbq_section": {
-      "headers": ["BBQ ve Mangal",
-          "Barbekünün ve Mangalın Eşsiz Lezzetlerine Hoş Geldiniz!",
-          "Mangalın Tadını Çıkarın",
-          "Barbekü ve Mangalın En İyi Adresi",
-          "Neden Bizi Tercih Etmelisiniz?"
-
-    ],
-      "paragraphs": [
-        "Canlı ateşin başında, mis gibi duman kokuları eşliğinde pişen etlerin ve sebzelerin tadına kim hayır diyebilir? Dünyanın dört bir yanında farklı isimlerle anılan bu eşsiz pişirme yöntemi, İngiltere ve ABD'de 'BBQ', Avustralya'da 'barbie', Güney Afrika'da 'braai' ve bizim kültürümüzde 'mangal' olarak bilinir. Her kültürün kendine özgü barbekü ve mangal gelenekleri vardır, ancak hepsinin ortak noktası ateşin ve dumanın büyüsüdür.",
-        "Mangal, Türk kültüründe sadece bir pişirme yöntemi değil, aynı zamanda dostlukların pekiştiği, keyifli sohbetlerin yapıldığı bir gelenektir. Restoranımızda bu geleneği en lezzetli haliyle yaşatıyoruz. Özel marinasyonlarla hazırlanan etlerimiz, kömür ateşinde ustalıkla pişirilerek sizlere sunulur. İster klasik kebaplarımızı deneyin, ister ızgara sebzelerimizin tadına bakın; mangalın vazgeçilmez lezzetlerini keşfedin.",
-        "Restoranımız, barbekü ve mangal konusunda uzmanlaşmış şefleriyle sizlere unutulmaz bir lezzet deneyimi sunuyor. Açık havada pişirilen yemeklerimiz, hem göze hem damağa hitap ediyor. Odun ateşinde yavaşça tütsülenmiş etlerden, sıcak kömürlerin üzerinde hızla ızgara edilmiş lezzetlere kadar geniş bir menü sizi bekliyor.",
-        "Siz de ateşin ve dumanın büyülü dünyasında eşsiz bir lezzet yolculuğuna çıkmak isterseniz, restoranımıza davetlisiniz. Unutulmaz anlar ve damak çatlatan tatlar için doğru adres!"
-      ],
-      "li_headers" : [
-        "Kalite ve Tazelik",
-        "Usta Şefler",
-        "Sıcak Atmosfer",
-        "Geniş Menü"
-      ],
-      "li_content":[
-        "Her zaman en taze ve kaliteli malzemeleri kullanıyoruz.",
-        "Barbekü ve mangal konusunda deneyimli şeflerimizle mükemmel lezzeti yakalayın.",
-        "Aileniz ve arkadaşlarınızla keyifli vakit geçirebileceğiniz samimi bir ortam sunuyoruz.",
-        "Farklı damak zevklerine hitap eden zengin barbekü ve mangal seçenekleri."
-      ]
-    },
+  "headers": [
+    "BBQ ve Mangal",
+    "Barbekünün ve Mangalın Eşsiz Lezzetlerine Hoş Geldiniz!",
+    "Mangalın Tadını Çıkarın",
+    "Barbekü ve Mangalın En İyi Adresi",
+    "Neden Bizi Tercih Etmelisiniz?"
+  ],
+  "paragraphs": [
+    "Canlı ateşin başında, mis gibi duman kokuları eşliğinde pişen etlerin ve sebzelerin tadına kim hayır diyebilir? Dünyanın dört bir yanında farklı isimlerle anılan bu eşsiz pişirme yöntemi, İngiltere ve ABD'de 'BBQ', Avustralya'da 'barbie', Güney Afrika'da 'braai' ve bizim kültürümüzde 'mangal' olarak bilinir. Her kültürün kendine özgü barbekü ve mangal gelenekleri vardır, ancak hepsinin ortak noktası ateşin ve dumanın büyüsüdür. Ankara'nın Gölbaşı ilçesinde yer alan Bizim Çatı, ister kendiniz pişirerek ister doğrudan bizden sipariş vererek unutulmaz bir mangal deneyimi yaşamanız için en iyi yerlerden biri olmasıyla meşhurdur.",
+    "Mangal, Türk kültüründe sadece bir pişirme yöntemi değil, aynı zamanda dostlukların pekiştiği, keyifli sohbetlerin yapıldığı bir gelenektir. Bizim Çatı'da bu geleneği en lezzetli haliyle yaşatıyoruz. Özel marinasyonlarla hazırlanan etlerimiz, kömür ateşinde ustalıkla pişirilerek sizlere sunulur. İster klasik kebaplarımızı deneyin, ister ızgara sebzelerimizin tadına bakın; mangalın vazgeçilmez lezzetlerini keşfedin.",
+    "Restoranımız, barbekü ve mangal konusunda uzmanlaşmış şefleriyle sizlere unutulmaz bir lezzet deneyimi sunuyor. Açık havada pişirilen yemeklerimiz, hem göze hem damağa hitap ediyor. Kendin pişir kendin ye seçeneği ile, ister siz ister uzman şeflerimiz tarafından sıcak kömürlerin üzerinde ızgara edilmiş lezzetlerle dolu geniş bir menü sizi bekliyor.",
+    "Siz de ateşin ve dumanın büyülü dünyasında eşsiz bir lezzet yolculuğuna çıkmak isterseniz, Gölbaşı, Ankara'daki Bizim Çatı'ya davetlisiniz. Unutulmaz anlar ve damak çatlatan tatlar için doğru adres!"
+  ],
+  "li_headers": [
+    "Kalite ve Tazelik",
+    "Usta Şefler",
+    "Sıcak Atmosfer",
+    "Geniş Menü"
+  ],
+  "li_content": [
+    "Her zaman en taze ve kaliteli malzemeleri kullanıyoruz.",
+    "Barbekü ve mangal konusunda deneyimli şeflerimizle mükemmel lezzeti yakalayın.",
+    "Aileniz ve arkadaşlarınızla keyifli vakit geçirebileceğiniz samimi bir ortam sunuyoruz.",
+    "Farklı damak zevklerine hitap eden zengin barbekü ve mangal seçenekleri."
+  ]
+}
+,
 
     "seminar_section": {
       "header": "Seminar & Workshop",
@@ -146,16 +147,16 @@
     "graduation_section": {
       "header": "Mezuniyet Kutlaması",
       "intro_paragraphs": [
-        "Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın",
-        "Ankara Gölbaşı'nın eşsiz doğası içinde yer alan Bizim Çatı Restoran & Otel, mezuniyet kutlamalarınız için ideal bir mekân sunuyor. Doğayla iç içe atmosferimizde lezzetli menüler, canlı müzik ve profesyonel hizmet anlayışımızla, eğitim hayatınızın bu önemli dönüm noktasını sevdiklerinizle birlikte unutulmaz kılabilirsiniz."
+        "",
+        "Mezuniyet kutlamalarınızı Bizim Çatı'nın eşsiz atmosferinde gerçekleştirin. Ankara Gölbaşı'nın eşsiz doğası içinde yer alan Bizim Çatı Restoran & Otel, mezuniyet kutlamalarınız için ideal bir mekân sunuyor. Doğayla iç içe atmosferimizde lezzetli menüler, canlı müzik ve profesyonel hizmet anlayışımızla, eğitim hayatınızın bu önemli dönüm noktasını sevdiklerinizle birlikte unutulmaz kılabilirsiniz."
       ],
       "contact_button": "İletişim"
     },
     "birthday_section": {
       "header": "Doğum Günü Partisi",
       "intro_paragraphs": [
-        "Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın",
-        "Ankara Gölbaşı'nın huzur dolu doğasında yer alan Bizim Çatı Restoran & Otel, sevdiklerinizle birlikte unutulmaz doğum günü partilerine ev sahipliği yapıyor. Doğanın içinde, sıcak ve samimi bir ortamda özel günlerinizi taçlandırmak için mükemmel bir mekân arıyorsanız doğru yerdesiniz."
+        "",
+        "Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın. Ankara Gölbaşı'nın huzur dolu doğasında yer alan Bizim Çatı Restoran & Otel, sevdiklerinizle birlikte unutulmaz doğum günü partilerine ev sahipliği yapıyor. Doğanın içinde, sıcak ve samimi bir ortamda özel günlerinizi taçlandırmak için mükemmel bir mekân arıyorsanız doğru yerdesiniz."
 
       ],
       "header2": "Neden Doğum Günü Partiniz İçin Bizim Çatı'yı Seçmelisiniz?",
