@@ -6,6 +6,8 @@ import HomeCarousel from './HomeCarousel';
 import EventTypesSection from './Events';
 import Footer from './Footer';
 import Intro from './Maps';
+import Intro3 from './openMap';
+
 
 
 function HomePage(){
@@ -23,7 +25,7 @@ function HomePage(){
     <EventTypesSection/>
     
     <div  className="my-20">
-    <Intro/>
+    <Intro3/>
     </div>
     <HomeCarousel/>
       <Footer/>

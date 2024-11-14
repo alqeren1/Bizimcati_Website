@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { FaXmark } from "react-icons/fa6";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { Fade as Hamburger } from 'hamburger-react';
 import { useTranslation } from 'react-i18next';
 import { FaChevronDown } from "react-icons/fa";
 
@@ -13,13 +12,40 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const menuRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   const isOnHomePage = location.pathname === '/';
 
-  // Handle menu toggle
+  // Toggle menu function
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
+
+  // Close menu on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(event.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   // Scroll event listener
   useEffect(() => {
@@ -44,7 +70,6 @@ export default function Navbar() {
     document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
   }, [isMenuOpen]);
 
-  // Conditional classes
   const navbarClasses = `navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300 h-20 ${
     isOnHomePage
       ? scrolled
@@ -52,8 +77,6 @@ export default function Navbar() {
         : 'bg-transparent'
       : 'bg-white'
   }`;
-
- 
 
   const linkClasses = `text-md btn btn-ghost hover:text-navbar-teal-blue active:text-navbar-red ${
     isOnHomePage
@@ -72,52 +95,96 @@ export default function Navbar() {
     <div className={navbarClasses}>
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo/Home Link */}
-        <div className="cursor-pointer ">
-            <img
-              src="/images/logo.png" // Replace with the path to your logo
-              alt="Logo"
-              onClick={() => navigate('/')}
-              className={`h-14  ${
-                scrolled ?  '' : 'hidden'
-              }`}// Adjust size as needed
-            />
-             <img
-              src="/images/logo_white.png" // Replace with the path to your logo
-              alt="Logo"
-              onClick={() => navigate('/')}
-              className={`h-14  ${
-                scrolled ?  'hidden' : ''
-              }`}// Adjust size as needed
-            />
-          </div>
-          
-
-        {/* Desktop Menu */}
-        <div className='flex items-center'>
-        <div className="hidden lg:flex space-x-4 mr-8">
-          <a className={linkClasses} onClick={() => navigate('/hakkimizda')}>
-            {t('navbar.links.0')}
-          </a>
-          <a className={linkClasses} onClick={() => navigate('/galeri')}>
-            {t('navbar.links.1')}
-          </a>
-          <a className={linkClasses} onClick={() => navigate('/iletisim')}>
-            {t('navbar.links.2')}
-          </a>
+        <div className="cursor-pointer">
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            onClick={() => navigate('/')}
+            className={`h-14 ${scrolled ? '' : 'hidden'}`}
+          />
+          <img
+            src="/images/logo_white.png"
+            alt="Logo"
+            onClick={() => navigate('/')}
+            className={`h-14 ${scrolled ? 'hidden' : ''}`}
+          />
         </div>
 
-        {/* Language Switcher Dropdown */}
-        <div className="hidden lg:flex relative">
+        {/* Desktop Menu */}
+        <div className="flex items-center">
+          <div className="hidden lg:flex space-x-4 mr-8">
+            <a className={linkClasses} onClick={() => navigate('/hakkimizda')}>
+              {t('navbar.links.0')}
+            </a>
+            <a className={linkClasses} onClick={() => navigate('/galeri')}>
+              {t('navbar.links.1')}
+            </a>
+            <a className={linkClasses} onClick={() => navigate('/iletisim')}>
+              {t('navbar.links.2')}
+            </a>
+          </div>
+
+          {/* Language Switcher Dropdown */}
+          <div className="hidden lg:flex relative">
+            <button
+              className={`py-3 px-5 w-22 text-sm flex items-center font-bold ${
+                scrolled
+                  ? 'text-gray-800 hover:bg-opacity-35'
+                  : isLanguageDropdownOpen
+                  ? 'text-gray-800'
+                  : 'text-white hover:bg-opacity-15'
+              } ${isLanguageDropdownOpen ? 'bg-white text-gray-800 rounded-t-lg border-gray-200' : 'hover:bg-gray-300 rounded-lg border-transparent'}`}
+              onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+            >
+              {i18n.language.toUpperCase()} <FaChevronDown className={`ml-2 transform transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
+            </button>
+            {isLanguageDropdownOpen && (
+              <div className="absolute top-full mt-[-1px] w-full text-black text-sm bg-white border-gray-200 shadow-lg rounded-b-lg">
+                {/* Language options */}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Mobile Menu Icon */}
+        <div className="lg:hidden z-50" ref={hamburgerRef}>
+          <Hamburger color={scrolled ? "#000" : isMenuOpen ? "#000" : "#fff"} size={20} toggled={isMenuOpen} toggle={toggleMenu} />
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        ref={menuRef}
+        className={`lg:hidden fixed top-0 right-0 h-full bg-gradient-to-l transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out z-40 w-auto min-w-max`}
+        style={{
+          background: 'linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)'
+        }}
+      >
+        <div className="flex flex-col px-10 items-end justify-start h-full space-y-8 mt-36">
+          {/* Menu Links */}
+          <button className="border-b border-gray-500 text-black">
+            <a className="text-2xl font-bold" onClick={() => { navigate('/'); toggleMenu(); }}>{t('navbar.links.3')}</a>
+          </button>
+          <button className="border-b border-gray-500 text-black">
+            <a className="text-2xl font-bold" onClick={() => { navigate('/hakkimizda'); toggleMenu(); }}>{t('navbar.links.0')}</a>
+          </button>
+          <button className="border-b border-gray-500 text-black">
+            <a className="text-2xl font-bold" onClick={() => { navigate('/galeri'); toggleMenu(); }}>{t('navbar.links.1')}</a>
+          </button>
+          <button className="border-b border-gray-500 text-black">
+            <a className="text-2xl font-bold" onClick={() => { navigate('/iletisim'); toggleMenu(); }}>{t('navbar.links.2')}</a>
+          </button>
+          {/* Language Switcher */}
+          <div className="flex lg:hidden relative">
           <button
-            className= {`py-3 px-5  w-22 text-sm  flex items-center font-bold  ${
-              scrolled
-                  ? 'text-gray-800 hover:bg-opacity-35 '
-                  : isLanguageDropdownOpen ?'text-gray-800 ' :'text-white hover:bg-opacity-15'
+            className= {`py-3 px-5  w-22 text-sm  flex items-center font-bold text-black 
                 
-            } ${
+             ${
               isLanguageDropdownOpen
                   ? 'bg-white text-gray-800 rounded-t-lg border-l border-r border-t  border-gray-200'
-                  : 'hover:bg-gray-300 rounded-lg border border-transparent'
+                  : ' rounded-lg border border-gray-500'
                 
             }`} 
             onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
@@ -211,114 +278,14 @@ export default function Navbar() {
           </div>
         </div>
       )}
-        </div></div>
-
-        {/* Mobile Menu Icon */}
-        <div className="lg:hidden z-50">
-          <button
-            className="relative w-8 h-8 focus:outline-none"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? (
-              <FaXmark className='text-black' />
-            ) : (
-              <RxHamburgerMenu/>
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden fixed top-0 left-0 w-full h-full bg-white transform ${
-          isMenuOpen ? 'translate-x-40' : 'translate-x-full'
-        } transition-transform duration-300 ease-in-out z-40`}
-      >
-        <div className="flex flex-col p-48 items-end justify-start h-full space-y-8 w-full bg-slate-200">
-          <button className="border-b border-gray-500 text-black">
-            <a
-              className="text-2xl font-bold"
-              onClick={() => {
-                navigate('/');
-                toggleMenu();
-              }}
-            >
-              {t('navbar.links.3')}
-            </a>
-          </button>
-          <button className="border-b border-gray-500 text-black">
-            <a
-              className="text-2xl font-bold"
-              onClick={() => {
-                navigate('/hakkimizda');
-                toggleMenu();
-              }}
-            >
-              {t('navbar.links.0')}
-            </a>
-          </button>
-          <button className="border-b border-gray-500 text-black">
-            <a
-              className="text-2xl font-bold"
-              onClick={() => {
-                navigate('/galeri');
-                toggleMenu();
-              }}
-            >
-              {t('navbar.links.1')}
-            </a>
-          </button>
-          <button className="border-b border-gray-500 text-black">
-            <a
-              className="text-2xl font-bold"
-              onClick={() => {
-                navigate('/iletisim');
-                toggleMenu();
-              }}
-            >
-              {t('navbar.links.2')}
-            </a>
-          </button>
-          <div className=" lg:flex relative">
-          <button
-            className="btn btn-ghost flex items-center"
-            onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
-          >
-            {i18n.language.toUpperCase()} <FaChevronDown className="ml-2" />
-          </button>
-          {isLanguageDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-28 bg-white border border-gray-200 shadow-lg rounded-lg">
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'tr' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('tr')}
-              >
-                TR
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'en' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('en')}
-              >
-                EN
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'de' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('de')}
-              >
-                DE
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 ${i18n.language === 'ru' ? 'font-bold' : ''}`}
-                onClick={() => handleLanguageChange('ru')}
-              >
-                RU
-              </button>
-            </div>
-          )}
         </div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
+

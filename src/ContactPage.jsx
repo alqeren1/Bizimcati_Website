@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Intro from './Maps2';
+import Intro3 from './openMap2';
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
@@ -104,7 +104,7 @@ const ContactPage = () => {
 
         </div>
         
-        <Intro/>
+        <Intro3/>
         </div>
         <div className='lg:hidden container mx-auto w-full px-4 mt-8 items-center '>
         <div className="w-full mb-8">
@@ -187,7 +187,7 @@ const ContactPage = () => {
 
         </div>
         
-        <Intro/>
+        <Intro3/>
         </div>
 
       </section>

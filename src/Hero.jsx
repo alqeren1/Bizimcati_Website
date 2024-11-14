@@ -17,13 +17,13 @@ function Hero() {
 
 
 
-      <div className="container mx-auto    relative z-10">
-        <div className="flex flex-col items-start justify-center min-h-screen text-white">
-          <div className='bg-black backdrop-blur-sm bg-opacity-25 rounded-3xl p-4'>
-          <h1 className="text-4xl font-bold mb-8  text-start ">
+      <div className="container mx-auto     relative z-10">
+        <div className="flex flex-col items-start justify-end min-h-screen text-white">
+          <div className='md:mb-10 bg-white  backdrop-blur-3xl bg-opacity-5 rounded-xl p-4'>
+          <h1 className="text-5xl 2xl:text-6xl outlined-text font-black  mb-8  ">
           {t('hero_section.header')}
           </h1>
-          <p className="text-xl mb-8 text-start max-w-2xl leading-8">
+          <p className="text-2xl 2xl:text-3xl mb-8 text-start 2xl:max-w-3xl max-w-2xl leading-8">
             {t('hero_section.intro_paragraph')}
           </p>
           

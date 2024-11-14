@@ -13,6 +13,11 @@ import CorporateMeetingPage from "./CorporateMeetingPage.jsx"
 import GraduationPage from "./GraduationPage.jsx"
 import SeminarPage from "./SeminarPage.jsx"
 import { useTranslation } from 'react-i18next';
+// Inside your main.jsx or App.jsx
+import 'leaflet/dist/leaflet.css';
+import './App.css';
+
+
 import ScrollTop from "./ScrollTop.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

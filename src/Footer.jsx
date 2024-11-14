@@ -31,7 +31,7 @@ function Footer() {
       {showArrow && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-500 transition duration-300 ease-in-out transform hover:scale-110 z-50"
+          className="fixed bottom-8 right-8  text-white p-4 rounded-full shadow-lg hover:bg-[#0a72bf] bg-[#0D92F4] transition duration-300 ease-in-out transform hover:scale-110 z-50"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={28} />
