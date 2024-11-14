@@ -23,7 +23,7 @@ const EventTypesSection = () => {
     <section  id= "organizasyonlar" className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">{t('event_types_section.header')}</h2>
           <p className="text-lg text-gray-600">
           {t('event_types_section.intro_paragraph')}          </p>
