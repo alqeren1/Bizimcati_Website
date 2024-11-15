@@ -19,7 +19,7 @@ function Hero() {
 
       <div className="    w-full z-10">
         <div className="flex flex-col items-start justify-end min-h-screen text-white">
-          <div className='mb-10 xs:mb-28 md:mb-12 bg-white w-min sm:px-8 backdrop-blur-3xl bg-opacity-5 rounded-r-3xl p-4'>
+          <div className='mb-10 xs:mb-28 md:mb-20 bg-white w-min sm:px-8 backdrop-blur-3xl bg-opacity-5 rounded-r-3xl p-4'>
           <h1 className="text-xl xs:text-2xl sm:text-5xl 2xl:text-6xl whitespace-nowrap font-black  mb-2 sm:mb-8 ">
           {t('hero_section.header')}
           </h1>
