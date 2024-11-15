@@ -41,7 +41,7 @@ export default function Intro3() {
   };
 
   return (
-    <div className="container mx-auto px-4 ">
+    <div className="container mx-auto  ">
       
       <div style={{ height: "70vh", width: "100%", position:'relative', zIndex:0}}>
         <MapContainer center={position} zoom={13} style={{ height: "100%", width: "100%" }} zoomControl={false} // Disable zoom control
