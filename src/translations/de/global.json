@@ -1,0 +1,190 @@
+{
+  "navbar": {
+    "logo": "Bizim Çatı",
+    "links": ["Über uns", "Galerie", "Kontakt", "Startseite"]
+  },
+  "hero_section": {
+    "header": "Bizim Çatı Hotel & Restaurant",
+    "intro_paragraph": "Ihr Zuhause am Mogan-See mit naturnaher Atmosphäre, hochwertigem Service und köstlichem Essen",
+    "buttons": ["Reservierung", "Unsere Veranstaltungen"]
+  },
+  "event_types_section": {
+    "header": "Unsere Dienstleistungen",
+    "intro_paragraph": "Unser Restaurant ist der perfekte Veranstaltungsort für alle Arten von Events. Entdecken Sie die Dienstleistungen, die wir anbieten.",
+    "event_types": [
+      "Restaurant",
+      "Hotel",
+      "BBQ und Grill",
+      "Hochzeit im Freien",
+      "Firmenveranstaltungen",
+      "Geburtstagsfeier",
+      "Abschlussfeier",
+      "Seminare & Workshops",
+      "Sport & Unterhaltung"
+    ]
+  },
+  "location": {
+    "header": "Standort",
+    "intro": "Unser Restaurant liegt direkt am Ufer des Mogan-Sees und ist leicht erreichbar."
+  },
+
+  "about_page": {
+    "header": "Über uns",
+    "paragraphs": [
+      "Das Bizim Çatı Hotel & Restaurant befindet sich am Ufer des Mogan-Sees in Gölbaşı, einer der schönsten Gegenden Ankaras. Es ist ein Ort, an dem Sie die Schönheit der Natur zu jeder Jahreszeit genießen können, mit köstlichem Essen zu fairen Preisen, freundlichem Personal und exzellentem Service.",
+      "Zu unseren beliebten saisonalen Veranstaltungen gehören Grillabende mit heißen Würstchen und Glühwein am Lagerfeuer, Sardellen-Barbecues, Silvesterfeiern und weitere Events, die zu unserer Identität geworden sind.",
+      "Bizim Çatı bietet komfortable Zimmer für Familienaufenthalte, einen Konferenzraum für Meetings und Arbeit, ein Restaurant am See mit vielfältiger Küche sowie großzügige Veranstaltungsflächen für Hochzeiten, Zeremonien, Firmenpicknicks und andere Events. Wir bieten eine 1000-Personen-Außenfläche, umgeben von Weiden, und einen Poolbereich am See für 400 Personen, um Ihre besonderen Tage unvergesslich zu machen.",
+      "Zudem verfügen wir über Spielplätze und einen kleinen Zoo, damit auch Ihre Kinder eine tolle Zeit haben können.",
+      "Wir laden Sie ins Bizim Çatı Hotel & Restaurant ein, um einen Tag voller Wärme und Komfort zu erleben, wie zuhause."
+    ]
+  },
+
+  "gallery": {
+    "header": "Galerie",
+    "header2": "Unsere lieben Tiere",
+    "header3": "Firmenveranstaltungen",
+    "images": "Fotos",
+    "videos": "Videos",
+    "header5": "Restaurant",
+    "header4": "Unsere Gerichte",
+    "header6": "Unterkunft",
+    "header7": "Gartenrestaurant",
+    "all": "Alle",
+    "intro": "Entdecken Sie unser Restaurant in seiner natürlichsten Form."
+  },
+
+  "contact_section": {
+    "header": "Kontakt",
+    "intro_paragraph": "Für Reservierungen und Anfragen erreichen Sie uns über die folgenden Kontaktmöglichkeiten.",
+    "contact_details": {
+      "reservation_header": "Für Reservierungen",
+      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "email_header": "Unsere E-Mail-Adresse",
+      "email": "info@bizimcati.com.tr",
+      "address_header": "Unsere Adresse",
+      "address": "Ufer des Mogan-Sees, Haymana Straße, 7 km, Nr. 281, Gölbaşı",
+      "social_media_header": "Finden Sie uns in sozialen Medien",
+      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+    }
+  },
+
+  "wedding_section": {
+    "header": "Hochzeit im Freien",
+    "seeMore": "Mehr erfahren",
+    "intro_paragraph": "Bizim Çatı lädt Sie zu unvergesslichen Hochzeiten im Freien an seinem Veranstaltungsort am Ufer des Sees in Gölbaşı, Ankara, ein. Genießen Sie die romantische Atmosphäre und die natürliche Schönheit unseres Hochzeitskonzepts für den Tag Ihrer Träume.",
+    "why_choose_us_header": "Warum eine Hochzeit bei Bizim Çatı?",
+    "features": [
+      {
+        "bold": "Wunderschöne Naturkulisse",
+        "text": "Wir bieten eine geräumige Hochzeitslocation im Freien mit atemberaubender Aussicht auf den Mogan-See und die natürliche Umgebung."
+      },
+      {
+        "bold": "Einzigartige Dekorationsoptionen",
+        "text": "Wir passen die Dekoration an Ihre persönlichen Wünsche an und machen Ihre Hochzeit einzigartig."
+      },
+      {
+        "bold": "Köstliche Menüoptionen",
+        "text": "Unsere erfahrenen Köche bereiten reichhaltige Menüs zu, die Ihren Gästen ein unvergessliches kulinarisches Erlebnis bieten."
+      },
+      {
+        "bold": "Professioneller Service",
+        "text": "Unser erfahrenes Team begleitet Sie in jeder Phase, damit alles perfekt ist."
+      },
+      {
+        "bold": "Unterkunftsmöglichkeiten",
+        "text": "Mit unserem Hotel können Sie Ihre Gäste von außerhalb bequem unterbringen."
+      }
+    ],
+    "header3": "Unser Ziel",
+    "additional_paragraphs": [
+      "Bei Bizim Çatı arbeiten wir daran, die Traumhochzeit jedes Paares zu verwirklichen. Egal, ob Sie eine intime Zeremonie oder eine große Feier planen, unsere flexiblen Pakete und personalisierten Dienstleistungen erfüllen Ihre Erwartungen."
+    ],
+    "header4": "Feiern in Harmonie mit der Natur",
+    "additional_paragraphs2": [
+      "Sind Sie bereit, „Ja“ zu sagen, umgeben von Vogelgezwitscher und natürlicher Schönheit? Unser Garten bietet die perfekte Kulisse für Ihre Fotos.",
+      "Für Reservierungen und weitere Informationen"
+    ],
+    "contact_button": "Kontakt"
+  },
+  "bbq_section": {
+    "headers": [
+      "BBQ und Grill",
+      "Willkommen in der Welt des einzigartigen Barbecue-Geschmacks!",
+      "Genießen Sie den Geschmack des Grills",
+      "Der beste Ort für BBQ und Grill",
+      "Warum sollten Sie uns wählen?"
+    ],
+    "paragraphs": [
+      "Wer kann dem Geschmack von Fleisch und Gemüse, die über offenem Feuer mit dem Aroma von Rauch zubereitet werden, widerstehen? Bekannt als BBQ in Großbritannien und den USA, 'Barbie' in Australien, 'Braai' in Südafrika und 'Mangal' in der Türkei, verbindet diese traditionelle Kochkunst Kulturen mit der Magie von Feuer und Rauch. Im Bizim Çatı können Sie selbst grillen oder von uns Gerichte bestellen, um ein unvergessliches Barbecue-Erlebnis zu genießen.",
+      "Barbecue ist in der türkischen Kultur nicht nur eine Kochmethode, sondern eine Tradition, die Freundschaften stärkt und angenehme Gespräche schafft. Im Bizim Çatı halten wir diese Tradition in ihrer köstlichsten Form am Leben. Unsere speziell marinierten Gerichte werden meisterhaft über Kohlen gegrillt.",
+      "Unser Restaurant ist auf Barbecue und Grill spezialisiert und bietet Ihnen mit erfahrenen Köchen ein unvergessliches Geschmackserlebnis. Von „Do-it-yourself“-Optionen bis hin zu Gerichten, die von unseren Köchen zubereitet werden, erwartet Sie eine breite Auswahl an Grillgerichten.",
+      "Wir laden Sie ins Bizim Çatı in Gölbaşı, Ankara, ein, um die Magie von Feuer und Rauch zu erleben. Der richtige Ort für unvergessliche Momente und köstliche Genüsse!"
+    ],
+    "li_headers": [
+      "Qualität und Frische",
+      "Erfahrene Köche",
+      "Warme Atmosphäre",
+      "Breite Menüauswahl"
+    ],
+    "li_content": [
+      "Wir verwenden stets die frischesten und hochwertigsten Zutaten.",
+      "Unsere erfahrenen Köche perfektionieren den Grillgeschmack.",
+      "Eine gemütliche Umgebung, in der Sie Zeit mit Familie und Freunden genießen können.",
+      "Ein vielfältiges Menü für jeden Geschmack."
+    ]
+  },
+  "seminar_section": {
+    "header": "Seminare & Workshops",
+    "intro_paragraph": "Das Bizim Çatı in Gölbaşı, Ankara, bietet die perfekte Location für Seminare und Workshops. Mit modernen, voll ausgestatteten Konferenzräumen, professionellem Service und einer natürlichen Atmosphäre machen wir Ihre Veranstaltungen produktiv und unvergesslich.",
+    "contact_button": "Kontakt"
+  },
+  "graduation_section": {
+    "header": "Abschlussfeier",
+    "intro_paragraphs": [
+      "",
+      "Feiern Sie Ihren Abschluss in der einzigartigen Atmosphäre des Bizim Çatı. Mit natürlicher Schönheit, köstlichen Menüs, Livemusik und professionellem Service machen wir diesen Meilenstein in Ihrer Ausbildung unvergesslich."
+    ],
+    "contact_button": "Kontakt"
+  },
+  "birthday_section": {
+    "header": "Geburtstagsfeier",
+    "intro_paragraphs": [
+      "",
+      "Feiern Sie Ihren Geburtstag in der einzigartigen Atmosphäre des Bizim Çatı. Umgeben von der Natur ist unser gemütlicher Veranstaltungsort ideal, um Ihre besonderen Momente noch unvergesslicher zu machen."
+    ],
+    "header2": "Warum Bizim Çatı für Ihre Geburtstagsfeier wählen?",
+    "li_headers": [
+      "Ort in der Natur:",
+      "Individuelle Menüoptionen:",
+      "Personalisierte Organisation:",
+      "Unterhaltungsangebote:",
+      "Komfortable Unterkunft:"
+    ],
+    "li_content": [
+      "Eine frische und stilvolle Umgebung, perfekt für Feierlichkeiten.",
+      "Gourmet-Menüs, zubereitet von unseren erfahrenen Köchen.",
+      "Individuelle Dekorationen und Veranstaltungen, die auf Ihre Wünsche abgestimmt sind.",
+      "Livemusik, DJ-Auftritte und Spielbereiche für Kinder.",
+      "Unterkunftsmöglichkeiten für Gäste von außerhalb."
+    ],
+    "contact_button": "Kontakt"
+  },
+  "corporate_meeting_section": {
+    "header": [
+      "Firmenveranstaltungen",
+      "Perfekte Veranstaltungen am Mogan-See",
+      "Erfolgreiche Planung",
+      "Nahtlose Organisation",
+      "Inspirierende Atmosphäre",
+      "Machen Sie Ihr nächstes Event unvergesslich"
+    ],
+    "intro_paragraphs": [
+      "Heben Sie Ihre Geschäftstreffen auf die nächste Stufe in unserem beeindruckenden Veranstaltungsort am Mogan-See. Mit Innen- und Außenbereichen bieten wir eine einzigartige Kulisse für alle Arten von Firmenveranstaltungen.",
+      "Von Strategietreffen über Produkteinführungen bis hin zu Teambuilding-Events und Jahresfeiern – wir sind Experten für beeindruckende und unvergessliche Veranstaltungen.",
+      "Unser engagiertes Team kümmert sich bis ins kleinste Detail, damit Sie sich auf das Wesentliche – Ihr Geschäft – konzentrieren können.",
+      "Lassen Sie sich von der ruhigen Natur inspirieren, die perfekte Bedingungen für produktive und unvergessliche Firmenveranstaltungen schafft.",
+      "Beeindrucken Sie Ihre Kunden, motivieren Sie Ihr Team und feiern Sie Ihre Erfolge – machen Sie Ihre Firmenveranstaltung zu einem außergewöhnlichen Erlebnis bei uns am Mogan-See."
+    ],
+    "contact_button": "Kontakt"
+  }
+}

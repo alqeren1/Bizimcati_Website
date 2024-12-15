@@ -1,0 +1,190 @@
+{
+  "navbar": {
+    "logo": "Bizim Çatı",
+    "links": ["About Us", "Gallery", "Contact", "Home"]
+  },
+  "hero_section": {
+    "header": "Bizim Çatı Hotel & Restaurant",
+    "intro_paragraph": "Your home by Lake Mogan with a nature-filled atmosphere, quality service, and delicious food",
+    "buttons": ["Reservation", "Our Events"]
+  },
+  "event_types_section": {
+    "header": "Our Services",
+    "intro_paragraph": "Our restaurant is the perfect venue for all types of events. Discover the services we offer.",
+    "event_types": [
+      "Restaurant",
+      "Hotel",
+      "BBQ and Grill",
+      "Outdoor Wedding",
+      "Corporate Events",
+      "Birthday Party",
+      "Graduation Party",
+      "Seminars & Workshops",
+      "Sports & Entertainment"
+    ]
+  },
+  "location": {
+    "header": "Location",
+    "intro": "Our restaurant is located on the shore of Lake Mogan in an easily accessible location."
+  },
+
+  "about_page": {
+    "header": "About Us",
+    "paragraphs": [
+      "Bizim Çatı Hotel & Restaurant is located on the shore of Lake Mogan in Gölbaşı, one of the most beautiful areas of Ankara. It is a place where you can enjoy the beauty of nature in every season, delicious food at reasonable prices, friendly staff, and quality service.",
+      "Among our popular seasonal events are hot wine and grilled sausage parties around the bonfire, anchovy barbecues, New Year celebrations, and other enjoyable events that have become part of our identity.",
+      "Bizim Çatı offers comfortable rooms for family stays, a conference room for meetings and work, a lakeside restaurant with diverse cuisine, and spacious venues for organizing weddings, ceremonies, corporate picnics, and other events. We provide a 1000-person outdoor area surrounded by willow trees and a lakeside poolside area for 400 people to make your special days unforgettable.",
+      "We also have playgrounds and a small zoo to ensure your children can have a great time.",
+      "We invite you to Bizim Çatı Hotel & Restaurant for a day filled with warmth and comfort, just like home."
+    ]
+  },
+
+  "gallery": {
+    "header": "Gallery",
+    "header2": "Our Lovely Pets",
+    "header3": "Corporate Events",
+    "images": "Photos",
+    "videos": "Videos",
+    "header5": "Restaurant",
+    "header4": "Our Dishes",
+    "header6": "Accommodation",
+    "header7": "Garden Restaurant",
+    "all": "All",
+    "intro": "Explore our restaurant in its most natural state."
+  },
+
+  "contact_section": {
+    "header": "Contact",
+    "intro_paragraph": "For reservations and inquiries, you can reach us through any of the methods below.",
+    "contact_details": {
+      "reservation_header": "For Reservations",
+      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "email_header": "Our Email Address",
+      "email": "info@bizimcati.com.tr",
+      "address_header": "Our Address",
+      "address": "Lake Mogan Shore, Haymana Road 7 km, No: 281, Gölbaşı",
+      "social_media_header": "Find Us on Social Media",
+      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+    }
+  },
+
+  "wedding_section": {
+    "header": "Outdoor Wedding",
+    "seeMore": "See More",
+    "intro_paragraph": "Bizim Çatı invites you to unforgettable outdoor weddings at its lakeside venue in Gölbaşı, Ankara. Enjoy the romantic atmosphere and natural beauty of our wedding concept for the day of your dreams.",
+    "why_choose_us_header": "Why Choose Bizim Çatı for Your Wedding?",
+    "features": [
+      {
+        "bold": "Spectacular Nature Views",
+        "text": "We offer a spacious outdoor wedding setting with stunning views of Lake Mogan and its natural surroundings."
+      },
+      {
+        "bold": "Unique Decoration Options",
+        "text": "We customize the decor to suit your personal tastes, making your wedding truly unique."
+      },
+      {
+        "bold": "Delicious Menu Options",
+        "text": "Our expert chefs prepare rich menus to provide an unforgettable dining experience for your guests."
+      },
+      {
+        "bold": "Professional Service",
+        "text": "Our experienced team assists you at every stage to ensure everything is flawless."
+      },
+      {
+        "bold": "Accommodation Options",
+        "text": "With our hotel, you can comfortably accommodate guests traveling from outside the city."
+      }
+    ],
+    "header3": "Our Goal",
+    "additional_paragraphs": [
+      "At Bizim Çatı, we work to realize every couple's dream wedding. Whether you plan an intimate ceremony or a grand celebration, our flexible packages and personalized services meet your expectations."
+    ],
+    "header4": "A Celebration in Harmony with Nature",
+    "additional_paragraphs2": [
+      "Are you ready to say 'Yes' amidst the sounds of chirping birds and surrounded by natural beauty? Our garden venue provides the perfect backdrop for your photos.",
+      "For reservations and detailed information"
+    ],
+    "contact_button": "Contact"
+  },
+  "bbq_section": {
+    "headers": [
+      "BBQ and Grill",
+      "Welcome to the Unique Flavors of Barbecue!",
+      "Enjoy the Taste of the Grill",
+      "The Best Place for BBQ and Grill",
+      "Why Choose Us?"
+    ],
+    "paragraphs": [
+      "Who can resist the taste of meats and vegetables cooked over an open fire with the aroma of smoke? Known as BBQ in the UK and USA, 'barbie' in Australia, 'braai' in South Africa, and 'mangal' in Turkey, this traditional cooking style unites cultures with the magic of fire and smoke. At Bizim Çatı, you can either cook yourself or order from us for an unforgettable barbecue experience.",
+      "Barbecue is not just a cooking method in Turkish culture; it is a tradition that strengthens friendships and creates enjoyable conversations. At Bizim Çatı, we keep this tradition alive in its most delicious form. Our specially marinated dishes are expertly grilled over coal.",
+      "Our restaurant specializes in barbecue and grill with expert chefs to provide you with an unforgettable taste experience. From 'do-it-yourself' options to dishes prepared by our chefs, we offer a wide variety of grilled flavors.",
+      "We invite you to Bizim Çatı in Gölbaşı, Ankara, for a magical experience of fire and smoke. The right place for unforgettable moments and amazing flavors!"
+    ],
+    "li_headers": [
+      "Quality and Freshness",
+      "Expert Chefs",
+      "Warm Atmosphere",
+      "Wide Menu Selection"
+    ],
+    "li_content": [
+      "We always use the freshest and highest-quality ingredients.",
+      "Our experienced chefs perfect the flavor of the grill.",
+      "A cozy environment where you can enjoy time with family and friends.",
+      "A diverse menu to suit all tastes."
+    ]
+  },
+  "seminar_section": {
+    "header": "Seminars & Workshops",
+    "intro_paragraph": "Located in the serene nature of Gölbaşı, Ankara, Bizim Çatı offers the perfect venue for seminars and workshops. With modern, fully-equipped conference rooms, professional service, and a natural atmosphere, we make your events productive and memorable.",
+    "contact_button": "Contact"
+  },
+  "graduation_section": {
+    "header": "Graduation Party",
+    "intro_paragraphs": [
+      "",
+      "Celebrate your graduation in the unique atmosphere of Bizim Çatı. With natural beauty, delicious menus, live music, and professional service, we make this milestone in your educational journey unforgettable."
+    ],
+    "contact_button": "Contact"
+  },
+  "birthday_section": {
+    "header": "Birthday Party",
+    "intro_paragraphs": [
+      "",
+      "Celebrate your birthday in the unique atmosphere of Bizim Çatı. Surrounded by nature, our cozy venue is perfect for making your special moments even more memorable."
+    ],
+    "header2": "Why Choose Bizim Çatı for Your Birthday Party?",
+    "li_headers": [
+      "Nature-Inspired Venue:",
+      "Special Menu Options:",
+      "Personalized Organization:",
+      "Entertainment Options:",
+      "Comfortable Accommodation:"
+    ],
+    "li_content": [
+      "A fresh and stylish environment perfect for celebrations.",
+      "Gourmet menus prepared by our expert chefs.",
+      "Personalized decorations and events tailored to your preferences.",
+      "Live music, DJ performances, and play areas for children.",
+      "Accommodation options for guests traveling from afar."
+    ],
+    "contact_button": "Contact"
+  },
+  "corporate_meeting_section": {
+    "header": [
+      "Corporate Events",
+      "Perfect Events by Lake Mogan",
+      "Planning for Success",
+      "Seamless Organization",
+      "Inspiring Atmosphere",
+      "Make Your Next Event Unforgettable"
+    ],
+    "intro_paragraphs": [
+      "Take your business meetings to the next level in our stunning lakeside venue by Lake Mogan. With indoor and outdoor areas, we offer a unique setting for all kinds of corporate events.",
+      "From strategy sessions to product launches, team-building activities, and annual celebrations, we specialize in creating impressive and memorable events.",
+      "Our dedicated team handles every detail meticulously, allowing you to focus on what matters most—your business.",
+      "Let the serene nature inspire your team and provide the perfect setting for productive and unforgettable corporate events.",
+      "Impress your clients, motivate your team, and celebrate your achievements—turn your corporate event into an extraordinary experience at our Lake Mogan venue."
+    ],
+    "contact_button": "Contact"
+  }
+}

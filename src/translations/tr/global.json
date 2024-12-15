@@ -1,0 +1,191 @@
+{
+  "navbar": {
+    "logo": "Bizim Çatı",
+    "links": ["Hakkımızda", "Galeri", "İletişim", "Anasayfa"]
+  },
+  "hero_section": {
+    "header": "Bizim Çatı Otel & Restoran",
+    "intro_paragraph": "Doğayla iç içe atmosferi, kaliteli hizmeti ve lezzetli yemekleriyle Mogan gölündeki eviniz",
+    "buttons": ["Rezervasyon", "Organizasyonlarımız"]
+  },
+  "event_types_section": {
+    "header": "Hizmetlerimiz",
+    "intro_paragraph": "Restoranımız her türlü etkinlik için mükemmel bir mekandır. Sizin için sunduğumuz hizmetleri keşfedin.",
+    "event_types": [
+      "Restoran",
+      "Otel",
+      "BBQ ve Mangal",
+      "Kır Düğünü",
+
+      "Şirket Organizasyonu",
+      "Doğum Günü Partisi",
+      "Mezuniyet Partisi",
+      "Seminer & Workshop",
+      "Spor & Eğlence"
+    ]
+  },
+  "location": {
+    "header": "Lokasyon",
+    "intro": "Restoranımız, Mogan Gölü'nün kıyısında kolay ulaşılabilir bir lokasyonda servis vermektedir."
+  },
+
+  "about_page": {
+    "header": "Hakkımızda",
+    "paragraphs": [
+      "Bizim Çatı Hotel Restorant, Ankara’nın en güzel yerlerinden biri olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli yemekleri ve makul fiyatlarıyla, güler yüzlü personeli ve kaliteli servisi ile hoş zaman geçirebileceğiniz bir mekândır.",
+      "Ayrıca dönemsel olarak yapılan ve oldukça beğeni toplayan çoban ateşi etrafında sucuk ızgara sıcak şarap partileri, hamsi barbekü partileri, yılbaşı eğlenceleri vb. etkinlikler işletme ile özdeşleşmiş keyifli ve unutulmaz etkinliklerinden bazılarıdır.",
+      "Bizim Çatı Hotel Restoran, ailenizle birlikte huzur ve güvenle konaklayabileceğiniz odaları, toplantılarınız ve iş çalışmalarınız için kullanabileceğiniz toplantı salonu, farklı lezzetlerin sunulduğu gölün kıyısında ki restoranıyla, düğün, nişan, sünnet düğünü, toplu yemek, şirket piknikleri vb. etkinlikleri düzenleyebileceğiniz salkım söğüt ve diğer ağaçlarla bezeli bin kişilik kır alanı ve gölün kıyısında yer alan dört yüz kişilik havuz başı alanı ile özel günlerinizin unutulmaz anılara dönüşmesi yönünde ki tecrübesi ve servis kalitesi ile sizlerin hizmetindedir.",
+      "Bizim Çatı Hotel Restoran, açık ve kapalı oyun alanları ve mini hayvanat bahçesi ile çocuklarınızın da keyifli zaman geçirebilmesi için gerekli donanıma sahiptir.",
+      "Evinizin sıcaklığını ve rahatlığını aratmayacak güzel bir gün için sizleri de Bizim Çatı Hotel Restorana bekliyoruz."
+    ]
+  },
+
+  "gallery": {
+    "header": "Galeri",
+    "header2": "Sevimli Dostlarımız",
+    "header3": "Şirket Organizasyonları",
+    "images": "Fotoğraflar",
+    "videos": "Videolar",
+    "header5": "Restoran",
+    "header4": "Yemeklerimiz",
+    "header6": "Konaklama",
+    "header7": "Bahçe Restoran",
+    "all": "Hepsi",
+    "intro": "Restoranımızı en doğal haliyle keşfedin."
+  },
+
+  "contact_section": {
+    "header": "İletişim",
+    "intro_paragraph": "Rezervasyonlarınız ve talepleriniz için, bize aşağıdaki yöntemlerden herhangi biriyle ulaşabilirsiniz.",
+    "contact_details": {
+      "reservation_header": "Rezervasyonlarınız İçin",
+      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "email_header": "E-posta Adresimiz",
+      "email": "info@bizimcati.com.tr",
+      "address_header": "Adresimiz",
+      "address": "Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı",
+      "social_media_header": "Sosyal Medyada Biz",
+      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+    }
+  },
+
+  "wedding_section": {
+    "header": "Kır Düğünü",
+    "seeMore": "Daha Fazlasını Gör",
+    "intro_paragraph": "Bizim Çatı'da Hayallerinizi Süsleyen Kır Düğünleri Ankara'nın incisi Gölbaşı'nda yer alan Bizim Çatı Restoran & Otel, doğanın eşsiz güzellikleriyle çevrili mekânında, hayatınızın en özel gününü unutulmaz kılmak için sizleri bekliyor. Kır düğünü konseptimizin sunduğu romantik ve doğal atmosferde, sevdiklerinizle birlikte masal gibi bir düğün deneyimi yaşayabilirsiniz.",
+    "why_choose_us_header": "Neden Bizim Çatı Kır Düğünü?",
+    "features": [
+      {
+        "bold": "Muhteşem Doğa Manzarası",
+        "text": "Gölbaşı'nın eşsiz göl ve doğa manzarası eşliğinde, açık havada ferah bir düğün ortamı sunuyoruz."
+      },
+      {
+        "bold": "Özel Dekorasyon Seçenekleri",
+        "text": "Kişisel zevklerinize uygun dekorasyon alternatifleriyle düğününüzü tamamen size özel hale getiriyoruz."
+      },
+      {
+        "bold": "Lezzetli Menü Seçenekleri",
+        "text": "Usta şeflerimizin hazırladığı zengin menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz."
+      },
+      {
+        "bold": "Profesyonel Hizmet Anlayışı",
+        "text": "Deneyimli ekibimiz, organizasyonun tüm aşamalarında yanınızda olarak her detayın kusursuz olmasını sağlıyor."
+      },
+      {
+        "bold": "Konaklama İmkanı",
+        "text": "Otelimizde sunduğumuz konaklama seçenekleriyle şehir dışından gelen misafirlerinizi rahat ettirebilirsiniz."
+      }
+    ],
+    "header3": "Hedefimiz",
+    "additional_paragraphs": [
+      "Bizim Çatı olarak, her çiftin hayalini kurduğu düğünü gerçekleştirmek için çalışıyoruz. İster samimi bir tören, ister görkemli bir kutlama planlayın; esnek paket seçeneklerimiz ve kişiselleştirilmiş hizmetlerimizle beklentilerinizi karşılıyoruz."
+    ],
+    "header4": "Doğayla İç İçe Bir Kutlama",
+    "additional_paragraphs2": [
+      "Kuş cıvıltıları, hafif esen bir rüzgâr ve doğanın tüm renkleriyle bezenmiş bir ortamda \"Evet\" demeye hazır mısınız? Kır bahçemiz, geniş alanı ve doğal güzelliğiyle fotoğraflarınıza da eşsiz bir fon oluşturacak.",
+      "Rezervasyon ve Detaylı Bilgi İçin"
+    ],
+    "contact_button": "İletişim"
+  },
+  "bbq_section": {
+    "headers": [
+      "BBQ ve Mangal",
+      "Barbekünün ve Mangalın Eşsiz Lezzetlerine Hoş Geldiniz!",
+      "Mangalın Tadını Çıkarın",
+      "Barbekü ve Mangalın En İyi Adresi",
+      "Neden Bizi Tercih Etmelisiniz?"
+    ],
+    "paragraphs": [
+      "Canlı ateşin başında, mis gibi duman kokuları eşliğinde pişen etlerin ve sebzelerin tadına kim hayır diyebilir? Dünyanın dört bir yanında farklı isimlerle anılan bu eşsiz pişirme yöntemi, İngiltere ve ABD'de 'BBQ', Avustralya'da 'barbie', Güney Afrika'da 'braai' ve bizim kültürümüzde 'mangal' olarak bilinir. Her kültürün kendine özgü barbekü ve mangal gelenekleri vardır, ancak hepsinin ortak noktası ateşin ve dumanın büyüsüdür. Ankara'nın Gölbaşı ilçesinde yer alan Bizim Çatı, ister kendiniz pişirerek ister doğrudan bizden sipariş vererek unutulmaz bir mangal deneyimi yaşamanız için en iyi yerlerden biri olmasıyla meşhurdur.",
+      "Mangal, Türk kültüründe sadece bir pişirme yöntemi değil, aynı zamanda dostlukların pekiştiği, keyifli sohbetlerin yapıldığı bir gelenektir. Bizim Çatı'da bu geleneği en lezzetli haliyle yaşatıyoruz. Özel marinasyonlarla hazırlanan etlerimiz, kömür ateşinde ustalıkla pişirilerek sizlere sunulur. İster klasik kebaplarımızı deneyin, ister ızgara sebzelerimizin tadına bakın; mangalın vazgeçilmez lezzetlerini keşfedin.",
+      "Restoranımız, barbekü ve mangal konusunda uzmanlaşmış şefleriyle sizlere unutulmaz bir lezzet deneyimi sunuyor. Açık havada pişirilen yemeklerimiz, hem göze hem damağa hitap ediyor. Kendin pişir kendin ye seçeneği ile, ister siz ister uzman şeflerimiz tarafından sıcak kömürlerin üzerinde ızgara edilmiş lezzetlerle dolu geniş bir menü sizi bekliyor.",
+      "Siz de ateşin ve dumanın büyülü dünyasında eşsiz bir lezzet yolculuğuna çıkmak isterseniz, Gölbaşı, Ankara'daki Bizim Çatı'ya davetlisiniz. Unutulmaz anlar ve damak çatlatan tatlar için doğru adres!"
+    ],
+    "li_headers": [
+      "Kalite ve Tazelik",
+      "Usta Şefler",
+      "Sıcak Atmosfer",
+      "Geniş Menü"
+    ],
+    "li_content": [
+      "Her zaman en taze ve kaliteli malzemeleri kullanıyoruz.",
+      "Barbekü ve mangal konusunda deneyimli şeflerimizle mükemmel lezzeti yakalayın.",
+      "Aileniz ve arkadaşlarınızla keyifli vakit geçirebileceğiniz samimi bir ortam sunuyoruz.",
+      "Farklı damak zevklerine hitap eden zengin barbekü ve mangal seçenekleri."
+    ]
+  },
+  "seminar_section": {
+    "header": "Seminer & Workshop",
+    "intro_paragraph": "Ankara Gölbaşı'nın huzur veren doğası içinde bulunan Bizim Çatı Restoran & Otel, seminer ve workshop etkinlikleriniz için mükemmel bir mekân sunuyor. Modern ve tam donanımlı toplantı salonlarımız, profesyonel hizmet anlayışımız ve doğayla iç içe atmosferimizle, iş etkinliklerinizi verimli ve unutulmaz kılıyoruz.",
+    "contact_button": "İletişim"
+  },
+  "graduation_section": {
+    "header": "Mezuniyet Kutlaması",
+    "intro_paragraphs": [
+      "",
+      "Mezuniyet kutlamalarınızı Bizim Çatı'nın eşsiz atmosferinde gerçekleştirin. Ankara Gölbaşı'nın eşsiz doğası içinde yer alan Bizim Çatı Restoran & Otel, mezuniyet kutlamalarınız için ideal bir mekân sunuyor. Doğayla iç içe atmosferimizde lezzetli menüler, canlı müzik ve profesyonel hizmet anlayışımızla, eğitim hayatınızın bu önemli dönüm noktasını sevdiklerinizle birlikte unutulmaz kılabilirsiniz."
+    ],
+    "contact_button": "İletişim"
+  },
+  "birthday_section": {
+    "header": "Doğum Günü Partisi",
+    "intro_paragraphs": [
+      "",
+      "Doğum Günü Kutlamalarınızı Bizim Çatı'nın Eşsiz Atmosferinde Kutlayın. Ankara Gölbaşı'nın huzur dolu doğasında yer alan Bizim Çatı Restoran & Otel, sevdiklerinizle birlikte unutulmaz doğum günü partilerine ev sahipliği yapıyor. Doğanın içinde, sıcak ve samimi bir ortamda özel günlerinizi taçlandırmak için mükemmel bir mekân arıyorsanız doğru yerdesiniz."
+    ],
+    "header2": "Neden Doğum Günü Partiniz İçin Bizim Çatı'yı Seçmelisiniz?",
+    "li_headers": [
+      "Doğayla İç İçe Mekân:",
+      "Özel Menü Alternatifleri:",
+      "Kişiye Özel Organizasyon:",
+      "Eğlence Seçenekleri:",
+      "Konforlu Konaklama:"
+    ],
+    "li_content": [
+      "Yeşillikler arasında, ferah ve şık bir ortamda hem çocuklar hem de yetişkinler için ideal bir kutlama alanı sunuyoruz.",
+      "Usta şeflerimizin hazırladığı lezzetli ve çeşitli menülerle misafirlerinize gastronomik bir şölen yaşatıyoruz.",
+      "İsteklerinize göre şekillenen dekorasyon ve etkinliklerle doğum günü partinizi benzersiz hale getiriyoruz.",
+      "Canlı müzik, DJ performansı ve çocuklar için oyun alanları gibi farklı eğlence alternatifleriyle partinizi renklendiriyoruz.",
+      "Otelimizde sunulan konaklama imkânlarıyla şehir dışından gelen misafirlerinizi rahat ettiriyoruz."
+    ],
+    "contact_button": "İletişim"
+  },
+  "corporate_meeting_section": {
+    "header": [
+      "Şirket Organizasyonları",
+      "Mogan Gölü'nde Kusursuz Etkinlikler",
+      "Başarı İçin Özel Planlama",
+      "Sorunsuz Planlama, Kusursuz Uygulama",
+      "İlham Veren Bir Ortam",
+      "Bir Sonraki Etkinliğinizi Unutulmaz Kılın"
+    ],
+    "intro_paragraphs": [
+      "İş toplantılarınızı, profesyonellik ile doğal güzelliklerin buluştuğu etkileyici göl kenarı mekanımızda bir üst seviyeye taşıyın. Kapalı ve açık alanlarımızla Mogan Gölü'nün büyüleyici manzarasına karşı, her türden kurumsal etkinlik için eşsiz ve ilham verici bir ortam sunuyoruz.",
+      "Strateji toplantılarından ürün lansmanlarına, ekip oluşturma etkinliklerinden yıllık kutlamalara kadar, etkileyici ve unutulmaz organizasyonlar düzenlemede uzmanız. Modern donanımlarla ve esnek düzenleme seçenekleriyle donatılmış mekanlarımız, her boyuttaki gruba uygun çözümler sunarak tüm detayların hedeflerinize uygun olmasını sağlar.",
+      "Özel etkinlik ekibimiz, sizin en önemli şeylere—işinize—odaklanabilmeniz için her detayı titizlikle ele alır. Özenle hazırlanan menülerden son teknoloji AV kurulumlarına, kişiselleştirilmiş dekorasyonlardan ilgi çekici aktivitelere kadar etkinliğinizin kusursuz ve şık bir şekilde gerçekleştirilmesini sağlıyoruz.",
+      "Geleneksel toplantı odalarından sıyrılın ve Mogan Gölü'nün huzurlu atmosferiyle ekibinizi motive edin. Sakin doğası, yaratıcılığı, iş birliğini ve bağlantıyı destekleyerek verimli ve unutulmaz kurumsal etkinlikler için mükemmel bir zemin hazırlar.",
+      "Müşterilerinizi etkileyin, ekibinizi motive edin ve başarılarınızı kutlayın—markanızın mükemmelliğini yansıtan bir etkinlikle fark yaratın. Mogan Gölü'ndeki mekanımızda, kurumsal etkinliklerinizi sıra dışı deneyimlere dönüştürüyoruz."
+    ],
+    "contact_button": "İletişim"
+  }
+}

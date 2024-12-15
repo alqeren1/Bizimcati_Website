@@ -1,0 +1,62 @@
+/* General button styles */
+.custom-lightbox .yarl__button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Ensure the center alignment */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above other elements */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  transform-origin: center; /* Scale from the center */
+}
+
+/* Close button (X) */
+.custom-lightbox
+  .yarl__button:not(.yarl__navigation_prev):not(.yarl__navigation_next) {
+  top: 20px; /* Adjust position from the top */
+  right: 20px; /* Adjust position from the right */
+  transform: none; /* Reset transform for close button */
+  transform-origin: center; /* Ensure scaling from center */
+}
+
+/* Icon size for the close button */
+.custom-lightbox
+  .yarl__button:not(.yarl__navigation_prev):not(.yarl__navigation_next)
+  .yarl__icon {
+  width: 40px; /* Set icon width */
+  height: 40px; /* Set icon height */
+  fill: white; /* Set icon color */
+}
+
+/* Previous button styles */
+.custom-lightbox .yarl__navigation_prev {
+  left: 51px; /* Adjust position from the left */
+}
+
+/* Next button styles */
+.custom-lightbox .yarl__navigation_next {
+  right: -33px; /* Adjust position from the right */
+}
+
+/* Navigation button icon sizes */
+.custom-lightbox .yarl__navigation_prev .yarl__icon,
+.custom-lightbox .yarl__navigation_next .yarl__icon {
+  width: 50px; /* Set icon width */
+  height: 50px; /* Set icon height */
+  fill: white; /* Set icon color */
+}
+
+/* Hover effect for all buttons */
+.custom-lightbox .yarl__button:hover {
+  transform: translate(-50%, -50%) scale(1.2); /* Scale up from center */
+}
+/* Style for images inside the lightbox */
+.custom-lightbox .yarl__slide img {
+  border-radius: 1.5rem; /* Rounded corners */
+  object-fit: contain; /* Ensure the image scales properly */
+  max-width: 100%; /* Make sure the image does not overflow */
+  max-height: 100%; /* Prevent it from stretching too much */
+  display: block;
+  margin: auto; /* Center the image */
+}
