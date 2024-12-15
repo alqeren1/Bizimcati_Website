@@ -154,19 +154,30 @@ const GalleryPage = () => {
       case "wedding":
         media = weddingMedia;
         break;
-      case "hotel": // Should never reach here due to redirection in useEffect
+      case "hotel":
         media = hotelMedia;
         break;
       case "companyEvents":
         media = companyEventsMedia;
         break;
       default:
-        media = generalMedia; // Fallback to default tab content
+        media = generalMedia;
     }
-    if (mediaType === "images") return media.filter((m) => m.type === "image");
-    if (mediaType === "videos") return media.filter((m) => m.type === "video");
-    return media;
+  
+    // Check if videos exist in the entire media list (persistent across filters)
+    const hasVideos = media.some((m) => m.type === "video");
+  
+    // Filter media based on the selected mediaType
+    if (mediaType === "images") {
+      media = media.filter((m) => m.type === "image");
+    } else if (mediaType === "videos") {
+      media = media.filter((m) => m.type === "video");
+    }
+  
+    return { media, hasVideos };
   };
+  
+  
 
   const openLightbox = (idx) => {
     setIndex(idx);
@@ -194,89 +205,101 @@ const GalleryPage = () => {
           <div className="container mt-10 mx-auto px-4 h-full">
             {/* Tab Headers */}
             <div className="flex overflow-x-auto space-x-6 mb-2 border-b pb-2">
-              {[
-                { id: "general", label: t("gallery.header") },
-                { id: "restaurant", label: t("gallery.header5") },
-                { id: "gardenRestaurant", label: t("gallery.header7") },
-                { id: "yemek", label: t("gallery.header4") },
-                { id: "animals", label: t("gallery.header2") },
-                { id: "wedding", label: t("wedding_section.header") },
-                { id: "hotel", label: t("gallery.header6") },
-                { id: "companyEvents", label: t("gallery.header3") },
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  className={`px-6 py-2 text-lg text-left font-bold ${
-                    currentTab === tab.id
-                      ? "border-b-4 border-blue-500 text-blue-500"
-                      : "text-gray-600 hover:text-blue-500"
-                  }`}
-                  onClick={() => setCurrentTab(tab.id)}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+  {[
+    { id: "general", label: t("gallery.header") },
+    { id: "restaurant", label: t("gallery.header5") },
+    { id: "gardenRestaurant", label: t("gallery.header7") },
+    { id: "yemek", label: t("gallery.header4") },
+    { id: "animals", label: t("gallery.header2") },
+    { id: "wedding", label: t("wedding_section.header") },
+    { id: "hotel", label: t("gallery.header6") },
+    { id: "companyEvents", label: t("gallery.header3") },
+  ].map((tab) => (
+    <button
+      key={tab.id}
+      className={`px-6 py-2 text-lg text-left font-bold ${
+        currentTab === tab.id
+          ? "border-b-4 border-blue-500 text-blue-500"
+          : "text-gray-600 hover:text-blue-500"
+      }`}
+      onClick={() => {
+        setCurrentTab(tab.id);
+        setMediaType("all"); // Reset mediaType to "all" on tab change
+      }}
+    >
+      {tab.label}
+    </button>
+  ))}
+</div>
 
-            {/* Media Type Filter */}
-            <div className="flex text-md justify-center space-x-2 xs:space-x-6 mb-2">
-              {[
-                { id: "all", label: t("gallery.all") },
-                { id: "images", label: t("gallery.images") },
-                { id: "videos", label: t("gallery.videos") },
-              ].map((filter) => (
-                <button
-                  key={filter.id}
-                  className={`px-4 py-2 rounded-lg ${
-                    mediaType === filter.id
-                      ? "text-blue-500 hover:bg-gray-100"
-                      : "text-gray-600 hover:bg-gray-100"
-                  }`}
-                  onClick={() => setMediaType(filter.id)}
-                >
-                  {filter.label}
-                </button>
-              ))}
-            </div>
 
-            {/* Tab Content */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {getCurrentTabMedia().length > 0 ? (
-                getCurrentTabMedia().map((media, idx) => (
-                  <div
-                    key={media.src}
-                    className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
-                    onClick={() => openLightbox(idx)}
-                  >
-                    {media.type === "image" ? (
-                      <img
-                        src={media.thumbnail || media.src}
-                        alt={media.alt}
-                        loading="lazy"
-                        className="w-full h-64 object-cover"
-                      />
-                    ) : (
-                      <>
-                        <video
-                          src={media.src}
-                          className="w-full h-64 object-cover"
-                          muted
-                          playsInline
-                          poster={media.thumbnail || "/path/to/your/poster.jpg"}
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <FaRegPlayCircle className="text-white w-12 h-12 bg-black bg-opacity-50 rounded-full" />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))
-              ) : (
-                <p className="col-span-full text-center text-gray-600">
-                  {t("gallery.no_media_available")}
-                </p>
-              )}
+           {/* Media Type Filter */}
+           {getCurrentTabMedia().hasVideos && (
+  <div className="flex text-md justify-center space-x-2 xs:space-x-6 mb-2">
+    {[
+      { id: "all", label: t("gallery.all") },
+      { id: "images", label: t("gallery.images") },
+      { id: "videos", label: t("gallery.videos") },
+    ].map((filter) => (
+      <button
+        key={filter.id}
+        className={`px-4 py-2 rounded-lg ${
+          mediaType === filter.id
+            ? "text-blue-500 hover:bg-gray-100"
+            : "text-gray-600 hover:bg-gray-100"
+        }`}
+        onClick={() => setMediaType(filter.id)}
+      >
+        {filter.label}
+      </button>
+    ))}
+  </div>
+)}
+
+
+{/* Tab Content */}
+<div
+  className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
+    getCurrentTabMedia().hasVideos ? "mt-2" : "mt-4"
+  }`}
+>
+  {getCurrentTabMedia().media.length > 0 ? (
+    getCurrentTabMedia().media.map((media, idx) => (
+      <div
+        key={media.src}
+        className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+        onClick={() => openLightbox(idx)}
+      >
+        {media.type === "image" ? (
+          <img
+            src={media.thumbnail || media.src}
+            alt={media.alt}
+            loading="lazy"
+            className="w-full h-64 object-cover"
+          />
+        ) : (
+          <>
+            <video
+              src={media.src}
+              className="w-full h-64 object-cover"
+              muted
+              playsInline
+              poster={media.thumbnail || "/path/to/your/poster.jpg"}
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <FaRegPlayCircle className="text-white w-12 h-12 bg-black bg-opacity-50 rounded-full" />
             </div>
+          </>
+        )}
+      </div>
+    ))
+  ) : (
+    <p className="col-span-full text-center text-gray-600">
+      {t("gallery.no_media_available")}
+    </p>
+  )}
+</div>
+
           </div>
         </section>
       </div>
@@ -287,7 +310,7 @@ const GalleryPage = () => {
           open={open}
           index={index}
           close={closeLightbox}
-          slides={getCurrentTabMedia().map((media) => ({
+          slides={getCurrentTabMedia().media.map((media) => ({
             src: media.src,
             type: media.type,
             content:
