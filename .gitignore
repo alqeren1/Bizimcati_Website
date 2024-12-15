@@ -27,3 +27,4 @@ dist-ssr
 *.sw?
 .env
 src/keys.env
+public/weddingimg/*.mp4
