@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.txt)
 
-This is a modern, responsive website developed for a hotel/restaurant client. Built with React, Vite, and Tailwind CSS, the site supports 4 languages to effectively cater to a diverse audience. Visit the live website at [bizimcati.com.tr](https://bizimcati.com.tr).
+This is a modern, responsive website developed for a hotel/restaurant client. Built with React, Vite and Tailwind CSS, the site supports 4 languages to effectively cater to a diverse audience. Visit the live website at [bizimcati.com.tr](https://bizimcati.com.tr).
 
 ## Overview
 
