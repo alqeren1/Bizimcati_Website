@@ -7,6 +7,8 @@ import EventTypesSection from './Events';
 import Footer from './Footer';
 import Intro from './Maps';
 import Intro3 from './openMap';
+import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -17,7 +19,17 @@ function HomePage(){
         i18n.changeLanguage(lng);
       };
 
-    return(<div className='bg-gray-100'>
+    return(
+      <>
+    <Helmet>
+        <title>Bizim Çatı Otel & Restoran</title>
+        <meta
+          name="description"
+          content="Bizim Çatı Otel & Restoran, Ankara’nın en güzel yerlerinden biri olan Gölbaşı Mogan Gölü kıyısında, her mevsim farklı güzelliklerin yaşandığı, doğa ile iç içe olan, lezzetli yemekleri ve makul fiyatları, güler yüzlü personeli ve kaliteli servisi ile size ve ailenize mükemmel bir haftasonu kaçamağı sunar."
+        />
+      </Helmet>
+      
+    <div className='bg-gray-100'>
       <Navbar/>
     <div className="min-h-screen">
        <Hero></Hero>
@@ -29,7 +41,7 @@ function HomePage(){
     </div>
     <HomeCarousel/>
       <Footer/>
-    </div>);
+    </div></>);
 }
 
 export default HomePage
