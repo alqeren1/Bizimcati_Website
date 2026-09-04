@@ -53,18 +53,18 @@ function Footer() {
                 className="items-center  text-white  transition duration-300 hover:text-blue-400   cursor-pointer flex"
                 href="mailto:info@bizimcati.com.tr"
               >
-                <a href="" className=" ">
+                <div href="" className=" ">
                   <FaEnvelope size={32} />
-                </a>
+                </div>
                 <div className="ml-2  font-semibold text-lg">
                   {" "}
                   info@bizimcati.com
                 </div>
               </a>
               <a className="items-center  mt-4 text-white   flex">
-                <a className=" ">
+                <div className=" ">
                   <FaPhoneAlt size={32} />
-                </a>
+                </div>
                 <div className="ml-2  font-semibold text-lg">
                   <div className=" ">+90 312 498 2121</div>
                   <div className="">+90 555 800 9261</div>
@@ -112,18 +112,18 @@ function Footer() {
                 className="items-center  text-white  transition duration-300 hover:text-blue-400   cursor-pointer flex"
                 href="mailto:info@bizimcati.com.tr"
               >
-                <a href="" className=" ">
+                <div href="" className=" ">
                   <FaEnvelope size={24} />
-                </a>
+                </div>
                 <div className="ml-2  font-semibold text-md">
                   {" "}
                   info@bizimcati.com
                 </div>
               </a>
               <a className="items-center  mt-4 text-white   flex">
-                <a className=" ">
+                <div className=" ">
                   <FaPhoneAlt size={24} />
-                </a>
+                </div>
                 <div className="ml-2  font-semibold text-md">
                   <div className=" ">+90 312 498 2121</div>
                   <div className="">+90 555 800 9261</div>

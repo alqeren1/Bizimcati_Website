@@ -1,68 +1,180 @@
 "use client";
 
-import { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import { useTranslation } from 'react-i18next';
+import { useEffect } from "react";
+import { MapContainer, Marker, useMap } from "react-leaflet";
 
+import * as L from "leaflet";
+import { maplibreGL } from "@maplibre/maplibre-gl-leaflet";
 
-// Path to your custom icon image
-const customIconUrl = '/images/pin.png';  // Adjust this path as necessary
-const createCustomMarkerIcon = () => {
-    return L.divIcon({
-        html: `<div style="position: relative; display: flex; align-items: center;">
-        <img src="/images/pin.png" style="height: 41px;"/>
-        <span style="position: absolute; left: 100%; margin-left: 8px; white-space: nowrap; font-size: 13px; color: red;">
-          Club Bizim Çatı<br>Hotel &amp; Restaurant
-        </span>
-       </div>`,
-      iconSize: [25, 41], // Original icon size
-      iconAnchor: [12, 41], // Original anchor position
-      className: '', // This removes extra styling to make your custom style work
-      popupAnchor: [1, -34],
+import "leaflet/dist/leaflet.css";
+import "maplibre-gl/dist/maplibre-gl.css";
+
+// --------------------------------------------------
+// OPENFREEMAP BRIGHT BACKGROUND
+// --------------------------------------------------
+
+function OpenFreeMapLayer() {
+  const map = useMap();
+
+  useEffect(() => {
+    const layer = maplibreGL({
+      style: "https://tiles.openfreemap.org/styles/bright",
+      interactive: false,
     });
-  };
-// Creating a custom Leaflet icon
-const customIcon = new L.Icon({
-  iconUrl: customIconUrl,
-  iconSize: [25, 41], // Size of the icon
-  iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
-  popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
-});
+
+    layer.addTo(map);
+
+    return () => {
+      map.removeLayer(layer);
+    };
+  }, [map]);
+
+  return null;
+}
+
+// --------------------------------------------------
+// REMOVE "LEAFLET" FROM ATTRIBUTION
+// --------------------------------------------------
+
+function CleanAttribution() {
+  const map = useMap();
+
+  useEffect(() => {
+    if (map.attributionControl) {
+      map.attributionControl.setPrefix(false);
+    }
+  }, [map]);
+
+  return null;
+}
+
+// --------------------------------------------------
+// CUSTOM MARKER
+// --------------------------------------------------
+
+const createCustomMarkerIcon = () => {
+  return L.divIcon({
+    html: `
+      <div style="
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        padding: 8px;
+        border-radius: 8px;
+        white-space: nowrap;
+      ">
+        <img
+          src="/images/pin.png"
+          style="
+            height: 41px;
+            width: auto;
+            margin-right: 8px;
+            display: block;
+          "
+        />
+
+        <span style="
+          font-size: 13px;
+          line-height: 1.4;
+          color: red;
+          white-space: nowrap;
+        ">
+          Club Bizim Çatı<br>
+          Hotel &amp; Restaurant
+        </span>
+      </div>
+    `,
+
+    iconSize: [25, 41],
+
+    // Pin tip remains on the same geographic point.
+    iconAnchor: [20, 49],
+
+    className: "",
+    popupAnchor: [1, -34],
+  });
+};
+
+// --------------------------------------------------
+// COMPONENT
+// --------------------------------------------------
 
 export default function Intro3() {
+  // MAP POSITION — UNCHANGED
   const position = [39.781564441858706, 32.78885615110678];
-  const pinPosition = [39.75723059753641, 32.78333838512227]; // Leaflet uses an array of [lat, lng]
-  const [open, setOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+
+  // PIN POSITION — UNCHANGED
+  const pinPosition = [39.75723059753641, 32.78333838512227];
+
   const handleMarkerClick = () => {
-    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=Club+Bizim+Çatı+Hotel+&+Restaurant,Gölbaşı,Ankara`;
-    window.open(googleMapsUrl, "_blank"); // Opens Google Maps in a new tab
+    const googleMapsUrl =
+      "https://www.google.com/maps/dir/?api=1&destination=Club+Bizim+Çatı+Hotel+%26+Restaurant,Gölbaşı,Ankara";
+
+    window.open(googleMapsUrl, "_blank");
   };
 
   return (
-    <div className="container mx-auto  ">
-      
-      <div style={{ height: "70vh", width: "100%", position:'relative', zIndex:0}}>
-        <MapContainer center={position} zoom={13} style={{ height: "100%", width: "100%" }} zoomControl={false} // Disable zoom control
-                      scrollWheelZoom={false} // Prevent scrolling zoom
-                      doubleClickZoom={false} // Prevent zoom on double click
-                      touchZoom={false} // Prevent touch zoom (mobile devices)
-                      dragging={false} // Prevent dragging/panning
-                      >
-        <TileLayer
-  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-/>
+    <>
+      <div className="container mx-auto">
+        <div
+          style={{
+            height: "70vh",
+            width: "100%",
+            position: "relative",
+            zIndex: 0,
+          }}
+        >
+          <MapContainer
+            center={position}
+            zoom={13}
+            style={{
+              height: "100%",
+              width: "100%",
+            }}
+            zoomControl={false}
+            scrollWheelZoom={false}
+            doubleClickZoom={false}
+            touchZoom={false}
+            dragging={false}
+          >
+            {/* Removes "Leaflet" attribution prefix */}
+            <CleanAttribution />
 
+            {/* OpenFreeMap Bright */}
+            <OpenFreeMapLayer />
 
-
-<Marker position={pinPosition} icon={createCustomMarkerIcon()} eventHandlers={{
-              click: handleMarkerClick, // Call handleMarkerClick on marker click
-            }}>
-            
-          </Marker>
-        </MapContainer>
+            <Marker
+              position={pinPosition}
+              icon={createCustomMarkerIcon()}
+              eventHandlers={{
+                click: handleMarkerClick,
+              }}
+            />
+          </MapContainer>
+        </div>
       </div>
-    </div>
+
+      {/* Tiny attribution */}
+      <style jsx global>{`
+        .leaflet-control-attribution {
+          font-size: 8px !important;
+          line-height: 9px !important;
+          padding: 0px 2px !important;
+          margin: 0 !important;
+
+          background: rgba(255, 255, 255, 0.55) !important;
+
+          white-space: nowrap !important;
+        }
+
+        .leaflet-control-attribution a {
+          font-size: 8px !important;
+          line-height: 9px !important;
+          text-decoration: none !important;
+        }
+      `}</style>
+    </>
   );
 }
