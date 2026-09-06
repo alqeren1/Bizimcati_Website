@@ -5,8 +5,7 @@ import Hero from './Hero';
 import HomeCarousel from './HomeCarousel';
 import EventTypesSection from './Events';
 import Footer from './Footer';
-import Intro from './Maps';
-import Intro3 from './openMap';
+import Intro3 from './openMap2';
 import { Helmet } from "react-helmet-async";
 
 
@@ -36,8 +35,8 @@ function HomePage(){
     </div>
     <EventTypesSection/>
     
-    <div  className="my-20">
-    <Intro3/>
+    <div  className="my-20 rounded-xl">
+    <Intro3 className="rounded-xl"/>
     </div>
     <HomeCarousel/>
       <Footer/>
