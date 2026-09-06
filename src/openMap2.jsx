@@ -157,7 +157,7 @@ export default function Intro3() {
       </div>
 
       {/* Tiny attribution */}
-      <style jsx global>{`
+      <style>{`
         .leaflet-control-attribution {
           font-size: 8px !important;
           line-height: 9px !important;

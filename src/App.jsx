@@ -1,49 +1,25 @@
-import React, { useRef, useState, Suspense } from "react";
-import Navbar from "./Navbar.jsx";
-import NavbarExt from "./NavbarExt.jsx";
-import HomePage from "./Homepage.jsx";
-import AboutPage from "./AboutPage.jsx";
-import ReservationPage from "./ReservationPage.jsx";
-import ContactPage from "./ContactPage.jsx";
-import GalleryPage from "./GalleryPage.jsx";
-import WeddingPage from "./WeddingPage.jsx";
-import BirthdayPage from "./BirthdayPage.jsx";
-import BBQPage from "./BBQPage.jsx";
-import CorporateMeetingPage from "./CorporateMeetingPage.jsx";
-import GraduationPage from "./GraduationPage.jsx";
-import SeminarPage from "./SeminarPage.jsx";
-import { useTranslation } from "react-i18next";
-// Inside your main.jsx or App.jsx
-import "leaflet/dist/leaflet.css";
-import "./App.css";
-
-import ScrollTop from "./ScrollTop.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-function App() {
-  return (
-    <Suspense fallback="loading">
-      <Router>
-        <ScrollTop />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/hakkimizda" element={<AboutPage />} />
-          <Route path="/reservasyon" element={<ReservationPage />} />
-          <Route path="/iletisim" element={<ContactPage />} />
-          <Route path="/galeri" element={<GalleryPage />} />
-          <Route path="/kirdugunu" element={<WeddingPage />} />
-          <Route path="/dogumgunu" element={<BirthdayPage />} />
-          <Route path="/bbq" element={<BBQPage />} />
-          <Route
-            path="/sirketorganizasyonu"
-            element={<CorporateMeetingPage />}
-          />
-          <Route path="/mezuniyet" element={<GraduationPage />} />
-          <Route path="/seminer" element={<SeminarPage />} />
-        </Routes>
-      </Router>
+import { Suspense, lazy } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './Homepage';
+import AboutPage from './AboutPage';
+import ReservationPage from './ReservationPage';
+import ServicePage from './Design';
+import ScrollTop from './ScrollTop';
+const GalleryPage = lazy(() => import('./GalleryPage'));
+const ContactPage = lazy(() => import('./ContactPage'));
+export default function App() {
+  return <BrowserRouter>
+    <ScrollTop />
+    <Suspense fallback={<div className="loading-state" role="status">Bizim Çatı…</div>}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/hakkimizda" element={<AboutPage />} />
+        <Route path="/reservasyon" element={<ReservationPage />} />
+        <Route path="/iletisim" element={<ContactPage />} />
+        <Route path="/galeri" element={<GalleryPage />} />
+        {[['kirdugunu', 'wedding'], ['dogumgunu', 'birthday'], ['bbq', 'bbq'], ['sirketorganizasyonu', 'corporate'], ['mezuniyet', 'graduation'], ['seminer', 'seminar']].map(([path, kind]) => <Route key={path} path={'/' + path} element={<ServicePage kind={kind} />} />)}
+        <Route path="*" element={<HomePage />} />
+      </Routes>
     </Suspense>
-  );
+  </BrowserRouter>;
 }
-
-export default App;

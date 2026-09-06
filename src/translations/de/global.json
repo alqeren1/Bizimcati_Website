@@ -1,12 +1,20 @@
 {
   "navbar": {
     "logo": "Bizim Çatı",
-    "links": ["Über uns", "Galerie", "Kontakt", "Startseite"]
+    "links": [
+      "Über uns",
+      "Galerie",
+      "Kontakt",
+      "Startseite"
+    ]
   },
   "hero_section": {
     "header": "Bizim Çatı Hotel & Restaurant",
     "intro_paragraph": "Ihr Zuhause am Mogan-See mit naturnaher Atmosphäre, hochwertigem Service und köstlichem Essen",
-    "buttons": ["Reservierung", "Unsere Veranstaltungen"]
+    "buttons": [
+      "Reservierung",
+      "Unsere Veranstaltungen"
+    ]
   },
   "event_types_section": {
     "header": "Unsere Dienstleistungen",
@@ -27,7 +35,6 @@
     "header": "Standort",
     "intro": "Unser Restaurant liegt direkt am Ufer des Mogan-Sees und ist leicht erreichbar."
   },
-
   "about_page": {
     "header": "Über uns",
     "paragraphs": [
@@ -38,7 +45,6 @@
       "Wir laden Sie ins Bizim Çatı Hotel & Restaurant ein, um einen Tag voller Wärme und Komfort zu erleben, wie zuhause."
     ]
   },
-
   "gallery": {
     "header": "Galerie",
     "header2": "Unsere lieben Tiere",
@@ -50,24 +56,30 @@
     "header6": "Unterkunft",
     "header7": "Gartenrestaurant",
     "all": "Alle",
-    "intro": "Entdecken Sie unser Restaurant in seiner natürlichsten Form."
+    "intro": "Entdecken Sie unser Restaurant in seiner natürlichsten Form.",
+    "no_media_available": "Noch keine Medien in dieser Kategorie."
   },
-
   "contact_section": {
     "header": "Kontakt",
     "intro_paragraph": "Für Reservierungen und Anfragen erreichen Sie uns über die folgenden Kontaktmöglichkeiten.",
     "contact_details": {
       "reservation_header": "Für Reservierungen",
-      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "phone_numbers": [
+        "+90 312 498 21 21",
+        "+90 555 800 92 61"
+      ],
       "email_header": "Unsere E-Mail-Adresse",
       "email": "info@bizimcati.com.tr",
       "address_header": "Unsere Adresse",
       "address": "Ufer des Mogan-Sees, Haymana Straße, 7 km, Nr. 281, Gölbaşı",
       "social_media_header": "Finden Sie uns in sozialen Medien",
-      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+      "social_media_links": [
+        "Facebook",
+        "Twitter",
+        "Instagram"
+      ]
     }
   },
-
   "wedding_section": {
     "header": "Hochzeit im Freien",
     "seeMore": "Mehr erfahren",
@@ -186,5 +198,55 @@
       "Beeindrucken Sie Ihre Kunden, motivieren Sie Ihr Team und feiern Sie Ihre Erfolge – machen Sie Ihre Firmenveranstaltung zu einem außergewöhnlichen Erlebnis bei uns am Mogan-See."
     ],
     "contact_button": "Kontakt"
+  },
+  "design": {
+    "skip": "Zum Inhalt",
+    "navigation": "Navigation",
+    "language": "Sprache",
+    "explore": "Entdecken",
+    "directions": "Route planen",
+    "backTop": "Nach oben",
+    "yourMoment": "IHR MOMENT, IHR ORT",
+    "invitation": "Hier beginnen schöne Erinnerungen.",
+    "planVisit": "Besuch planen",
+    "experiences": "DAS BİZİM ÇATI ERLEBNIS",
+    "somethingSpecial": "Ein Ort für jeden Anlass.",
+    "experiencesIntro": "Ein erholsamer Aufenthalt, ein Tisch am See oder ein unvergessliches Fest. Alles an einem Ort.",
+    "stay": "Übernachten",
+    "dine": "Genießen",
+    "celebrate": "Feiern",
+    "stayDescription": "Lassen Sie den Alltag hinter sich. Genießen Sie die Natur.",
+    "dineDescription": "Liebevoll zubereitete Gerichte mit Seeblick.",
+    "celebrateDescription": "Ein besonderer Rahmen für Ihre schönsten Momente.",
+    "madeForYou": "FÜR SIE GESTALTET",
+    "viewGallery": "Galerie entdecken",
+    "lakeside": "AM UFER DES MOGAN-SEES",
+    "heroLine1": "Nah an der Stadt,",
+    "heroLine2": "näher an der Ruhe.",
+    "previous": "Vorheriges Foto",
+    "next": "Nächstes Foto",
+    "freshFlavours": "Frisch zubereitete Gerichte",
+    "memorableMoments": "Unvergessliche Momente",
+    "directBooking": "Direkt bei uns buchen",
+    "welcome": "WILLKOMMEN BEI BİZİM ÇATI",
+    "welcomeTitle": "Ein wenig Natur, etwas Ruhe,",
+    "welcomeItalic": "ein Ort zum Wohlfühlen.",
+    "welcomeText": "Vor den Toren Ankaras wird das Leben am Mogan-See ruhiger. Ein herzlicher Empfang, genussvolle Mahlzeiten und Momente in der Natur. Fühlen Sie sich bei Bizim Çatı wie zu Hause.",
+    "ourStory": "Unsere Geschichte",
+    "slowDown": "Durchatmen. Den See genießen.",
+    "findUs": "So finden Sie uns",
+    "reservationIntro": "Kontaktieren Sie uns für einen Aufenthalt, ein Essen oder einen besonderen Anlass. Gemeinsam planen wir Ihren Besuch.",
+    "yourDetails": "Ihre Besuchsdetails",
+    "emailNotice": "Dieses Formular erstellt eine Reservierungsanfrage in Ihrer E-Mail-App. Die Reservierung gilt erst nach Bestätigung durch unser Team.",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "guests": "Anzahl der Gäste",
+    "eventType": "Art des Besuchs",
+    "select": "Bitte wählen",
+    "additionalRequests": "Weitere Wünsche (optional)",
+    "prepareEmail": "E-Mail-Anfrage vorbereiten",
+    "prepared": "Ihre Anfrage ist bereit. Bitte senden Sie sie mit Ihrer E-Mail-App. Falls sie sich nicht öffnet, rufen Sie uns an oder versuchen Sie den Link erneut."
   }
 }

@@ -1,12 +1,20 @@
 {
   "navbar": {
     "logo": "Bizim Çatı",
-    "links": ["About Us", "Gallery", "Contact", "Home"]
+    "links": [
+      "About Us",
+      "Gallery",
+      "Contact",
+      "Home"
+    ]
   },
   "hero_section": {
     "header": "Bizim Çatı Hotel & Restaurant",
     "intro_paragraph": "Your home by Lake Mogan with a nature-filled atmosphere, quality service, and delicious food",
-    "buttons": ["Reservation", "Our Events"]
+    "buttons": [
+      "Reservation",
+      "Our Events"
+    ]
   },
   "event_types_section": {
     "header": "Our Services",
@@ -27,7 +35,6 @@
     "header": "Location",
     "intro": "Our restaurant is located on the shore of Lake Mogan in an easily accessible location."
   },
-
   "about_page": {
     "header": "About Us",
     "paragraphs": [
@@ -38,7 +45,6 @@
       "We invite you to Bizim Çatı Hotel & Restaurant for a day filled with warmth and comfort, just like home."
     ]
   },
-
   "gallery": {
     "header": "Gallery",
     "header2": "Our Lovely Pets",
@@ -50,24 +56,30 @@
     "header6": "Accommodation",
     "header7": "Garden Restaurant",
     "all": "All",
-    "intro": "Explore our restaurant in its most natural state."
+    "intro": "Explore our restaurant in its most natural state.",
+    "no_media_available": "No media in this category yet."
   },
-
   "contact_section": {
     "header": "Contact",
     "intro_paragraph": "For reservations and inquiries, you can reach us through any of the methods below.",
     "contact_details": {
       "reservation_header": "For Reservations",
-      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "phone_numbers": [
+        "+90 312 498 21 21",
+        "+90 555 800 92 61"
+      ],
       "email_header": "Our Email Address",
       "email": "info@bizimcati.com.tr",
       "address_header": "Our Address",
       "address": "Lake Mogan Shore, Haymana Road 7 km, No: 281, Gölbaşı",
       "social_media_header": "Find Us on Social Media",
-      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+      "social_media_links": [
+        "Facebook",
+        "Twitter",
+        "Instagram"
+      ]
     }
   },
-
   "wedding_section": {
     "header": "Outdoor Wedding",
     "seeMore": "See More",
@@ -186,5 +198,55 @@
       "Impress your clients, motivate your team, and celebrate your achievements—turn your corporate event into an extraordinary experience at our Lake Mogan venue."
     ],
     "contact_button": "Contact"
+  },
+  "design": {
+    "skip": "Skip to content",
+    "navigation": "Navigation",
+    "language": "Language",
+    "explore": "Explore",
+    "directions": "Get directions",
+    "backTop": "Back to top",
+    "yourMoment": "YOUR MOMENT, YOUR PLACE",
+    "invitation": "Your next memory starts here.",
+    "planVisit": "Plan your visit",
+    "experiences": "THE BİZİM ÇATI EXPERIENCE",
+    "somethingSpecial": "A place for every occasion.",
+    "experiencesIntro": "A peaceful stay, a table by the lake, or a celebration to remember. Discover it all in one place.",
+    "stay": "Stay",
+    "dine": "Dine",
+    "celebrate": "Celebrate",
+    "stayDescription": "Leave the everyday behind. Settle into nature.",
+    "dineDescription": "Thoughtful flavours, served with a lake view.",
+    "celebrateDescription": "An extraordinary setting for your special moments.",
+    "madeForYou": "THOUGHTFULLY YOURS",
+    "viewGallery": "Explore the gallery",
+    "lakeside": "ON THE SHORES OF LAKE MOGAN",
+    "heroLine1": "Close to the city,",
+    "heroLine2": "closer to tranquility.",
+    "previous": "Previous photo",
+    "next": "Next photo",
+    "freshFlavours": "Freshly prepared flavours",
+    "memorableMoments": "Unforgettable moments",
+    "directBooking": "Book directly with us",
+    "welcome": "WELCOME TO BİZİM ÇATI",
+    "welcomeTitle": "A little nature, a little calm,",
+    "welcomeItalic": "a place to call your own.",
+    "welcomeText": "Just outside Ankara, life slows down on the shores of Lake Mogan. A warm welcome, thoughtful dining, and moments surrounded by nature. Make yourself at home at Bizim Çatı.",
+    "ourStory": "Our story",
+    "slowDown": "Take a breath. Take in the lake.",
+    "findUs": "Find us",
+    "reservationIntro": "Get in touch for a stay, a meal, or a special occasion. Let us help you plan a visit that feels like you.",
+    "yourDetails": "Your visit details",
+    "emailNotice": "This form prepares a reservation inquiry in your email app. Your reservation is confirmed only when our team responds.",
+    "name": "Full name",
+    "email": "Email",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Number of guests",
+    "eventType": "Visit type",
+    "select": "Please select",
+    "additionalRequests": "Additional requests (optional)",
+    "prepareEmail": "Prepare email inquiry",
+    "prepared": "Your inquiry is ready. Please send it using your email app. If it did not open, call us or try the link again."
   }
 }

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { useState, useEffect } from "react";
+import { PageLayout } from "./Design";
+
 import { useLocation } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -125,6 +125,7 @@ const GalleryPage = () => {
 
     const params = new URLSearchParams(location.search);
     const tab = params.get("tab") || location.state?.tab;
+    setMediaType("all");
 
     if (tab && validTabs.includes(tab)) {
       setCurrentTab(tab === "hotel" ? "hotel" : tab); // Redirect "hotel" to "restaurant"
@@ -198,13 +199,12 @@ const GalleryPage = () => {
   }, [index, open]);
 
   return (
-    <div className="flex bg-white flex-col min-h-screen">
-      <Navbar />
+    <PageLayout title={t('gallery.header')}><div className="gallery-page">
       <div className="flex-grow">
-        <section className="bg-white py-16 h-full">
-          <div className="container mt-10 mx-auto px-4 h-full">
-            {/* Tab Headers */}
-            <div className="flex overflow-x-auto space-x-6 mb-2 border-b pb-2">
+        <section className="gallery-main">
+          <div className="gallery-container">
+            <div className="gallery-heading"><span className="eyebrow">BİZİM ÇATI · HOTEL & RESTAURANT</span><h1>{t("gallery.header")}</h1><p>{t("gallery.intro")}</p></div>{/* Tab Headers */}
+            <div className="gallery-tabs flex overflow-x-auto space-x-6 mb-2 border-b pb-2">
   {[
     { id: "general", label: t("gallery.header") },
     { id: "restaurant", label: t("gallery.header5") },
@@ -217,6 +217,7 @@ const GalleryPage = () => {
   ].map((tab) => (
     <button
       key={tab.id}
+      aria-pressed={currentTab === tab.id}
       className={`px-6 py-2 text-lg text-left font-bold ${
         currentTab === tab.id
           ? "border-b-4 border-blue-500 text-blue-500"
@@ -265,9 +266,10 @@ const GalleryPage = () => {
 >
   {getCurrentTabMedia().media.length > 0 ? (
     getCurrentTabMedia().media.map((media, idx) => (
-      <div
+      <button
+        type="button" aria-label={t(media.type === 'video' ? 'gallery.videos' : 'gallery.images') + ' ' + (idx + 1)}
         key={media.src}
-        className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+        className="gallery-tile relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
         onClick={() => openLightbox(idx)}
       >
         {media.type === "image" ? (
@@ -284,14 +286,14 @@ const GalleryPage = () => {
               className="w-full h-64 object-cover"
               muted
               playsInline
-              poster={media.thumbnail || "/path/to/your/poster.jpg"}
+              preload="none" poster={media.thumbnail}
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <FaRegPlayCircle className="text-white w-12 h-12 bg-black bg-opacity-50 rounded-full" />
             </div>
           </>
         )}
-      </div>
+      </button>
     ))
   ) : (
     <p className="col-span-full text-center text-gray-600">
@@ -350,8 +352,7 @@ const GalleryPage = () => {
           className="custom-lightbox"
         />
       )}
-      <Footer />
-    </div>
+    </div></PageLayout>
   );
 };
 

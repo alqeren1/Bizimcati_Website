@@ -1,12 +1,20 @@
 {
   "navbar": {
     "logo": "Bizim Çatı",
-    "links": ["Hakkımızda", "Galeri", "İletişim", "Anasayfa"]
+    "links": [
+      "Hakkımızda",
+      "Galeri",
+      "İletişim",
+      "Anasayfa"
+    ]
   },
   "hero_section": {
     "header": "Bizim Çatı Otel & Restoran",
     "intro_paragraph": "Doğayla iç içe atmosferi, kaliteli hizmeti ve lezzetli yemekleriyle Mogan gölündeki eviniz",
-    "buttons": ["Rezervasyon", "Organizasyonlarımız"]
+    "buttons": [
+      "Rezervasyon",
+      "Organizasyonlarımız"
+    ]
   },
   "event_types_section": {
     "header": "Hizmetlerimiz",
@@ -16,7 +24,6 @@
       "Otel",
       "BBQ ve Mangal",
       "Kır Düğünü",
-
       "Şirket Organizasyonu",
       "Doğum Günü Partisi",
       "Mezuniyet Partisi",
@@ -28,7 +35,6 @@
     "header": "Lokasyon",
     "intro": "Restoranımız, Mogan Gölü'nün kıyısında kolay ulaşılabilir bir lokasyonda servis vermektedir."
   },
-
   "about_page": {
     "header": "Hakkımızda",
     "paragraphs": [
@@ -39,7 +45,6 @@
       "Evinizin sıcaklığını ve rahatlığını aratmayacak güzel bir gün için sizleri de Bizim Çatı Hotel Restorana bekliyoruz."
     ]
   },
-
   "gallery": {
     "header": "Galeri",
     "header2": "Sevimli Dostlarımız",
@@ -51,24 +56,30 @@
     "header6": "Konaklama",
     "header7": "Bahçe Restoran",
     "all": "Hepsi",
-    "intro": "Restoranımızı en doğal haliyle keşfedin."
+    "intro": "Restoranımızı en doğal haliyle keşfedin.",
+    "no_media_available": "Bu kategoride henüz içerik yok."
   },
-
   "contact_section": {
     "header": "İletişim",
     "intro_paragraph": "Rezervasyonlarınız ve talepleriniz için, bize aşağıdaki yöntemlerden herhangi biriyle ulaşabilirsiniz.",
     "contact_details": {
       "reservation_header": "Rezervasyonlarınız İçin",
-      "phone_numbers": ["+90 312 498 21 21", "+90 555 800 92 61"],
+      "phone_numbers": [
+        "+90 312 498 21 21",
+        "+90 555 800 92 61"
+      ],
       "email_header": "E-posta Adresimiz",
       "email": "info@bizimcati.com.tr",
       "address_header": "Adresimiz",
       "address": "Mogan Gölü Kenarı Haymana Yolu 7.km No: 281 Gölbaşı",
       "social_media_header": "Sosyal Medyada Biz",
-      "social_media_links": ["Facebook", "Twitter", "Instagram"]
+      "social_media_links": [
+        "Facebook",
+        "Twitter",
+        "Instagram"
+      ]
     }
   },
-
   "wedding_section": {
     "header": "Kır Düğünü",
     "seeMore": "Daha Fazlasını Gör",
@@ -187,5 +198,55 @@
       "Müşterilerinizi etkileyin, ekibinizi motive edin ve başarılarınızı kutlayın—markanızın mükemmelliğini yansıtan bir etkinlikle fark yaratın. Mogan Gölü'ndeki mekanımızda, kurumsal etkinliklerinizi sıra dışı deneyimlere dönüştürüyoruz."
     ],
     "contact_button": "İletişim"
+  },
+  "design": {
+    "skip": "İçeriğe geç",
+    "navigation": "Menü",
+    "language": "Dil",
+    "explore": "Keşfedin",
+    "directions": "Yol tarifi alın",
+    "backTop": "Başa dön",
+    "yourMoment": "SİZİN ANINIZ, SİZİN YERİNİZ",
+    "invitation": "Güzel anılar burada başlar.",
+    "planVisit": "Ziyaretinizi planlayın",
+    "experiences": "BİZİM ÇATI DENEYİMİ",
+    "somethingSpecial": "Her anınıza özel.",
+    "experiencesIntro": "Huzurlu bir konaklama, göl kenarında bir sofra veya unutulmaz bir kutlama. Hepsi bir arada.",
+    "stay": "Konaklayın",
+    "dine": "Tadını çıkarın",
+    "celebrate": "Kutlayın",
+    "stayDescription": "Günün yorgunluğunu doğanın huzuruna bırakın.",
+    "dineDescription": "Göl manzarasına eşlik eden özenli lezzetler.",
+    "celebrateDescription": "Hayatınızın özel anlarına, eşsiz bir atmosfer.",
+    "madeForYou": "SİZİN İÇİN DÜŞÜNÜLDÜ",
+    "viewGallery": "Galeriyi keşfedin",
+    "lakeside": "MOGAN GÖLÜ KIYISINDA",
+    "heroLine1": "Şehre yakın,",
+    "heroLine2": "huzura daha yakın.",
+    "previous": "Önceki fotoğraf",
+    "next": "Sonraki fotoğraf",
+    "freshFlavours": "Özenle hazırlanan lezzetler",
+    "memorableMoments": "Unutulmaz anılar",
+    "directBooking": "Doğrudan rezervasyon",
+    "welcome": "BİZİM ÇATI’YA HOŞ GELDİNİZ",
+    "welcomeTitle": "Biraz doğa, biraz huzur,",
+    "welcomeItalic": "tam da sizin yeriniz.",
+    "welcomeText": "Ankara’nın yanı başında, Mogan Gölü’nün kıyısında hayat biraz yavaşlar. Sıcacık bir karşılama, keyifle kurulan sofralar ve doğayla iç içe anlar… Bizim Çatı’da kendinizi evinizde hissedin.",
+    "ourStory": "Hikâyemiz",
+    "slowDown": "Bir nefes alın. Gölün tadını çıkarın.",
+    "findUs": "Bizi bulun",
+    "reservationIntro": "Konaklama, restoran veya özel etkinlikleriniz için bize ulaşın. Birlikte size özel bir ziyaret planlayalım.",
+    "yourDetails": "Ziyaret detaylarınız",
+    "emailNotice": "Bu form e-posta uygulamanızda bir rezervasyon talebi hazırlar. Rezervasyon, ekibimizin onayıyla kesinleşir.",
+    "name": "Ad soyad",
+    "email": "E-posta",
+    "date": "Tarih",
+    "time": "Saat",
+    "guests": "Misafir sayısı",
+    "eventType": "Ziyaret türü",
+    "select": "Seçiniz",
+    "additionalRequests": "Ek talepler (isteğe bağlı)",
+    "prepareEmail": "E-posta talebi hazırlayın",
+    "prepared": "Talebiniz hazır. Göndermek için e-posta uygulamanızı kullanın. Açılmadıysa bizi arayabilir veya bağlantıyı tekrar deneyebilirsiniz."
   }
 }

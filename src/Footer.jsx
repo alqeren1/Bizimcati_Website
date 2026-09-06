@@ -1,140 +1,79 @@
-import React, { useState, useEffect } from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaArrowUp,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
-
-function Footer() {
-  const [showArrow, setShowArrow] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const pageHeight = window.innerHeight;
-      if (window.scrollY > pageHeight) {
-        setShowArrow(true);
-      } else {
-        setShowArrow(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <>
-      {/* Arrow to scroll to top */}
-      {showArrow && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8  text-white p-4 rounded-full shadow-lg hover:bg-[#0a72bf] bg-[#0D92F4] transition duration-300 ease-in-out transform hover:scale-110 z-50"
-          aria-label="Scroll to top"
-        >
-          <FaArrowUp size={28} />
-        </button>
-      )}
-
-      <footer className="footer bg-[#073686] text-neutral-content py-4 flex flex-col items-start">
-        <div className="container md:flex justify-left 2xl:justify-between items-end mx-auto px-4 ">
-          <div className="flex md:hidden mb-4 mt-4">
-            <div className="">
-              <a
-                className="items-center  text-white  transition duration-300 hover:text-blue-400   cursor-pointer flex"
-                href="mailto:info@bizimcati.com.tr"
-              >
-                <div href="" className=" ">
-                  <FaEnvelope size={32} />
-                </div>
-                <div className="ml-2  font-semibold text-lg">
-                  {" "}
-                  info@bizimcati.com
-                </div>
-              </a>
-              <a className="items-center  mt-4 text-white   flex">
-                <div className=" ">
-                  <FaPhoneAlt size={32} />
-                </div>
-                <div className="ml-2  font-semibold text-lg">
-                  <div className=" ">+90 312 498 2121</div>
-                  <div className="">+90 555 800 9261</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div>
-            <img src="/images/logo_white.png" alt="Logo" className={`h-16  `} />
-
-            <aside className="flex items-center mb-4 ">
-              <p className="text-white">
-                Copyright © {new Date().getFullYear()} - All rights reserved
-              </p>
-            </aside>
-            <nav className="flex w-full    justify-left items-center">
-              <div className="flex space-x-2">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/clubbizimcati/"
-                  className="text-white hover:text-blue-600 transition duration-300"
-                >
-                  <FaFacebookF size={24} />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/bizimcati"
-                  className="text-white hover:text-blue-400 transition duration-300"
-                >
-                  <FaTwitter size={24} />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/clubbizimcati/"
-                  className="text-white hover:text-pink-600 transition duration-300"
-                >
-                  <FaInstagram size={24} />
-                </a>
-              </div>
-            </nav>
-          </div>
-          <div className="hidden md:flex">
-            <div className=" ml-20">
-              <a
-                className="items-center  text-white  transition duration-300 hover:text-blue-400   cursor-pointer flex"
-                href="mailto:info@bizimcati.com.tr"
-              >
-                <div href="" className=" ">
-                  <FaEnvelope size={24} />
-                </div>
-                <div className="ml-2  font-semibold text-md">
-                  {" "}
-                  info@bizimcati.com
-                </div>
-              </a>
-              <a className="items-center  mt-4 text-white   flex">
-                <div className=" ">
-                  <FaPhoneAlt size={24} />
-                </div>
-                <div className="ml-2  font-semibold text-md">
-                  <div className=" ">+90 312 498 2121</div>
-                  <div className="">+90 555 800 9261</div>
-                </div>
-              </a>
-            </div>
-          </div>
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { FiArrowUpRight, FiInstagram, FiFacebook, FiArrowUp } from 'react-icons/fi';
+export default function Footer() {
+  const {
+    t
+  } = useTranslation();
+  return <footer className="site-footer">
+    <div className="shell footer-grid">
+      <div className="footer-brand">
+        <Link to="/">
+          <img src="/images/logo_white.png" alt="Bizim Çatı" />
+        </Link>
+        <p>
+          {t('hero_section.intro_paragraph')}
+        </p>
+        <div className="socials">
+          <a href="https://www.instagram.com/clubbizimcati/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <FiInstagram />
+          </a>
+          <a href="https://www.facebook.com/clubbizimcati/" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <FiFacebook />
+          </a>
         </div>
-      </footer>
-    </>
-  );
+      </div>
+      <div>
+        <span className="eyebrow">
+          {t('design.explore')}
+        </span>
+        <Link to="/hakkimizda">
+          {t('navbar.links.0')}
+        </Link>
+        <Link to="/galeri?tab=hotel">
+          {t('gallery.header6')}
+        </Link>
+        <Link to="/galeri">
+          {t('gallery.header')}
+        </Link>
+        <Link to="/kirdugunu">
+          {t('wedding_section.header')}
+        </Link>
+      </div>
+      <div>
+        <span className="eyebrow">
+          {t('contact_section.header')}
+        </span>
+        <a href="tel:+903124982121">+90 312 498 21 21</a>
+        <a href="tel:+905558009261">+90 555 800 92 61</a>
+        <a href="mailto:info@bizimcati.com.tr">info@bizimcati.com.tr</a>
+        <Link to="/reservasyon">
+          {t('hero_section.buttons.0')}
+          <FiArrowUpRight />
+        </Link>
+      </div>
+      <div>
+        <span className="eyebrow">
+          {t('location.header')}
+        </span>
+        <p>
+          {t('contact_section.contact_details.address')}
+        </p>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Club+Bizim+Cati+Golbasi+Ankara" target="_blank" rel="noreferrer">
+          {t('design.directions')}
+          <FiArrowUpRight />
+        </a>
+      </div>
+    </div>
+    <div className="shell footer-bottom">
+      <span>© {new Date().getFullYear()} Bizim Çatı Hotel & Restaurant</span>
+      <span>Mogan Gölü · Ankara</span>
+      <button onClick={() => window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })} aria-label={t('design.backTop')}>
+        <FiArrowUp />
+      </button>
+    </div>
+  </footer>;
 }
-
-export default Footer;
